@@ -15,13 +15,13 @@
   const AVATAR = "assets/dr-mathew.jpg";
   const POS_KEY = "td_drm_pos", HIDE_KEY = "td_drm_hidden", WAVE_KEY = "td_drm_waved";
 
-  const GREETING = "Hello, I'm **Dr. Liji Mathew**. I help internationally trained dentists get into U.S. dental schools.\n\nTo get you to the right advice: where are you in the process right now? Preparing for exams, applying through CAAPID, or already invited to a bench test or interview?";
-  const STARTERS = ["What is the bench test?", "How do I prepare for the interview?", "What are the steps to practice in the US?", "What services do you offer?", "How do I book a consultation?"];
+  const GREETING = "Hello, I'm **Dr. Liji Mathew**. I trained as a dentist and prosthodontist in India, then earned my DMD at Temple University. Now I help internationally trained dentists get into U.S. dental schools.\n\nWhere are you in the process? Preparing for exams, applying through CAAPID, or already invited to a bench test or interview?";
+  const STARTERS = ["What are the steps to practice in the US?", "Do I need a US dental degree?", "What is the bench test?", "How much does the whole pathway cost?", "What should I do next?"];
   const NUDGES = [
     "A tip while you look around: the most common mistake I see is waiting for an interview invitation before starting bench test practice. Invitations can come with only a few weeks' notice. Have you started hands-on practice yet?",
     "Something many applicants underestimate is the \"Why our school?\" question. Interviewers can tell a generic answer from one built on their own program. Which schools are on your list?",
     "On the bench test, examiners grade the adjacent tooth as carefully as your prep. A nicked neighbour can cost more points than an imperfect outline. Want my checklist for a clean Class II?",
-    "Every session I offer is 1-on-1, online or in person. If you tell me your graduation year and INBDE/TOEFL status, I can suggest where to focus first.",
+    "Every session I offer is 1-on-1, online worldwide or in person in Houston/Katy. Tell me your graduation year and INBDE/TOEFL status and I'll suggest where to focus first. Or try the Pathway Planner for a printable checklist.",
   ];
 
   const $ = (tag, attrs = {}, kids = []) => { const el = document.createElement(tag); for (const [k, v] of Object.entries(attrs)) { if (k === "class") el.className = v; else if (k === "text") el.textContent = v; else if (k.startsWith("on")) el.addEventListener(k.slice(2), v); else el.setAttribute(k, v); } for (const c of [].concat(kids)) if (c) el.append(c); return el; };
@@ -154,7 +154,7 @@
       try { finish(await callModel(text), "DR. MATHEW · AI ASSISTANT"); return; } catch (e) { console.warn("Dr. Mathew AI unavailable:", e.message); }
     }
     if (routed.fact && routed.score >= 2) { finish(routed.fact.answer, "FROM DR. MATHEW'S GUIDE", related(routed.fact)); return; }
-    finish(`I don't have a ready answer for that here. If it's about your own application, a short **free consultation** is the best next step, so I can hear your background. Email **${CFG.email}** or call **${CFG.phone}**, or use the form on this page.\n\nI can already help with these:`, null, STARTERS.slice(0, 4));
+    finish(`I don't have a ready answer for that here. If it's about your own application, a short **free consultation** is the best next step, so I can hear your background. Email **${CFG.email}**, or use the **Book a Consultation** form on the home page.\n\nI can already help with these:`, null, STARTERS.slice(0, 4));
   }
   send.addEventListener("click", () => ask());
   input.addEventListener("keydown", (e) => { if (e.key === "Enter") ask(); });

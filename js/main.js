@@ -10,12 +10,14 @@
   for (const a of document.querySelectorAll("[data-cfg]")) {
     const k = a.dataset.cfg;
     if (k === "email" && C.email) { a.href = "mailto:" + C.email; a.textContent = C.email; }
-    if (k === "phone" && C.phone) { a.href = "tel:" + C.phoneHref; a.textContent = C.phone; }
-    if (k === "social" && C.social) { a.href = C.socialUrl; a.textContent = C.social; }
   }
-  document.getElementById("year").textContent = new Date().getFullYear();
+  const yr = document.getElementById("year"); if (yr) yr.textContent = new Date().getFullYear();
 
   const form = document.getElementById("contact-form"), note = document.getElementById("form-note");
+  if (!form) return;
+  /* package buttons preselect the interest; planner results prefill the message */
+  document.addEventListener("click", (e) => { const b = e.target.closest("[data-interest]"); if (b) form.interest.value = b.dataset.interest; });
+  try { const plan = sessionStorage.getItem("td_plan"); if (plan && !form.message.value) form.message.value = plan; } catch { /* private mode */ }
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const d = Object.fromEntries(new FormData(form));

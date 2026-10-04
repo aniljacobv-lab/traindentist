@@ -3,7 +3,9 @@
 The website for Dr. Liji Mathew, DMD: mentorship for internationally trained dentists applying to U.S. dental schools. It's a static site (plain HTML, CSS and JS with no build step), hosted free on **GitHub Pages**, and includes the **Dr. Mathew** chat assistant.
 
 ```
-index.html               the page
+index.html               home page
+pathway.html             the U.S. Pathway Guide + Pathway Planner
+js/planner.js            the Pathway Planner checklist
 css/styles.css           all styles, including the chat widget
 js/config.js             EDIT ME: email, phone, form endpoint, chat API URL
 js/main.js               menu and consultation form
@@ -63,7 +65,8 @@ Then set `chatApi: "https://drmathew-chat.<you>.workers.dev"` in `js/config.js` 
 By default, the form opens the visitor's email app with the request already filled in. To receive submissions directly instead, create a free form at formspree.io and paste its endpoint into `formEndpoint` in `js/config.js`.
 
 ## Content to finish
-- [ ] Dr. Mathew's specifics: dental school and year, state license, years in practice (see the TODO comment in `index.html`, section `#about`)
-- [ ] A professional headshot (`assets/dr-mathew.jpg`) and hero photo (`assets/hero-mentorship.jpg`); the current images are cropped from the flyer
-- [ ] Confirm the email: the flyer uses info@usdentalprep.com. Change it in `js/config.js` and `index.html` if you set up an @traindentist.com address
-- [ ] Testimonials, once you have permission from real students
+- [ ] Set up the **info@traindentist.com** mailbox (or forwarding) at your domain host, or change `email` in `js/config.js`
+- [ ] Optional: a smiling professional headshot to replace `assets/dr-mathew-portrait.jpg` / `assets/dr-mathew.jpg`
+- [ ] Coaching rates for the Programs section (currently "Contact for current rates")
+- [ ] Student testimonials, once you have permission from real students
+- [ ] Re-check the Pathway Guide facts each cycle (CAAPID dates, fees, TOEFL minimums)
