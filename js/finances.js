@@ -31,6 +31,15 @@
         term = Number(v.term),
         extra = Number(v.extra),
         cash = Number(v.income) - Number(v.spending);
+      const timing = TDFinance.cashTiming(
+        Number(v.upfront),
+        Number(v.cashNow),
+        b.total,
+        input.savings,
+      );
+      $("upfront-result").classList.toggle("warning", timing.gap > 0);
+      $("upfront-result").innerHTML =
+        `<strong>Before aid arrives: ${timing.gap ? money(timing.gap) + " cash gap" : "initial costs covered"}</strong><br>${money(Number(v.upfront))} due − ${money(Number(v.cashNow))} available now. ${timing.gap ? "Arrange this cash before the payment deadline; a later loan disbursement does not meet an earlier bill." : "Confirm the dates and retain a reserve."} These amounts are already in your budget and have not been added again.`;
       const monthly = TDFinance.payment(b.balance, input.rate, term * 12),
         schedule = TDFinance.amortize(b.balance, input.rate, monthly + extra);
       $("result-balance").textContent = money(b.balance);
@@ -80,7 +89,7 @@
         `Estimate updated. Repayment balance ${money(b.balance)}, monthly payment ${money(actual)}. ${left < 0 ? "Your monthly budget has a shortfall." : ""}`;
     } catch {
       $("calc-error").textContent =
-        "Please check the amounts and periods, then update your estimate.";
+        "Please check the amounts and periods. Initial costs cannot exceed the education budget, and cash available now cannot exceed your savings/other cash. Then update your estimate.";
     }
   }
   form.addEventListener("submit", calculate);

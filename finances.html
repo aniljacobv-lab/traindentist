@@ -27,7 +27,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/resources.css" />
+    <link rel="stylesheet" href="css/resources.css?v=20261004-costs2" />
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
@@ -51,8 +51,7 @@
         <nav id="nav-links" class="nav-links" aria-label="Main navigation">
           <a href="pathway.html">Pathway</a><a href="schools.html">Schools</a
           ><a href="finances.html" aria-current="page">Finances</a
-          ><a href="careers.html">Careers</a
-          ><a href="index.html#about">Mentorship</a
+          ><a href="careers.html">Careers</a><a href="my-story.html">My Story</a
           ><a class="btn btn-sm" href="index.html#contact"
             >Let’s talk <span aria-hidden="true">↗</span></a
           >
@@ -71,6 +70,7 @@
           <nav class="resource-jumps" aria-label="On this page">
             <a href="#funding">Funding by status</a
             ><a href="#lenders">Loan sources</a
+            ><a href="#complete-budget">The complete budget</a
             ><a href="#calculator">Repayment calculator</a
             ><a href="#before-borrowing">Before you borrow</a>
           </nav>
@@ -326,6 +326,91 @@
             </article>
           </div>
         </section>
+        <section class="resource-section" id="complete-budget">
+          <p class="eyebrow">BUILD THE WHOLE BUDGET</p>
+          <h2>From accepting a seat to graduation.</h2>
+          <p>
+            A tuition quote is only one part of the cost. Request the itemized
+            budget for your exact advanced-standing program, entering class and
+            residency classification. Compare
+            <a href="schools.html">reviewed school budgets</a> before choosing
+            how much to borrow.
+          </p>
+          <div class="resource-grid">
+            <article class="resource-card">
+              <span class="tag">01 / INITIAL CASH</span>
+              <h3>Before aid arrives.</h3>
+              <p>
+                Track application and testing fees, interview travel, acceptance
+                deposits, the first bridge term, relocation and housing
+                deposits. Get payment dates and the first loan-disbursement date
+                in writing.
+              </p>
+              <p>
+                A credited tuition deposit is part of tuition, paid earlier. A
+                noncredited acceptance fee is an additional expense.
+              </p>
+              <p class="micro">
+                <a
+                  href="https://dental.cuanschutz.edu/prospective-students/tuition-financial-info"
+                  target="_blank"
+                  rel="noopener"
+                  >Colorado: $4,000 credited deposit ↗</a
+                ><br /><a
+                  href="https://dental.washington.edu/students/international-dds-program/acceptancenotification-phase/"
+                  target="_blank"
+                  rel="noopener"
+                  >Washington: $5,000 not credited ↗</a
+                >
+              </p>
+            </article>
+            <article class="resource-card">
+              <span class="tag">02 / EVERY TERM</span>
+              <h3>All tuition and charges.</h3>
+              <p>
+                Add the introductory or bridge period and every later term,
+                mandatory fees, instruments, clinic charges, insurance, exams
+                and licensing. Verify whether an initial period is already
+                included in an annual figure.
+              </p>
+              <p>
+                A green card or U.S. citizenship does not automatically mean
+                in-state tuition. Do not assume you can switch to a lower rate
+                after the first year; ask the school to confirm its rules.
+              </p>
+              <a
+                href="https://iss.washington.edu/annual-expenses/"
+                target="_blank"
+                rel="noopener"
+                >Example: UW residency guidance ↗</a
+              >
+            </article>
+            <article class="resource-card">
+              <span class="tag">03 / ALL LIVING MONTHS</span>
+              <h3>Through the final term.</h3>
+              <p>
+                Budget rent, utilities, food, transport, insurance not billed by
+                the school, childcare and personal expenses for every month. An
+                academic-year allowance may exclude summer or the initial bridge
+                period.
+              </p>
+              <p>
+                Use your own household costs and allow for price increases,
+                moving and emergencies. Keep a separate reserve after graduation
+                for licensing, a job search and living costs before your first
+                paycheck.
+              </p>
+            </article>
+          </div>
+          <aside class="resource-note" style="margin-top: 24px">
+            <strong>A school budget is not a loan approval.</strong> A lender
+            may finance only school-certified costs, less other aid, and may
+            have its own limit. An approved amount can still leave initial fees,
+            extra living costs or later years unfunded. Confirm program
+            eligibility, annual and total limits, renewal conditions and the
+            co-signer requirement before committing.
+          </aside>
+        </section>
         <section class="resource-section" id="calculator">
           <p class="eyebrow">03 / MAKE THE NUMBERS CONCRETE</p>
           <h2>What could repayment look like?</h2>
@@ -334,9 +419,18 @@
             USD. The 8% default is an illustration, not a rate quote. Terms
             shown are comparisons and may not be available from your lender.
           </p>
-          <div class="calculator">
+          <p class="resource-note">
+            <strong>Avoid double-counting:</strong> enter tuition, fees and
+            living separately. A school’s cost-of-attendance figure already
+            contains several of these items. Reconcile its breakdown first.
+          </p>
+          <div class="calculator" style="margin-top: 24px">
             <form class="calculator-inputs" id="finance-form">
               <h3>Your education budget</h3>
+              <p class="micro">
+                Example amounts only; replace every field with your own program
+                and household budget.
+              </p>
               <div class="calc-fields">
                 <label for="tuition"
                   >Tuition · whole program ($)<input
@@ -350,7 +444,9 @@
                     value="220000"
                     required
                   /><span class="calc-detail"
-                    >Add all academic years and bridge terms.</span
+                    >Add all academic years and bridge terms. Do not enter a
+                    cost-of-attendance total here; it already includes fees and
+                    living.</span
                   ></label
                 ><label for="fees"
                   >Fees, equipment & insurance ($)<input
@@ -364,7 +460,9 @@
                     value="20000"
                     required
                   /><span class="calc-detail"
-                    >Whole-program total; include financing fees if known.</span
+                    >Whole-program total; include actual loan fees and
+                    noncredited acceptance charges. Count credited deposits only
+                    once, in tuition.</span
                   ></label
                 ><label for="living"
                   >Living expenses per month ($)<input
@@ -376,9 +474,13 @@
                     max="20000"
                     step="50"
                     value="2500"
-                    required /></label
+                    required
+                  /><span class="calc-detail"
+                    >Housing, food, transport, utilities and personal costs; add
+                    dependents where applicable.</span
+                  ></label
                 ><label for="months"
-                  >Months in school<input
+                  >All living months through graduation<input
                     id="months"
                     name="months"
                     type="number"
@@ -412,6 +514,42 @@
                     required
                 /></label>
               </div>
+              <fieldset>
+                <legend>
+                  Cash needed before the first loan payment arrives
+                </legend>
+                <p class="micro">
+                  Timing check only: these expenses must already be included
+                  above. Cash available now is part of your savings/other cash
+                  above, not extra funding.
+                </p>
+                <div class="calc-fields">
+                  <label for="upfront"
+                    >Budget costs due before aid ($)<input
+                      id="upfront"
+                      name="upfront"
+                      type="number"
+                      inputmode="decimal"
+                      min="0"
+                      max="1000000"
+                      step="100"
+                      value="15000"
+                      required
+                  /></label>
+                  <label for="cash-now"
+                    >Cash available by then ($)<input
+                      id="cash-now"
+                      name="cashNow"
+                      type="number"
+                      inputmode="decimal"
+                      min="0"
+                      max="1000000"
+                      step="100"
+                      value="10000"
+                      required
+                  /></label>
+                </div>
+              </fieldset>
               <fieldset>
                 <legend>Interest before repayment</legend>
                 <div class="calc-fields">
@@ -516,6 +654,7 @@
               </p>
             </form>
             <section class="calculator-results" aria-label="Loan estimate">
+              <div id="upfront-result" class="resource-note"></div>
               <p>Estimated balance when repayment starts</p>
               <div class="result-big" id="result-balance">
                 Calculate your plan
@@ -743,6 +882,7 @@
             <p>A personal path to your professional future.</p>
           </div>
           <div class="footer-links">
+            <a href="my-story.html">My Story</a>
             <a href="pathway.html">Pathway guide</a
             ><a href="schools.html">School explorer</a
             ><a href="finances.html">Financial planning</a
@@ -765,7 +905,7 @@
     </footer>
     <script src="js/config.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/finance-core.js"></script>
-    <script src="js/finances.js"></script>
+    <script src="js/finance-core.js?v=20261004-costs2"></script>
+    <script src="js/finances.js?v=20261004-costs2"></script>
   </body>
 </html>

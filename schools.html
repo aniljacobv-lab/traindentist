@@ -27,7 +27,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/resources.css" />
+    <link rel="stylesheet" href="css/resources.css?v=20261004-costs2" />
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
@@ -52,7 +52,7 @@
           <a href="pathway.html">Pathway</a
           ><a href="schools.html" aria-current="page">Schools</a
           ><a href="finances.html">Finances</a><a href="careers.html">Careers</a
-          ><a href="index.html#about">Mentorship</a
+          ><a href="my-story.html">My Story</a
           ><a class="btn btn-sm" href="index.html#contact"
             >Let’s talk <span aria-hidden="true">↗</span></a
           >
@@ -88,6 +88,13 @@
             international applicants does not automatically sponsor a visa or
             guarantee a loan.
           </div>
+          <p class="cost-legend">
+            <strong>Read the full cost, not a single term.</strong> Dollar
+            headlines include published program phases and living allowances.
+            “Full cost not confirmed” means the source is incomplete or
+            inconsistent. Open a profile for initial costs, living coverage and
+            in-state/out-of-state rates.
+          </p>
           <fieldset
             id="directory-controls"
             disabled
@@ -155,9 +162,10 @@
                   >Cost information<select id="filter-cost">
                     <option value="">All cost profiles</option>
                     <option value="published">
-                      Published numeric estimate
+                      Program attendance estimate
                     </option>
-                    <option value="pending">Budget needs confirmation</option>
+                    <option value="pending">Full cost not confirmed</option>
+                    <option value="conflict">Source figures conflict</option>
                   </select></label
                 >
                 <div class="filter-actions">
@@ -612,10 +620,53 @@
                 A.T. Still Missouri School of Dentistry and Oral Health
               </p>
               <p>D.M.D. · 28.5 months</p>
-              <div class="cost-block">
-                <strong>$97,266</strong><span>Annual ASID tuition</span
-                ><span>2026–27</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>$243,166 tuition before fees and living.</p>
+                <span>2026–27</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      $49,376 introductory tuition and technology charge, before
+                      living and other expenses.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $48,634 introductory NDS term + $97,266 in each of two
+                      ASID years = $243,166 tuition. Listed technology and
+                      equipment/lab charges add $18,326.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      A complete ASID living allowance was not verified; add
+                      housing, food, transport, insurance and personal costs for
+                      28.5 months.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  The introductory term is included in the tuition sum; do not
+                  add it again. Full cost of attendance is higher.
+                </p>
+              </details>
               <p class="micro">
                 U.S. citizenship or permanent residence required; visa holders
                 are excluded by the profile.
@@ -642,9 +693,66 @@
               </p>
               <p>D.M.D. · 24 months</p>
               <div class="cost-block">
-                <strong>$170,235</strong
-                ><span>First-year attendance budget</span><span>2026–27</span>
+                <span class="cost-label">Program attendance estimate</span
+                ><strong>$325,167</strong>
+                <p>Two 12-month AS budgets; insurance may be extra.</p>
+                <span>2026–27</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      AS I attendance budget: $170,235, including $101,676
+                      tuition. This is a first-year budget, not an acceptance
+                      deposit.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $203,352 tuition across AS I and AS II. Published budgets
+                      also include instruments, fees and living.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      $64,800 housing/utilities and food across both years;
+                      personal and transport allowances are additional lines
+                      already included in the budgets.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <details class="cost-phases">
+                  <summary>View published phase budgets</summary>
+                  <ul>
+                    <li>
+                      <span>AS I · 12 months</span><strong>$170,235</strong>
+                    </li>
+                    <li>
+                      <span>AS II · 12 months</span><strong>$154,932</strong>
+                    </li>
+                  </ul>
+                  <p class="micro">
+                    Sum: $325,167. Already included in the estimate above.
+                  </p>
+                </details>
+                <p class="cost-caveat">
+                  Health insurance is listed at $0 in the budget; add the
+                  required premium unless you qualify for a waiver. Future-year
+                  increases and borrowing interest are extra.
+                </p>
+              </details>
               <p class="micro">
                 Foreign nationals may apply. BU describes help with I-20 or
                 DS-2019 documentation after admission.
@@ -670,11 +778,77 @@
                 Columbia University College of Dental Medicine
               </p>
               <p>D.D.S. · 30 months</p>
-              <div class="cost-block">
-                <strong>$104,207</strong
-                ><span>Initial 6-month attendance budget</span
-                ><span>2026–27</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>
+                  $504,364 across published phases; living-month coverage needs
+                  confirmation.
+                </p>
+                <span>2026–27</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Initial 6-month budget: $104,207, including $74,394
+                      tuition.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $371,970 tuition across initial, third and fourth years;
+                      mandatory fees and supplies are additional and included in
+                      the phase budgets.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      $84,988 published living allowance across 6, 12 and 10.5
+                      months. Confirm coverage for the full 30-month program.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <details class="cost-phases">
+                  <summary>View published phase budgets</summary>
+                  <ul>
+                    <li>
+                      <span>Initial · 6 months</span><strong>$104,207</strong>
+                    </li>
+                    <li>
+                      <span>Third year · 12 months</span
+                      ><strong>$200,917</strong>
+                    </li>
+                    <li>
+                      <span>Fourth year · 10.5 months</span
+                      ><strong>$199,240</strong>
+                    </li>
+                  </ul>
+                  <p class="micro">
+                    Sum: $504,364. A subtotal, not a confirmed complete program
+                    budget.
+                  </p>
+                </details>
+                <p class="cost-caveat">
+                  The sum uses three cohorts at one academic year’s prices.
+                  International services fees of $175 per term may be
+                  additional. A “resident” housing budget does not establish
+                  in-state tuition.
+                </p>
+              </details>
               <p class="micro">
                 The profile does not restrict admission to U.S. citizens or
                 permanent residents. This does not establish visa sponsorship;
@@ -699,11 +873,77 @@
               <h3>Harvard</h3>
               <p class="school-full">Harvard School of Dental Medicine</p>
               <p>D.M.D. · 29 months</p>
-              <div class="cost-block">
-                <strong>$95,725</strong
-                ><span>Initial ASID attendance budget · off campus</span
-                ><span>2026–27</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>
+                  $426,737 published off-campus phase budgets; confirm uncovered
+                  months.
+                </p>
+                <span>2026–27</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Initial off-campus phase budget: $95,725, including
+                      $50,894 tuition.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $254,470 ASID tuition across the three phases; fees and
+                      equipment are included in attendance budgets.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      Off-campus housing and food: $65,098 across the published
+                      periods. Confirm the difference between budget months and
+                      the 29-month program.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <details class="cost-phases">
+                  <summary>View published phase budgets</summary>
+                  <ul>
+                    <li>
+                      <span>Initial ASID · off campus</span
+                      ><strong>$95,725</strong>
+                    </li>
+                    <li>
+                      <span>Next ASID phase · off campus</span
+                      ><strong>$165,410</strong>
+                    </li>
+                    <li>
+                      <span>Final ASID phase · off campus</span
+                      ><strong>$165,602</strong>
+                    </li>
+                  </ul>
+                  <p class="micro">
+                    Sum: $426,737. A subtotal, not a confirmed complete program
+                    budget.
+                  </p>
+                </details>
+                <p class="cost-caveat">
+                  Housing choices change the budget: published on-campus phases
+                  total $422,646; on-campus with dependent totals $455,950.
+                  These are housing categories, not state tuition rates.
+                </p>
+              </details>
               <p class="micro">
                 The profile states that Harvard offers visa sponsorship to
                 accepted students; confirm document and funding requirements.
@@ -730,10 +970,64 @@
               </p>
               <p>D.D.S. · 24 months</p>
               <div class="cost-block">
-                <strong>$186,945</strong
-                ><span>First-year ASPID attendance budget</span
-                ><span>2026–27</span>
+                <span class="cost-label">Program attendance estimate</span
+                ><strong>$362,953</strong>
+                <p>Two full ASPID year budgets, including living.</p>
+                <span>2026–27</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      First-year budget: $186,945, including $128,547 tuition.
+                      Confirm the deposit and first payment deadline.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $257,094 tuition across two years; fees, books,
+                      instruments and insurance are included in the attendance
+                      budgets.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      $52,924 housing/dining across both years. Personal and
+                      transportation allowances are also included.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <details class="cost-phases">
+                  <summary>View published phase budgets</summary>
+                  <ul>
+                    <li>
+                      <span>ASPID first year</span><strong>$186,945</strong>
+                    </li>
+                    <li>
+                      <span>ASPID second year</span><strong>$176,008</strong>
+                    </li>
+                  </ul>
+                  <p class="micro">
+                    Sum: $362,953. Already included in the estimate above.
+                  </p>
+                </details>
+                <p class="cost-caveat">
+                  Sum of two published year budgets at 2026–27 rates; future
+                  increases and loan interest are not included.
+                </p>
+              </details>
               <p class="micro">
                 The profile does not restrict admission to U.S. citizens or
                 permanent residents. This does not establish visa sponsorship;
@@ -758,11 +1052,57 @@
               <h3>Howard</h3>
               <p class="school-full">Howard University College of Dentistry</p>
               <p>D.D.S. · 24 months</p>
-              <div class="cost-block">
-                <strong>Confirm with school</strong
-                ><span>Program budget needs confirmation</span
-                ><span>Current amount not verified</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>
+                  IDP rates found; complete semester count and living budget
+                  need confirmation.
+                </p>
+                <span>2026–27</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      The schedule lists $14,360 for IDP2 summer
+                      books/instruments, in addition to summer tuition. Confirm
+                      required deposits and other opening charges.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $29,950 per IDP semester and $11,980 per summer term.
+                      Confirm every billable term before calculating a program
+                      tuition total.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      An IDP-specific full-program living allowance was not
+                      verified.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  Central materials are $1,565 per semester; university fees and
+                  insurance also apply. Do not substitute the regular DDS
+                  tuition rate for IDP.
+                </p>
+              </details>
               <p class="micro">
                 The profile does not restrict admission to U.S. citizens or
                 permanent residents. This does not establish visa sponsorship;
@@ -775,7 +1115,7 @@
                   rel="noopener"
                   >Program requirements ↗</a
                 ><a
-                  href="https://dentistry.howard.edu/education/programs-and-admissions/predoctoral-programs/international-dentist-program"
+                  href="https://financialservices.howard.edu/official-notice/student-charges-2026-27"
                   target="_blank"
                   rel="noopener"
                   >Cost source ↗</a
@@ -787,11 +1127,43 @@
               <h3>Indiana</h3>
               <p class="school-full">Indiana University School of Dentistry</p>
               <p>D.D.S. · 30 months</p>
-              <div class="cost-block">
-                <strong>Confirm with school</strong
-                ><span>Program budget needs confirmation</span
-                ><span>Current amount not verified</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>Request the IDP-specific budget from Indiana.</p>
+                <span>Current amount not verified</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      $70 supplemental application fee; enrollment deposit and
+                      initial tuition need confirmation.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>Not verified.</dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>Full-program living allowance not verified.</dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      IDP-specific resident/nonresident rates were not verified.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  The program describes a distinct flat tuition rate. Regular
+                  DDS resident rates cannot establish this program’s total.
+                </p>
+              </details>
               <p class="micro">
                 Citizens, Canadian citizens, permanent residents and applicants
                 with a valid visa may be considered. Status documentation
@@ -818,11 +1190,55 @@
                 Loma Linda University School of Dentistry
               </p>
               <p>D.D.S. · 27 months</p>
-              <div class="cost-block">
-                <strong>$260,740</strong
-                ><span>Tuition &amp; fees · sum of three published phases</span
-                ><span>Year not stated</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>
+                  $284,840 published tuition, fees and supplies before living.
+                </p>
+                <span>2025–26 · older budget</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Initial 3-month tuition/fees $29,114 plus books/equipment
+                      $21,100, before living, insurance and other costs.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $260,740 tuition/fees + $24,100 books/equipment across
+                      three periods.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      $60,236 off-campus food/housing, or $34,431 dorm
+                      food/housing, over 25 budget months. Confirm the remaining
+                      months of the 27-month program.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  Published transport totals $9,100 and personal expenses
+                  $9,490. Licensing and financing charges can add more. The
+                  older budget is not a current all-in quotation.
+                </p>
+              </details>
               <p class="micro">
                 The school describes F-1 documentation and proof of funding.
                 Confirm advance tuition payments and the amount needed for the
@@ -835,7 +1251,7 @@
                   rel="noopener"
                   >Program requirements ↗</a
                 ><a
-                  href="https://home.llu.edu/academics/programs/international-dentist-program-dds"
+                  href="https://llu.edu/academics/programs/school-dentistry/international-dentist-program-dds"
                   target="_blank"
                   rel="noopener"
                   >Cost source ↗</a
@@ -849,10 +1265,51 @@
                 Louisiana State University School of Dentistry
               </p>
               <p>D.D.S. · 36 months</p>
-              <div class="cost-block">
-                <strong>$92,287</strong><span>Tuition per program year</span
-                ><span>Year not stated</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>$298,548 tuition and academic fees before living.</p>
+                <span>Year not stated</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Year 1 tuition $92,287 plus $12,094 academic fees, before
+                      living and other costs.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $276,861 tuition over three years + $21,687 listed
+                      academic fees = $298,548.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      Full 36-month housing, food, insurance, transport and
+                      personal budget not verified.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  Uniforms and other required purchases may be additional;
+                  obtain an itemized IEDP attendance budget.
+                </p>
+              </details>
               <p class="micro">
                 The profile does not restrict admission to U.S. citizens or
                 permanent residents. This does not establish visa sponsorship;
@@ -879,11 +1336,47 @@
                 Marquette University School of Dentistry
               </p>
               <p>D.D.S. · 36 months</p>
-              <div class="cost-block">
-                <strong>Confirm with school</strong
-                ><span>Program budget needs confirmation</span
-                ><span>Current amount not verified</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>
+                  Advanced-standing costs need a program-specific quotation.
+                </p>
+                <span>2026–27 regular DDS schedule; ASP not confirmed</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Deposit, payment due dates and cash needed before aid
+                      disbursement need confirmation.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>Not verified.</dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>Full 36-month living allowance not verified.</dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      Regular DDS tuition is $62,890 resident / $71,550
+                      nonresident annually. Their application to this
+                      advanced-standing route was not verified.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  The published regular DDS rates are not sufficient to
+                  calculate an Advanced Standing Program budget.
+                </p>
+              </details>
               <p class="micro">
                 Immigration requirements must be satisfied before enrollment;
                 ask the international office which status and documents apply.
@@ -909,11 +1402,69 @@
                 Meharry Medical College School of Dentistry
               </p>
               <p>D.D.S. · 24 months</p>
-              <div class="cost-block">
-                <strong>$196,162</strong
-                ><span>First-year IDP attendance budget</span
-                ><span>2025–26 · older budget</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>
+                  $367,928 across published ID3/ID4 budgets; confirm all 24
+                  months.
+                </p>
+                <span>2025–26 · older budget</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      ID3 attendance budget: $196,162, including $119,146
+                      tuition.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $238,292 tuition plus $38,786 fees across ID3 and ID4.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      $53,900 housing and food across 12 + 10 budget months;
+                      confirm the remaining months. Transport and personal
+                      allowances are included separately.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <details class="cost-phases">
+                  <summary>View published phase budgets</summary>
+                  <ul>
+                    <li>
+                      <span>ID3 · 12 months</span><strong>$196,162</strong>
+                    </li>
+                    <li>
+                      <span>ID4 · 10 months</span><strong>$171,766</strong>
+                    </li>
+                  </ul>
+                  <p class="micro">
+                    Sum: $367,928. A subtotal, not a confirmed complete program
+                    budget.
+                  </p>
+                </details>
+                <p class="cost-caveat">
+                  Older published budgets include other charges and financing
+                  allowances. Reconfirm current rates and actual loan fees.
+                </p>
+              </details>
               <p class="micro">
                 The profile does not restrict admission to U.S. citizens or
                 permanent residents. This does not establish visa sponsorship;
@@ -941,10 +1492,70 @@
               </p>
               <p>D.D.S. · 28 months</p>
               <div class="cost-block">
-                <strong>$87,455</strong
-                ><span>Initial 6-month attendance budget</span
-                ><span>2026–27</span>
+                <span class="cost-label">Program attendance estimate</span
+                ><strong>$433,234</strong>
+                <p>Three advanced-standing phase budgets, including living.</p>
+                <span>2026–27</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Initial D2 6-month budget: $87,455, including $55,620
+                      tuition.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $278,100 tuition across initial D2, D3 and D4. Other
+                      academic fees and supplies are included in attendance
+                      budgets.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      $103,810 housing and food across the published periods,
+                      plus transport and personal allowances.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <details class="cost-phases">
+                  <summary>View published phase budgets</summary>
+                  <ul>
+                    <li>
+                      <span>Advanced standing D2 · 6 months</span
+                      ><strong>$87,455</strong>
+                    </li>
+                    <li>
+                      <span>Advanced standing D3</span><strong>$174,999</strong>
+                    </li>
+                    <li>
+                      <span>Advanced standing D4</span><strong>$170,780</strong>
+                    </li>
+                  </ul>
+                  <p class="micro">
+                    Sum: $433,234. Already included in the estimate above.
+                  </p>
+                </details>
+                <p class="cost-caveat">
+                  The budget periods differ from the listed 28-month curriculum.
+                  Confirm actual enrollment dates and housing needs.
+                  Health-insurance estimates use earlier rates; replace with the
+                  current bill.
+                </p>
+              </details>
               <p class="micro">
                 The profile does not restrict admission to U.S. citizens or
                 permanent residents. This does not establish visa sponsorship;
@@ -971,11 +1582,51 @@
                 Nova Southeastern University College of Dental Medicine
               </p>
               <p>D.M.D. · 39 months</p>
-              <div class="cost-block">
-                <strong>$106,014</strong
-                ><span>Tuition for each full program year</span
-                ><span>Published current table · year not stated</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>$353,380 tuition before fees and living.</p>
+                <span>Published current table · year not stated</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      $35,338 summer tuition, before fees, equipment and living.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $35,338 initial summer + three years at $106,014 =
+                      $353,380 tuition.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      A complete 39-month advanced-standing living allowance was
+                      not verified.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  Include the initial summer only once. Obtain the
+                  international-program attendance budget and mandatory fee
+                  schedule.
+                </p>
+              </details>
               <p class="micro">
                 The profile does not restrict admission to U.S. citizens or
                 permanent residents. This does not establish visa sponsorship;
@@ -1000,11 +1651,70 @@
               <h3>Ponce Health Sciences</h3>
               <p class="school-full">Ponce Health Sciences University</p>
               <p>D.M.D. · 26 months</p>
-              <div class="cost-block">
-                <strong>$124,831</strong
-                ><span>Year 3 attendance budget · nonresident</span
-                ><span>2026–27</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>
+                  Two-year COA: $213,398 resident / $247,310 nonresident; bridge
+                  pending.
+                </p>
+                <span>2026–27</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Initial bridge-period charges and deposit were not
+                      verified.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $113,848 resident / $147,760 nonresident tuition across
+                      the two published years; mandatory fees total $18,498.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      $58,500 living allowance across the two published years;
+                      confirm coverage for the full 26 months.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      Two published year budgets total $213,398 resident /
+                      $247,310 nonresident. Do not assume resident status from
+                      citizenship or a green card.
+                    </dd>
+                  </div>
+                </dl>
+                <details class="cost-phases">
+                  <summary>View published phase budgets</summary>
+                  <ul>
+                    <li>
+                      <span>Nonresident year 3</span><strong>$124,831</strong>
+                    </li>
+                    <li>
+                      <span>Nonresident year 4</span><strong>$122,479</strong>
+                    </li>
+                  </ul>
+                  <p class="micro">
+                    Sum: $247,310. A subtotal, not a confirmed complete program
+                    budget.
+                  </p>
+                </details>
+                <p class="cost-caveat">
+                  The two-year sum includes books, transport, personal expenses
+                  and loan-fee allowances, but initial bridge coverage is
+                  unconfirmed.
+                </p>
+              </details>
               <p class="micro">
                 The profile discusses F-1 or J-1 status for international
                 students. Confirm issuance and financial evidence with the
@@ -1029,11 +1739,56 @@
               <h3>Rutgers</h3>
               <p class="school-full">Rutgers School of Dental Medicine</p>
               <p>D.M.D. · 27 months</p>
-              <div class="cost-block">
-                <strong>Confirm with school</strong
-                ><span>Program budget needs confirmation</span
-                ><span>Current amount not verified</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>
+                  $192,933 resident / $231,775 nonresident tuition; fees and
+                  living extra.
+                </p>
+                <span>2026–27</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Pre-session tuition: $18,493 resident / $22,671
+                      nonresident, before fees. The program requires
+                      tuition/fees before each academic period; confirm the
+                      exact payment schedule.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      Pre-session + two academic years: $192,933 resident /
+                      $231,775 nonresident tuition. Annual student, campus,
+                      health and applicable international fees are additional.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      An IDMD-specific full-program living allowance was not
+                      verified.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      Annual IDMD tuition: $87,220 resident / $104,552
+                      nonresident; pre-session rates also differ.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  Do not use regular DMD tuition in place of IDMD rates. F-1/J-1
+                  international fees are listed separately.
+                </p>
+              </details>
               <p class="micro">
                 The profile does not restrict admission to U.S. citizens or
                 permanent residents. This does not establish visa sponsorship;
@@ -1046,10 +1801,15 @@
                   rel="noopener"
                   >Program requirements ↗</a
                 ><a
-                  href="https://financialaid.rutgers.edu/cost-of-attendance/rbhs/rsdm/"
+                  href="https://finance.rutgers.edu/sites/default/files/2026-05/RSDM%20Tuition%20and%20Fees%202026-2027.pdf"
                   target="_blank"
                   rel="noopener"
                   >Cost source ↗</a
+                ><a
+                  href="https://sdm.rutgers.edu/admissions/predoctoral-admissions/international-dmd-program"
+                  target="_blank"
+                  rel="noopener"
+                  >IDMD payment requirements ↗</a
                 >
               </div>
             </article>
@@ -1061,10 +1821,73 @@
               </p>
               <p>D.M.D. · 27 months</p>
               <div class="cost-block">
-                <strong>$308,849</strong
-                ><span>Attendance budget · sum of published phases</span
-                ><span>Year not stated</span>
+                <span class="cost-label">Program attendance estimate</span
+                ><strong>$308,849</strong>
+                <p>
+                  Clinical certification + two integrated years, including
+                  living.
+                </p>
+                <span>Year not stated on source · reconfirm</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Clinical certification attendance budget: $44,017.32,
+                      including $36,592.32 tuition/fees.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $242,947.34 published tuition/fees across all three
+                      phases.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      $45,764 living allowance; transport, personal and other
+                      allowances are included separately.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <details class="cost-phases">
+                  <summary>View published phase budgets</summary>
+                  <ul>
+                    <li>
+                      <span>Clinical certification</span
+                      ><strong>$44,017</strong>
+                    </li>
+                    <li>
+                      <span>Integrated third year</span
+                      ><strong>$135,606</strong>
+                    </li>
+                    <li>
+                      <span>Integrated fourth year</span
+                      ><strong>$129,226</strong>
+                    </li>
+                  </ul>
+                  <p class="micro">
+                    Sum: $308,849. Already included in the estimate above.
+                  </p>
+                </details>
+                <p class="cost-caveat">
+                  Sum of published phases, rounded to the nearest dollar in the
+                  headline. Confirm the applicable intake, current charges and
+                  deposit.
+                </p>
+              </details>
               <p class="micro">
                 The profile does not restrict admission to U.S. citizens or
                 permanent residents. This does not establish visa sponsorship;
@@ -1092,10 +1915,67 @@
               </p>
               <p>D.M.D. · 24-36 months</p>
               <div class="cost-block">
-                <strong>$178,285</strong
-                ><span>First advanced-standing phase · attendance</span
-                ><span>2025–26 · older budget</span>
+                <span class="cost-label">Program attendance estimate</span
+                ><strong>$323,957</strong>
+                <p>Estimate applies to the 24-month placement only.</p>
+                <span>2025–26 · older budget</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      First 15-month phase budget: $178,285. Confirm the deposit
+                      and pre-enrollment cash requirement.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $209,204 tuition; published direct charges total $232,149
+                      across the two advanced-standing years.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      $84,908 living-related allowances across 15 + 9 budget
+                      months, including housing, food, transport, insurance and
+                      personal expenses.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <details class="cost-phases">
+                  <summary>View published phase budgets</summary>
+                  <ul>
+                    <li>
+                      <span>Advanced standing D3 · 15 months</span
+                      ><strong>$178,285</strong>
+                    </li>
+                    <li>
+                      <span>Advanced standing D4 · 9 months</span
+                      ><strong>$145,672</strong>
+                    </li>
+                  </ul>
+                  <p class="micro">
+                    Sum: $323,957. Already included in the estimate above.
+                  </p>
+                </details>
+                <p class="cost-caveat">
+                  This estimate does not cover a 36-month placement. A separate
+                  $350 annual F-1 international fee is listed; confirm whether
+                  it is additional. Request current-year rates.
+                </p>
+              </details>
               <p class="micro">
                 The profile does not restrict admission to U.S. citizens or
                 permanent residents. This does not establish visa sponsorship;
@@ -1122,11 +2002,44 @@
                 The Ohio State University College of Dentistry
               </p>
               <p>D.D.S. · 28 Months</p>
-              <div class="cost-block">
-                <strong>Confirm with school</strong
-                ><span>Program budget needs confirmation</span
-                ><span>Current amount not verified</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>Request an ASPID-specific all-term budget.</p>
+                <span>Current amount not verified</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Deposit, payment due dates and cash needed before aid
+                      disbursement need confirmation.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>Not verified.</dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>Full 28-month living allowance not verified.</dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      ASPID-specific resident and nonresident rates were not
+                      verified.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  A traditional four-year DDS price is not a verified budget for
+                  this pathway.
+                </p>
+              </details>
               <p class="micro">
                 The profile requires U.S. citizenship or lawful permanent
                 residence. Confirm proof and timing with admissions.
@@ -1152,11 +2065,53 @@
                 The University of Iowa College of Dentistry &amp; Dental Clinics
               </p>
               <p>D.D.S. · 30 months</p>
-              <div class="cost-block">
-                <strong>$256,301</strong
-                ><span>Tuition &amp; university fees · full program</span
-                ><span>2025–26 · older projection</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>$286,776 published academic charges; living extra.</p>
+                <span>2025–26 · older budget</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Initial spring tuition/fees: $46,614; subsequent summer
+                      tuition/fees: $23,231. Supplies and initial cash
+                      requirements are additional.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $256,301 tuition/fees across spring, summer, D3 and D4.
+                      Published broader academic expenses total $286,776.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      Living, housing, food and personal costs are not included
+                      in that academic total.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  The page separately lists a $250 application fee and $1,500
+                  interview/testing fee. Confirm inclusion before adding them to
+                  the academic sum.
+                </p>
+              </details>
               <p class="micro">
                 The profile does not restrict admission to U.S. citizens or
                 permanent residents. This does not establish visa sponsorship;
@@ -1181,11 +2136,57 @@
               <h3>UT San Antonio</h3>
               <p class="school-full">The University of Texas at San Antonio</p>
               <p>D.D.S. · 29 months</p>
-              <div class="cost-block">
-                <strong>Confirm with school</strong
-                ><span>Program budget needs confirmation</span
-                ><span>Current amount not verified</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>
+                  Resident/nonresident academic schedules verified; full living
+                  budget pending.
+                </p>
+                <span>2026–27 / spring 2027</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Spring 2027 tuition/fees: $37,412.99 resident / $49,292.99
+                      nonresident. Separate items include a $5,000 acceptance
+                      fee, $2,500 loupes and $3,634 handpiece/teeth kit; confirm
+                      credits and due dates.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      Published initial spring + years 3/4 tuition-and-fee rows
+                      sum to $184,298.99 resident / $219,938.99 nonresident,
+                      before separately listed charges and living.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      A full 29-month IDEP living allowance was not verified.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      Year 3 tuition/fees: $73,481 Texas resident / $85,361
+                      nonresident. Year 4: $73,405 / $85,285.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  The source also lists curriculum support, laptop and other
+                  charges outside the row totals. Ask which are assessed once
+                  and whether the acceptance fee is credited. Future rates may
+                  rise.
+                </p>
+              </details>
               <p class="micro">
                 The profile allows citizenship, permanent residence and a legal
                 visa permitting study; includes conditional/temporary permanent
@@ -1198,10 +2199,15 @@
                   rel="noopener"
                   >Program requirements ↗</a
                 ><a
-                  href="https://students.uthscsa.edu/financial-aid/cost-of-attendance/school-of-dentistry-cost-of-attendance/"
+                  href="https://students.uthscsa.edu/wp-content/uploads/sites/210/2026/06/International-Dentist-Education-Program.pdf"
                   target="_blank"
                   rel="noopener"
                   >Cost source ↗</a
+                ><a
+                  href="https://students.uthscsa.edu/wp-content/uploads/sites/210/2026/05/International-Dentist-Education-Program-Spring-2027.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  >Initial spring charges ↗</a
                 >
               </div>
             </article>
@@ -1212,11 +2218,47 @@
                 Touro College of Dental Medicine at New York Medical College
               </p>
               <p>D.D.S. · 24 months</p>
-              <div class="cost-block">
-                <strong>Confirm with school</strong
-                ><span>Program budget needs confirmation</span
-                ><span>Current amount not verified</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>Request the advanced-standing budget for your campus.</p>
+                <span>Current amount not verified</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Deposit, payment due dates and cash needed before aid
+                      disbursement need confirmation.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>Not verified.</dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      New York and New Mexico budgets differ; a complete
+                      advanced-standing living budget was not verified.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      Campus-specific and advanced-standing tuition
+                      classification need confirmation.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  Regular DDS year budgets do not resolve advanced-standing
+                  entry charges or full program coverage.
+                </p>
+              </details>
               <p class="micro">
                 Appropriate study authorization and evidence of financial
                 commitment for two years are required. Confirm sponsorship and
@@ -1244,10 +2286,71 @@
               </p>
               <p>D.M.D. · 29 months</p>
               <div class="cost-block">
-                <strong>$113,708</strong
-                ><span>Initial DIS attendance budget</span
-                ><span>Published table · confirm academic year</span>
+                <span class="cost-label">Program attendance estimate</span
+                ><strong>$472,189</strong>
+                <p>
+                  All three DIS phase budgets; health insurance extra unless
+                  waived.
+                </p>
+                <span>2026–27</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Initial DIS attendance budget: $113,708, including $60,954
+                      tuition.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $304,770 tuition; billed costs across all phases total
+                      $351,402.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      $104,025 off-campus allowance across the published phases.
+                      Confirm coverage through graduation and any gaps between
+                      terms.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <details class="cost-phases">
+                  <summary>View published phase budgets</summary>
+                  <ul>
+                    <li>
+                      <span>Initial DIS phase</span><strong>$113,708</strong>
+                    </li>
+                    <li>
+                      <span>Second DIS phase</span><strong>$185,946</strong>
+                    </li>
+                    <li>
+                      <span>Final DIS phase</span><strong>$172,535</strong>
+                    </li>
+                  </ul>
+                  <p class="micro">
+                    Sum: $472,189. Already included in the estimate above.
+                  </p>
+                </details>
+                <p class="cost-caveat">
+                  Health insurance is excluded. Add the premium unless waived.
+                  Published loan-fee allowances may assume financing unavailable
+                  to a new borrower; replace them with actual loan fees.
+                </p>
+              </details>
               <p class="micro">
                 U.S. citizens, permanent residents and applicants eligible for a
                 student visa are considered.
@@ -1273,11 +2376,58 @@
                 University at Buffalo School of Dental Medicine
               </p>
               <p>D.D.S. · 24 months</p>
-              <div class="cost-block">
-                <strong>$72,420</strong
-                ><span>Annual nonresident DDS tuition · summer extra</span
-                ><span>2026–27 · provisional</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>
+                  Summer fee + DDS-year budgets: $264,537 resident / $330,957
+                  nonresident; initial living extra.
+                </p>
+                <span>2026–27 · source notes budget pending</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      $95,000 summer program fee excludes summer living,
+                      transport and a required computer. Confirm deposit and
+                      payment timing.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $95,000 summer program fee, plus DDS-year tuition and
+                      fees. The summer fee is not the full program price.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      $51,804 living allowance across the two DDS-year budgets.
+                      Initial summer living/transport and required computer are
+                      extra; health insurance is listed as $0.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      Annual DDS tuition: $39,130 NY resident / $72,420
+                      nonresident. Eligibility for NY residency must be
+                      established separately; do not assume an F-1 visa or green
+                      card guarantees it.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  The displayed sums use the school’s published annual totals
+                  plus the summer fee. Confirm final figures and residency rules
+                  with the school before treating them as a complete budget.
+                </p>
+              </details>
               <p class="micro">
                 The profile does not restrict admission to U.S. citizens or
                 permanent residents. This does not establish visa sponsorship;
@@ -1304,11 +2454,53 @@
                 University of Alabama at Birmingham School of Dentistry
               </p>
               <p>D.M.D. · 30 months</p>
-              <div class="cost-block">
-                <strong>$212,210</strong
-                ><span>Tuition only · sum of three phases</span
-                ><span>Year not stated</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>$212,210 tuition before fees and living.</p>
+                <span>Year not stated on source · reconfirm</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Preparatory tuition $42,442, before insurance,
+                      laboratory/clinical charges and living.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $42,442 preparatory phase + $84,884 in each of D3/D4 =
+                      $212,210 tuition. Instruments, insurance and mandatory
+                      fees add more.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      Books and living expenses are excluded from the published
+                      fee schedule.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  The schedule lists separate clinical, laboratory, insurance,
+                  dental and other charges. Request a dated full attendance
+                  budget.
+                </p>
+              </details>
               <p class="micro">
                 U.S. citizens or permanent residents only. The profile specifies
                 permanent residence valid for the program duration without
@@ -1335,10 +2527,73 @@
                 University of California, Los Angeles School of Dentistry
               </p>
               <p>D.D.S. · 25 months</p>
-              <div class="cost-block">
-                <strong>$120,968</strong><span>Annual PPID program fee</span
-                ><span>2026–27</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>
+                  $387,897 across four published PPID budgets; confirm month
+                  coverage.
+                </p>
+                <span>2026–27</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      First summer attendance budget: $68,789, including $28,802
+                      program fees and $28,052 equipment/materials.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $241,936 program fees; equipment/materials total $50,481.
+                      Additional campus charges are included in the phase
+                      budgets.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      $76,712 housing/food across published summer and academic
+                      periods; confirm coverage of the full 25-month curriculum.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <details class="cost-phases">
+                  <summary>View published phase budgets</summary>
+                  <ul>
+                    <li><span>D3 summer</span><strong>$68,789</strong></li>
+                    <li>
+                      <span>D3 academic year</span><strong>$139,158</strong>
+                    </li>
+                    <li><span>D4 summer</span><strong>$41,737</strong></li>
+                    <li>
+                      <span>D4 academic year</span><strong>$138,213</strong>
+                    </li>
+                  </ul>
+                  <p class="micro">
+                    Sum: $387,897. A subtotal, not a confirmed complete program
+                    budget.
+                  </p>
+                </details>
+                <p class="cost-caveat">
+                  The published periods cover two summer/academic-year cycles.
+                  Confirm any additional orientation or living month and future
+                  rate increases.
+                </p>
+              </details>
               <p class="micro">
                 The profile does not restrict admission to U.S. citizens or
                 permanent residents. This does not establish visa sponsorship;
@@ -1366,9 +2621,71 @@
               </p>
               <p>D.D.S. · 36 months</p>
               <div class="cost-block">
-                <strong>$148,719</strong><span>ID2 attendance budget</span
-                ><span>2026–27</span>
+                <span class="cost-label">Program attendance estimate</span
+                ><strong>$415,599</strong>
+                <p>Three 12-month IDP budgets, including living.</p>
+                <span>2026–27</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      ID2 attendance budget: $148,719. The initial $2,715 summer
+                      fee is included in that budget; do not add it twice.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $258,957 program fees across three years; kits, campus
+                      fees, insurance and other charges are included in
+                      attendance budgets.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      $116,208 living allowance across 36 months, before
+                      personal circumstances or dependents.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <details class="cost-phases">
+                  <summary>View published phase budgets</summary>
+                  <ul>
+                    <li>
+                      <span>International Dentist 2</span
+                      ><strong>$148,719</strong>
+                    </li>
+                    <li>
+                      <span>International Dentist 3</span
+                      ><strong>$136,055</strong>
+                    </li>
+                    <li>
+                      <span>International Dentist 4</span
+                      ><strong>$130,825</strong>
+                    </li>
+                  </ul>
+                  <p class="micro">
+                    Sum: $415,599. Already included in the estimate above.
+                  </p>
+                </details>
+                <p class="cost-caveat">
+                  Uses current rates for three cohorts, not a locked multi-year
+                  price. Regular DDS nonresident supplements are not substituted
+                  for the separate IDP schedule.
+                </p>
+              </details>
               <p class="micro">
                 The profile does not restrict admission to U.S. citizens or
                 permanent residents. This does not establish visa sponsorship;
@@ -1396,10 +2713,62 @@
               </p>
               <p>D.D.S. · 24 months</p>
               <div class="cost-block">
-                <strong>$152,358</strong
-                ><span>First-year ISP attendance budget</span
-                ><span>Class of 2028</span>
+                <span class="cost-label">Program attendance estimate</span
+                ><strong>$294,553</strong>
+                <p>Class of 2028 two-year ISP budget, including living.</p>
+                <span>ISP class of 2028</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      $4,000 deposit credited toward first-semester tuition.
+                      Financial aid is not available for this deposit.
+                      First-year attendance budget: $152,358.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $195,701 tuition/fees plus $28,100 books, supplies and
+                      insurance across both years.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>$70,752 living allowance across two years.</dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <details class="cost-phases">
+                  <summary>View published phase budgets</summary>
+                  <ul>
+                    <li>
+                      <span>ISP first year</span><strong>$152,358</strong>
+                    </li>
+                    <li>
+                      <span>ISP second year</span><strong>$142,195</strong>
+                    </li>
+                  </ul>
+                  <p class="micro">
+                    Sum: $294,553. Already included in the estimate above.
+                  </p>
+                </details>
+                <p class="cost-caveat">
+                  The deposit changes when cash is needed, not the total
+                  tuition. Obtain the budget for your own entering class;
+                  regular DDS resident tables are separate.
+                </p>
+              </details>
               <p class="micro">
                 The profile does not restrict admission to U.S. citizens or
                 permanent residents. This does not establish visa sponsorship;
@@ -1426,11 +2795,45 @@
                 University of Florida College of Dentistry
               </p>
               <p>D.M.D. · 45 months</p>
-              <div class="cost-block">
-                <strong>Confirm with school</strong
-                ><span>Program budget needs confirmation</span
-                ><span>Current amount not verified</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>Request the full four-year international DMD budget.</p>
+                <span>Current amount not verified</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Deposit, payment due dates and cash needed before aid
+                      disbursement need confirmation.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>Not verified.</dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>Full 45-month living allowance not verified.</dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      Resident/nonresident eligibility and rates for the
+                      four-year international DMD route need confirmation.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  This listing is the longer international DMD route, not the
+                  Hialeah AEGD program. Avoid comparing only two years of DDS
+                  tuition.
+                </p>
+              </details>
               <p class="micro">
                 The profile requires U.S. citizenship or lawful permanent
                 residence. Confirm proof and timing with admissions.
@@ -1456,10 +2859,52 @@
                 University of Illinois Chicago College of Dentistry
               </p>
               <p>D.M.D. · 28 months</p>
-              <div class="cost-block">
-                <strong>$41,500</strong><span>Tuition per listed semester</span
-                ><span>2026–27</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label">Source figures need clarification</span
+                ><strong>Full cost not confirmed</strong>
+                <p>Published UIC table has a term-count inconsistency.</p>
+                <span>2026–27</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Initial AS2 tuition/fees: $102,194 resident / $113,946
+                      nonresident, before living.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      Printed academic rows total $357,679 resident / $398,811
+                      nonresident, excluding living. The table describes 8
+                      semesters but its populated cost rows account for 7.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      Source suggests $30,000 per year for living. At
+                      $2,500/month, 28 months would add $70,000 as a planning
+                      assumption, before individual adjustments.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      Per-semester tuition: $41,500 resident / $47,376
+                      nonresident. Published fees add $9,597 per semester.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  A reliable total requires UIC to resolve the
+                  missing/inconsistent semester. Do not treat either printed
+                  subtotal plus living as a confirmed full-program budget.
+                </p>
+              </details>
               <p class="micro">
                 Applicants must currently be in the U.S. with a status
                 permitting study. A tourist visa does not meet the stated
@@ -1486,11 +2931,47 @@
                 University of Louisville School of Dentistry
               </p>
               <p>D.M.D. · 28 months</p>
-              <div class="cost-block">
-                <strong>Confirm with school</strong
-                ><span>Program budget needs confirmation</span
-                ><span>Current amount not verified</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>
+                  Confirm DMD rate category, entry period and living allowance.
+                </p>
+                <span>Current amount not verified</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Deposit, payment due dates and cash needed before aid
+                      disbursement need confirmation.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>Not verified.</dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>Full 28-month living allowance not verified.</dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      The AS page says tuition matches the traditional program.
+                      Confirm the resident/nonresident category and every
+                      required AS term.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  The published DMD schedule alone does not establish the
+                  initial advanced-standing period or its complete cost.
+                </p>
+              </details>
               <p class="micro">
                 The profile does not restrict admission to U.S. citizens or
                 permanent residents. This does not establish visa sponsorship;
@@ -1507,6 +2988,11 @@
                   target="_blank"
                   rel="noopener"
                   >Cost source ↗</a
+                ><a
+                  href="https://dentistry.louisville.edu/admission/dmd-admissions/ways-apply/advanced-standing-internationally-trained-dentists"
+                  target="_blank"
+                  rel="noopener"
+                  >Advanced-standing tuition policy ↗</a
                 >
               </div>
             </article>
@@ -1518,10 +3004,64 @@
               </p>
               <p>D.D.S. · 28 months</p>
               <div class="cost-block">
-                <strong>$58,808</strong
-                ><span>Initial 4-month ITDP attendance budget</span
-                ><span>2026–27 · nonresident</span>
+                <span class="cost-label">Program attendance estimate</span
+                ><strong>$356,642</strong>
+                <p>Nonresident ITDP budget across 4 + 12 + 12 months.</p>
+                <span>2026–27</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Initial January–April budget: $58,808. The school
+                      describes separate loan certification for this winter
+                      period.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>$209,787 tuition/fees across all three phases.</dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      $89,264 housing, meals and utilities over 28 months.
+                      Personal allowances, including insurance, are included
+                      separately.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      This ITDP table explicitly uses international/out-of-state
+                      nonresident rates. A resident ITDP alternative was not
+                      verified.
+                    </dd>
+                  </div>
+                </dl>
+                <details class="cost-phases">
+                  <summary>View published phase budgets</summary>
+                  <ul>
+                    <li><span>D2 · 4 months</span><strong>$58,808</strong></li>
+                    <li>
+                      <span>D3 · 12 months</span><strong>$149,320</strong>
+                    </li>
+                    <li>
+                      <span>D4 · 12 months</span><strong>$148,514</strong>
+                    </li>
+                  </ul>
+                  <p class="micro">
+                    Sum: $356,642. Already included in the estimate above.
+                  </p>
+                </details>
+                <p class="cost-caveat">
+                  Published rates are estimates. The figure includes academic,
+                  living, books, transportation and personal allowances; future
+                  increases and loan interest are additional.
+                </p>
+              </details>
               <p class="micro">
                 Applicants who need F-1 status are eligible to apply; confirm
                 document issuance and required funding evidence.
@@ -1548,10 +3088,64 @@
               </p>
               <p>D.D.S. · 29 months</p>
               <div class="cost-block">
-                <strong>$475,183</strong
-                ><span>Estimated full 29-month attendance budget</span
-                ><span>PASS Class of 2029</span>
+                <span class="cost-label">Program attendance estimate</span
+                ><strong>$475,183</strong>
+                <p>School’s complete 29-month class budget.</p>
+                <span>Class of 2029 · 29 months</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      First spring budget: $77,735, including $57,371 tuition.
+                      Confirm acceptance deposit and cash needed before
+                      disbursement.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>$350,893 tuition across seven terms.</dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      $60,510 room/board, $6,566 transport and $12,000 personal
+                      allowances; insurance and other school charges are
+                      included separately.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <details class="cost-phases">
+                  <summary>View published phase budgets</summary>
+                  <ul>
+                    <li><span>Initial spring</span><strong>$77,735</strong></li>
+                    <li><span>First summer</span><strong>$44,164</strong></li>
+                    <li><span>First fall</span><strong>$77,280</strong></li>
+                    <li><span>Second spring</span><strong>$77,280</strong></li>
+                    <li><span>Second summer</span><strong>$44,164</strong></li>
+                    <li><span>Second fall</span><strong>$77,280</strong></li>
+                    <li><span>Final spring</span><strong>$77,280</strong></li>
+                  </ul>
+                  <p class="micro">
+                    Sum: $475,183. Already included in the estimate above.
+                  </p>
+                </details>
+                <p class="cost-caveat">
+                  The school states tuition is fixed for the 29-month cohort;
+                  other costs can change. Dependents and personal spending can
+                  increase the budget.
+                </p>
+              </details>
               <p class="micro">
                 All citizenship categories may apply. The profile describes
                 F-1/F-2 documentation support after admission.
@@ -1577,11 +3171,49 @@
                 University of Missouri Kansas City - School of Dentistry
               </p>
               <p>D.D.S. · 29 months</p>
-              <div class="cost-block">
-                <strong>$249,000</strong
-                ><span>Tuition only · full program calculation</span
-                ><span>2024–25 · older estimate</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>$280,325 older academic-charge estimate; living extra.</p>
+                <span>2024–25 · older rates</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Confirm initial summer tuition, material charges, deposit
+                      and payment date against an updated schedule.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      Five full semesters + two summers total $249,000 tuition.
+                      Seven terms of listed fees and initial materials bring
+                      academic charges to $280,325.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>A full 29-month living allowance was not verified.</dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  This calculation applies the source’s listed term rates; it is
+                  not a current cost-of-attendance budget.
+                </p>
+              </details>
               <p class="micro">
                 The profile requires U.S. citizenship or lawful permanent
                 residence. Confirm proof and timing with admissions.
@@ -1607,11 +3239,53 @@
                 University of Nebraska Medical Center College of Dentistry
               </p>
               <p>D.D.S. · 29 months</p>
-              <div class="cost-block">
-                <strong>$103,715</strong
-                ><span>Year 2 advanced-standing tuition</span
-                ><span>Current catalog · confirm academic year</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label">Source figures need clarification</span
+                ><strong>Full cost not confirmed</strong>
+                <p>
+                  Published Nebraska initial-year arithmetic needs
+                  clarification.
+                </p>
+                <span>Current catalog · confirm academic year</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      First semester tuition/fees $46,215 and second/summer
+                      $21,150 by listed components. Ask the school to reconcile
+                      the annual total.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $248,915 tuition across the three AS years; fees and
+                      living add more. The first-year fee components total
+                      $67,365, but the printed total says $62,635.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>Full 29-month living allowance not verified.</dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  Do not use the inconsistent first-year total to build a
+                  full-program estimate. Confirm current AS tuition and every
+                  required fee.
+                </p>
+              </details>
               <p class="micro">
                 U.S. citizens or permanent residents only; the program does not
                 sponsor student visas.
@@ -1637,11 +3311,51 @@
                 University of Nevada, Las Vegas School of Dental Medicine
               </p>
               <p>D.D.S. · exactly 24 months</p>
-              <div class="cost-block">
-                <strong>$33,767</strong
-                ><span>Tuition &amp; special fee per semester</span
-                ><span>Year not stated</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>$202,602 tuition and special fees before living.</p>
+                <span>Year not stated</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      $33,767 per listed semester before other fees and living.
+                      Confirm deposit and initial payment.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      Six semesters × ($28,667 tuition + $5,100 special fee) =
+                      $202,602.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      Full 24-month living, insurance, transport and other
+                      personal costs were not verified.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  The program’s published academic charges do not constitute a
+                  full attendance budget.
+                </p>
+              </details>
               <p class="micro">
                 The profile includes citizens, permanent residents, Canadian
                 residents and applicants eligible for F-1 status.
@@ -1667,11 +3381,56 @@
                 University of New England College of Dental Medicine
               </p>
               <p>D.M.D. · 29 months</p>
-              <div class="cost-block">
-                <strong>$59,645</strong
-                ><span>Initial advanced-standing direct costs</span
-                ><span>Published table · confirm academic year</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>
+                  $299,135 published direct charges; some fees still pending.
+                </p>
+                <span>2026–27 · some fees pending</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Initial phase direct charges $59,645, plus $3,500 listed
+                      equipment allowance and living. Confirm deposit and
+                      billing dates.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $265,400 tuition; published direct-cost rows total
+                      $299,135 across all three phases.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      The source gives $2,250/month off-campus housing, food and
+                      utilities. At 29 months this is $65,250; transport,
+                      personal, insurance and other costs are extra.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  Some program/malpractice fees are not finalized. Add health
+                  insurance unless waived, final examinations and rotations; do
+                  not use the direct-charge total as all-in.
+                </p>
+              </details>
               <p class="micro">
                 The profile flags citizen/GC eligibility but also mentions other
                 appropriate immigration documents. Confirm your category
@@ -1699,11 +3458,48 @@
                 Dentistry
               </p>
               <p>D.D.S. · 29 months</p>
-              <div class="cost-block">
-                <strong>Confirm with school</strong
-                ><span>Program budget needs confirmation</span
-                ><span>Current amount not verified</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>UNC provides the detailed budget at interview.</p>
+                <span>Current amount not verified</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Deposit, payment due dates and cash needed before aid
+                      disbursement need confirmation.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>Not verified.</dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      The webpage’s expense wording does not establish an
+                      unambiguous full-program living allowance.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      ASPID resident/nonresident tuition rates were not
+                      verified.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  Request the dated interview budget, initial bridge charges and
+                  proof-of-funds requirement. Do not interpret the isolated
+                  expense figure on the page as total attendance cost.
+                </p>
+              </details>
               <p class="micro">
                 The profile does not restrict admission to U.S. citizens or
                 permanent residents. This does not establish visa sponsorship;
@@ -1730,11 +3526,68 @@
                 University of Oklahoma College of Dentistry
               </p>
               <p>D.D.S. · 29 months</p>
-              <div class="cost-block">
-                <strong>$175,594</strong
-                ><span>Third-year tuition &amp; fees · resident</span
-                ><span>2024–25 · older budget</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>
+                  $436,236 resident / $436,238 nonresident across older
+                  published budgets.
+                </p>
+                <span>2024–25 · older budget</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      D3 initial summer attendance budget: $62,686 resident /
+                      $56,713 nonresident, already included in the published D3
+                      total.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      Published D3/D4 tuition/fees: $352,022 resident / $352,024
+                      nonresident, before living and other costs.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      $43,200 living allowance across the published years;
+                      confirm that every month of the 29-month program is
+                      covered.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      Published full D3/D4 budgets total $436,236 resident /
+                      $436,238 nonresident. Initial term allocations differ;
+                      current classification needs confirmation.
+                    </dd>
+                  </div>
+                </dl>
+                <details class="cost-phases">
+                  <summary>View published phase budgets</summary>
+                  <ul>
+                    <li><span>Resident D3</span><strong>$218,429</strong></li>
+                    <li><span>Resident D4</span><strong>$217,807</strong></li>
+                  </ul>
+                  <p class="micro">
+                    Sum: $436,236. A subtotal, not a confirmed complete program
+                    budget.
+                  </p>
+                </details>
+                <p class="cost-caveat">
+                  The source is an older ASPID budget. Confirm current rates,
+                  full month coverage and preparatory-period inclusion before
+                  relying on the sum.
+                </p>
+              </details>
               <p class="micro">
                 The school restricts this route to permanent residents and
                 naturalized U.S. citizens; confirm any other citizenship
@@ -1762,10 +3615,64 @@
               </p>
               <p>D.M.D. · 29 months</p>
               <div class="cost-block">
-                <strong>$82,567</strong
-                ><span>Initial PASS spring attendance budget</span
-                ><span>2026–27</span>
+                <span class="cost-label">Program attendance estimate</span
+                ><strong>$405,155</strong>
+                <p>Initial PASS spring + D3/D4 budgets, including living.</p>
+                <span>2026–27</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Initial PASS spring attendance budget: $82,567, including
+                      $48,924 tuition.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $244,620 tuition across initial spring and D3/D4; other
+                      mandatory costs are included in attendance budgets.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      $69,860 housing and food across the published phases.
+                      Personal, transport and insurance allowances are included
+                      separately.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <details class="cost-phases">
+                  <summary>View published phase budgets</summary>
+                  <ul>
+                    <li>
+                      <span>Initial PASS spring</span><strong>$82,567</strong>
+                    </li>
+                    <li><span>D3</span><strong>$160,904</strong></li>
+                    <li><span>D4</span><strong>$161,684</strong></li>
+                  </ul>
+                  <p class="micro">
+                    Sum: $405,155. Already included in the estimate above.
+                  </p>
+                </details>
+                <p class="cost-caveat">
+                  Uses the PASS initial period and D3/D4 only, not the regular
+                  four-year DDS sequence. Confirm budget dates, actual insurance
+                  costs and future increases.
+                </p>
+              </details>
               <p class="micro">
                 U.S. citizenship or permanent residence is required when the
                 application is submitted.
@@ -1791,11 +3698,46 @@
                 University of Pikeville – Tanner College of Dental Medicine
               </p>
               <p>D.M.D. · 25.5 months</p>
-              <div class="cost-block">
-                <strong>Confirm with school</strong
-                ><span>Program budget needs confirmation</span
-                ><span>Current amount not verified</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>
+                  Request an advanced-standing budget directly from Pikeville.
+                </p>
+                <span>Current amount not verified</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Deposit, payment due dates and cash needed before aid
+                      disbursement need confirmation.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>Not verified.</dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>Full 25.5-month living allowance not verified.</dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      Program-specific resident/nonresident rates were not
+                      verified.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  The general dental-program webpage does not establish a
+                  complete budget for the advanced-standing route.
+                </p>
+              </details>
               <p class="micro">
                 Conditional: the profile allows applicants legally authorized to
                 study without F-1 sponsorship. Its citizen/GC checkbox is more
@@ -1822,11 +3764,53 @@
                 University of Pittsburgh School of Dental Medicine
               </p>
               <p>D.M.D. · 24 months</p>
-              <div class="cost-block">
-                <strong>$122,119</strong
-                ><span>D3 attendance budget · nonresident</span
-                ><span>2026–27</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>Initial summer and D3/D4 overlap needs clarification.</p>
+                <span>2026–27</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Initial summer budget: $55,692, including $33,318 tuition
+                      and $10,000 living.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      Published D3/D4 budgets sum to $212,413 resident /
+                      $225,663 nonresident. A separate initial summer budget is
+                      $55,692; whether it overlaps needs confirmation.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      Summer allowance $10,000; D3 $32,000 and D4 $24,000.
+                      Confirm the covered dates before adding these amounts.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      D3 tuition: $29,346 resident / $37,296 nonresident; D4:
+                      $19,564 / $24,864. A $34,428 annual professional fee is
+                      additional in both categories.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  Ask whether the separate summer is already included in D3.
+                  Adding it without confirmation could double-count costs;
+                  omitting it could understate them.
+                </p>
+              </details>
               <p class="micro">
                 The profile does not restrict admission to U.S. citizens or
                 permanent residents. This does not establish visa sponsorship;
@@ -1853,11 +3837,69 @@
                 University of Puerto Rico School of Dental Medicine
               </p>
               <p>D.M.D. · 25 months</p>
-              <div class="cost-block">
-                <strong>Confirm with school</strong
-                ><span>Program budget needs confirmation</span
-                ><span>Current amount not verified</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>
+                  $200,095 published D3/D4 budgets; additional months need
+                  confirmation.
+                </p>
+                <span>2026–27</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      D3 attendance budget: $106,448, including initial kit,
+                      loupes and laptop allowances. A separate entry-period
+                      charge was not verified.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $120,000 tuition; tuition/fee rows total $127,300, with
+                      instruments, kits and other academic costs additional.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      $27,785 housing/per-diem across 11 + 10 budget months;
+                      confirm the remaining months of the 25-month program.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <details class="cost-phases">
+                  <summary>View published phase budgets</summary>
+                  <ul>
+                    <li>
+                      <span>D3 · 11 months</span><strong>$106,448</strong>
+                    </li>
+                    <li><span>D4 · 10 months</span><strong>$93,647</strong></li>
+                  </ul>
+                  <p class="micro">
+                    Sum: $200,095. A subtotal, not a confirmed complete program
+                    budget.
+                  </p>
+                </details>
+                <p class="cost-caveat">
+                  Published two-year sum includes $2,781 annual health insurance
+                  unless waived. Confirm initial-period coverage, current
+                  charges and additional living months.
+                </p>
+              </details>
               <p class="micro">
                 The profile does not restrict admission to U.S. citizens or
                 permanent residents. This does not establish visa sponsorship;
@@ -1885,10 +3927,66 @@
               </p>
               <p>D.D.S. · 24 months</p>
               <div class="cost-block">
-                <strong>Confirm with school</strong
-                ><span>Program budget needs confirmation</span
-                ><span>Current amount not verified</span>
+                <span class="cost-label">Program attendance estimate</span
+                ><strong>$398,758</strong>
+                <p>Two IDS year budgets with 24 months of living.</p>
+                <span>2026–27</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      First-year attendance estimate: $206,312, including
+                      $163,748 direct charges.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $271,400 tuition; total direct charges $313,630 across
+                      both years.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      $85,128 living allowance over 24 months ($3,547/month),
+                      including food, housing, transport and personal expenses.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <details class="cost-phases">
+                  <summary>View published phase budgets</summary>
+                  <ul>
+                    <li>
+                      <span>IDS first year · direct + living</span
+                      ><strong>$206,312</strong>
+                    </li>
+                    <li>
+                      <span>IDS second year · direct + living</span
+                      ><strong>$192,446</strong>
+                    </li>
+                  </ul>
+                  <p class="micro">
+                    Sum: $398,758. Already included in the estimate above.
+                  </p>
+                </details>
+                <p class="cost-caveat">
+                  Calculated from school direct costs plus its published living
+                  allowance. Confirm your campus, actual housing expenses,
+                  deposit and future-year increases.
+                </p>
+              </details>
               <p class="micro">
                 The profile directs international applicants to the
                 international student office. Confirm study authorization and
@@ -1901,7 +3999,7 @@
                   rel="noopener"
                   >Program requirements ↗</a
                 ><a
-                  href="https://dental.pacific.edu/dental/academic-programs/international-dental-studies"
+                  href="https://www.pacific.edu/dental/academic-programs/cost-of-attendance"
                   target="_blank"
                   rel="noopener"
                   >Cost source ↗</a
@@ -1915,11 +4013,50 @@
                 University of Washington School of Dentistry
               </p>
               <p>D.D.S. · 30 months</p>
-              <div class="cost-block">
-                <strong>Confirm with school</strong
-                ><span>Program budget needs confirmation</span
-                ><span>Current amount not verified</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>
+                  Initial $5,000 fee confirmed; full UWIDDS budget still needed.
+                </p>
+                <span>Current amount not verified</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      $5,000 nonrefundable acceptance deposit is explicitly NOT
+                      applied toward tuition; include it as an additional cost.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>Not verified.</dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      A complete 30-month UWIDDS-specific living allowance was
+                      not verified.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      UWIDDS-specific resident/nonresident classification and
+                      complete tuition schedule were not verified.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  Regular DDS projected costs do not establish every UWIDDS
+                  entry-period charge. Request the complete program budget and
+                  proof-of-funds amount.
+                </p>
+              </details>
               <p class="micro">
                 The profile requires lawful status allowing attendance; confirm
                 sponsorship and when documentation must be supplied.
@@ -1943,11 +4080,46 @@
               <h3>UTHealth Houston</h3>
               <p class="school-full">UTHealth Houston School of Dentistry</p>
               <p>D.D.S. · 27 months</p>
-              <div class="cost-block">
-                <strong>Up to $100,000</strong
-                ><span>Indicative annual tuition &amp; fees</span
-                ><span>2025 program announcement</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>Launch announcement is not a complete IDEP budget.</p>
+                <span>2025 program announcement</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Deposit, payment due dates and cash needed before aid
+                      disbursement need confirmation.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>Not verified.</dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>Full 27-month living allowance not verified.</dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      The announcement says tuition/fees depend on Texas
+                      residency; exact resident and nonresident schedules were
+                      not verified.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  The launch announcement mentions annual tuition/fees up to
+                  $100,000. This is not an all-term quotation and excludes a
+                  verified living-cost calculation.
+                </p>
+              </details>
               <p class="micro">
                 The profile requires U.S. citizenship or lawful permanent
                 residence. Confirm proof and timing with admissions.
@@ -1973,11 +4145,55 @@
                 Virginia Commonwealth University School of Dentistry
               </p>
               <p>D.D.S. · 33 months</p>
-              <div class="cost-block">
-                <strong>Confirm with school</strong
-                ><span>Program budget needs confirmation</span
-                ><span>Current amount not verified</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label">Source figures need clarification</span
+                ><strong>Full cost not confirmed</strong>
+                <p>VCU’s published IDP budget contains conflicting totals.</p>
+                <span>2026–27</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Footnote lists initial summer tuition $5,000 plus
+                      estimated fees $1,166; confirm whether included in the
+                      first-year budget.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      The 2026–27 tuition/mandatory-fee year rows sum to
+                      $347,163, while the printed program total says $344,835.
+                      Other totals also differ.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      Published room/board rows total $97,470; transport and
+                      personal allowances add more. Resolve the budget
+                      arithmetic before using a full total.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  Printed annual attendance totals sum to $556,443, but the
+                  first-year direct + indirect rows do not match its printed
+                  total. Ask VCU for a corrected IDP budget; no verified
+                  full-program total is shown here.
+                </p>
+              </details>
               <p class="micro">
                 The profile does not restrict admission to U.S. citizens or
                 permanent residents. This does not establish visa sponsorship;
@@ -1990,10 +4206,15 @@
                   rel="noopener"
                   >Program requirements ↗</a
                 ><a
-                  href="https://dentistry.vcu.edu/programs/sod-financial-aid-office/"
+                  href="https://drive.google.com/file/d/1-rZqpoZZ-vpPhlB062V-gLHZIiE8lsbL/view?usp=drive_link"
                   target="_blank"
                   rel="noopener"
                   >Cost source ↗</a
+                ><a
+                  href="https://dentistry.vcu.edu/programs/sod-financial-aid-office/"
+                  target="_blank"
+                  rel="noopener"
+                  >VCU financial aid / budget links ↗</a
                 >
               </div>
             </article>
@@ -2004,11 +4225,57 @@
                 Western University Health Sciences College of Dental Medicine
               </p>
               <p>D.M.D. · 26 months</p>
-              <div class="cost-block">
-                <strong>$180,174</strong
-                ><span>Second-year IDP tuition &amp; fees</span
-                ><span>2026–27</span>
+              <div class="cost-block cost-pending">
+                <span class="cost-label"
+                  >Partial information · request complete budget</span
+                ><strong>Full cost not confirmed</strong>
+                <p>
+                  $378,420 academic charges; living-period alignment needs
+                  confirmation.
+                </p>
+                <span>2026–27</span>
               </div>
+              <details class="static-cost-details">
+                <summary>Initial costs, living & residency</summary>
+                <dl class="cost-breakdown">
+                  <div>
+                    <dt>Initial term & cash timing</dt>
+                    <dd>
+                      Initial tuition/fees $49,817, including $40,320 tuition;
+                      initial books/computer and living add more.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Tuition & required charges</dt>
+                    <dd>
+                      $330,664 tuition; three published tuition/fee rows total
+                      $378,420, before books and living.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Housing, food & living</dt>
+                    <dd>
+                      Each of the three published phases repeats an annual
+                      living allowance, despite the 26-month curriculum. Confirm
+                      actual funded months before multiplying or adding those
+                      rows.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>In-state / out-of-state rates</dt>
+                    <dd>
+                      One program rate is published; no in-state/out-of-state
+                      split is shown. Confirm your classification with the
+                      school.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="cost-caveat">
+                  Summing three annual living budgets could overstate this
+                  26-month route. Loan-fee assumptions may also differ from the
+                  loans now available to new borrowers.
+                </p>
+              </details>
               <p class="micro">
                 F-1 applicants may apply; legal U.S. residency documentation is
                 required before matriculation. Confirm your exact status with
@@ -2112,13 +4379,23 @@
               in the original profile for your application cycle.
             </p>
             <p>
-              Costs come from linked school pages and budgets. A “published
-              numeric estimate” can be an older or partial budget; its year,
-              period and inclusions are always shown. We leave unverified
-              amounts blank. Amounts are in U.S. dollars, subject to change, and
-              are not quotations. Duration ranges use their minimum for
-              filtering. Program dates are a reviewed snapshot, not a live
-              admissions feed.
+              Costs were rechecked against official program fee schedules and
+              attendance budgets on October 4, 2026. Only reconciled attendance
+              estimates receive a numeric headline. Initial-term, annual,
+              tuition-only and incomplete figures remain clearly labeled
+              components. Where published arithmetic, covered months or entry
+              periods are unclear, the full total stays unconfirmed. We do not
+              fill missing amounts with an assumed minimum.
+            </p>
+            <p>
+              Most estimates add phase budgets from different cohorts at the
+              same academic year's prices. They are planning estimates, not
+              locked prices for a future intake. Check the displayed year,
+              residency basis, insurance, bridge terms and all living months.
+              Loan interest, future increases, dependents and relocation may add
+              substantially. Citizenship, tuition residency, visa eligibility
+              and loan eligibility are separate decisions. Duration filters use
+              the minimum listed length; admissions dates are a snapshot.
             </p>
             <p class="micro">
               Independent educational resource. No affiliation with ADEA or any
@@ -2191,6 +4468,7 @@
             <p>A personal path to your professional future.</p>
           </div>
           <div class="footer-links">
+            <a href="my-story.html">My Story</a>
             <a href="pathway.html">Pathway guide</a
             ><a href="schools.html">School explorer</a
             ><a href="finances.html">Financial planning</a
@@ -2213,7 +4491,8 @@
     </footer>
     <script src="js/config.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/programs-core.js"></script>
-    <script src="js/schools.js"></script>
+    <script src="js/programs-core.js?v=20261004-costs2"></script>
+    <script src="js/program-costs.js?v=20261004-costs2"></script>
+    <script src="js/schools.js?v=20261004-costs2"></script>
   </body>
 </html>
