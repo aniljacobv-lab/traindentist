@@ -1,0 +1,92 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 640 470"
+  role="img"
+  aria-labelledby="title desc"
+>
+  <title id="title">Three areas of bench test preparation</title>
+  <desc id="desc">
+    An illustrative tooth model connects to three coaching priorities: precision
+    in your preparation, protection of adjacent teeth, and time to review and
+    refine. This is a conceptual graphic, not a clinical preparation guide.
+  </desc>
+  <defs>
+    <linearGradient id="tooth" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fffef6" />
+      <stop offset="1" stop-color="#b7d6ce" />
+    </linearGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#8fb8ad" />
+      <stop offset="1" stop-color="#dbe9dc" />
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#bed5cc" />
+    </pattern>
+  </defs>
+  <rect width="640" height="470" rx="24" fill="#edf3ec" />
+  <rect x="24" y="24" width="592" height="380" fill="url(#grid)" />
+  <g fill="none" stroke="#c3d6cb">
+    <ellipse cx="330" cy="301" rx="165" ry="76" />
+    <ellipse cx="330" cy="301" rx="135" ry="61" />
+    <path d="M139 302h382M330 208v187" />
+  </g>
+  <ellipse cx="325" cy="318" rx="84" ry="22" fill="#abc8b9" opacity=".4" />
+  <path
+    d="M244 183C250 155 295 154 319 169c35-17 78-7 84 25 8 28-9 59-17 85l-12 47c-4 15-17 15-22 1l-20-53c-4-9-13-9-17 0l-24 50c-7 14-19 10-20-4l-4-40c-4-35-26-63-23-97Z"
+    fill="url(#side)"
+    stroke="#689387"
+    stroke-width="2"
+  />
+  <path
+    d="M244 181c-9-27 16-58 42-58 20 0 32 13 41 12 12-1 26-17 50-9 27 9 40 34 29 58-5 13-29 31-41 29-21-4-23-19-38-19-13 0-28 17-45 12-14-5-30-12-38-25Z"
+    fill="url(#tooth)"
+    stroke="#689387"
+    stroke-width="2"
+  />
+  <path
+    d="m284 148 30 20 19-9 21 14 26-20m-66 15 10 20m9-29 5-15"
+    fill="none"
+    stroke="#95b7ab"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+  <path
+    d="m310 159 15-9 25 17-18 13Z"
+    fill="#c2a879"
+    stroke="#927e55"
+    stroke-width="1.5"
+  />
+  <path d="m317 161 9-5 16 11-10 6Z" fill="#f1dfad" />
+  <g stroke="#427d6e" fill="none" stroke-width="1.5">
+    <path d="M323 165V108H171" />
+    <path d="m388 223 82-27h37" />
+    <path d="M294 275 217 334H135" />
+  </g>
+  <g fill="#176352" stroke="#edf3ec" stroke-width="4">
+    <circle cx="323" cy="165" r="6" />
+    <circle cx="388" cy="223" r="6" />
+    <circle cx="294" cy="275" r="6" />
+  </g>
+  <g font-family="Arial,sans-serif">
+    <g fill="#1f493e" font-size="13" font-weight="700" letter-spacing="1.4">
+      <text x="53" y="67">01 / PRECISION</text>
+      <text x="453" y="160">02 / PROTECTION</text>
+      <text x="53" y="326">03 / TIMING</text>
+    </g>
+    <g fill="#536c63" font-size="13">
+      <text x="53" y="91">Purposeful preparation</text>
+      <text x="453" y="181">Respect adjacent teeth</text>
+      <text x="53" y="355">Review. Refine. Finish.</text>
+    </g>
+    <text
+      x="320"
+      y="428"
+      text-anchor="middle"
+      fill="#416759"
+      font-size="11"
+      letter-spacing="2"
+    >
+      PRACTICE WITH A CLEAR PURPOSE
+    </text>
+  </g>
+</svg>

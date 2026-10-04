@@ -15,7 +15,7 @@
   const AVATAR = "assets/dr-mathew.jpg";
   const POS_KEY = "td_drm_pos", HIDE_KEY = "td_drm_hidden", WAVE_KEY = "td_drm_waved";
 
-  const GREETING = "Hello, I'm **Dr. Liji Mathew**. I help internationally trained dentists get into U.S. dental schools.\n\nTo get you to the right advice: where are you in the process right now? Preparing for exams, applying through CAAPID, or already invited to a bench test or interview?";
+  const GREETING = "Hello! I'm **Train Dentist's automated admissions guide**. I can share information about Dr. Mathew's programs and help you explore your next steps.\n\nWhere are you in the process: preparing for exams, applying through CAAPID, or invited to a bench test or interview? For personal advice from Dr. Mathew, book a free consultation.";
   const STARTERS = ["What is the bench test?", "How do I prepare for the interview?", "What are the steps to practice in the US?", "What services do you offer?", "How do I book a consultation?"];
   const NUDGES = [
     "A tip while you look around: the most common mistake I see is waiting for an interview invitation before starting bench test practice. Invitations can come with only a few weeks' notice. Have you started hands-on practice yet?",
@@ -62,7 +62,7 @@
   const homeBtn = $("button", { class: "drm-icon", title: "Snap back to the corner", text: "⌂", onclick: resetPos });
   const head = $("div", { class: "drm-head", title: "Drag to move" }, [
     img("drm-head-img"),
-    $("div", {}, [$("div", { class: "drm-name", text: "Dr. Liji Mathew, DMD" }), $("div", { class: "drm-sub", text: "YOUR U.S. DENTAL ADMISSIONS GUIDE" })]),
+    $("div", {}, [$("div", { class: "drm-name", text: "Train Dentist guide" }), $("div", { class: "drm-sub", text: "AUTOMATED ADMISSIONS ASSISTANT" })]),
     $("div", { class: "drm-head-btns" }, [
       homeBtn,
       $("button", { class: "drm-icon", title: "Minimize", text: "—", onclick: () => setOpen(false) }),
@@ -72,7 +72,7 @@
   const panel = $("div", { class: "drm-panel", role: "dialog", "aria-label": "Chat with Dr. Mathew" }, [
     head, log,
     $("div", { class: "drm-bar" }, [input, send]),
-    $("div", { class: "drm-foot", text: "General guidance only, not a guarantee of admission. Requirements vary by school." }),
+    $("div", { class: "drm-foot", text: "Automated guidance, not a live conversation. Requirements vary by school." }),
   ]);
 
   function render() {
@@ -158,6 +158,7 @@
   }
   send.addEventListener("click", () => ask());
   input.addEventListener("keydown", (e) => { if (e.key === "Enter") ask(); });
+  panel.addEventListener("keydown", (e) => { if (e.key === "Escape") { setOpen(false); fab.focus(); } });
 
   /* page buttons open Dr. Mathew with a question */
   document.addEventListener("click", (e) => { const b = e.target.closest("[data-ask]"); if (!b) return; e.preventDefault(); if (state.hidden) setHidden(false); setOpen(true); const q = b.getAttribute("data-ask"); if (q) setTimeout(() => ask(q), 120); });

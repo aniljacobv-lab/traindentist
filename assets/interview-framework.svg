@@ -1,0 +1,105 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 640 500"
+  role="img"
+  aria-labelledby="title desc"
+>
+  <title id="title">The STAR framework for behavioral interview answers</title>
+  <desc id="desc">
+    Situation: set the context. Task: explain your responsibility. Action:
+    describe what you did. Result: share the outcome and what you learned. Use a
+    real example and keep the answer relevant.
+  </desc>
+  <rect width="640" height="500" rx="24" fill="#173f36" />
+  <circle cx="574" cy="43" r="132" fill="none" stroke="#31564b" />
+  <circle cx="574" cy="43" r="100" fill="none" stroke="#31564b" />
+  <g font-family="Arial,sans-serif">
+    <text x="48" y="49" fill="#b7c7aa" font-size="11" letter-spacing="2.3">
+      THE BEHAVIORAL ANSWER FRAMEWORK
+    </text>
+    <text
+      x="48"
+      y="89"
+      fill="#fffdf4"
+      font-size="29"
+      font-family="Georgia,serif"
+    >
+      Your experience. A clear story.
+    </text>
+  </g>
+  <path d="M77 159v234" stroke="#53796b" stroke-width="2" />
+  <g font-family="Arial,sans-serif">
+    <g>
+      <circle cx="77" cy="151" r="25" fill="#dce8c5" />
+      <text
+        x="77"
+        y="159"
+        text-anchor="middle"
+        fill="#173f36"
+        font-size="21"
+        font-weight="700"
+      >
+        S
+      </text>
+      <text x="125" y="147" fill="#fffdf4" font-size="19">Situation</text>
+      <text x="125" y="173" fill="#c4d3cb" font-size="14">
+        Set the context. What was happening?
+      </text>
+    </g>
+    <g>
+      <circle cx="77" cy="225" r="25" fill="#dce8c5" />
+      <text
+        x="77"
+        y="233"
+        text-anchor="middle"
+        fill="#173f36"
+        font-size="21"
+        font-weight="700"
+      >
+        T
+      </text>
+      <text x="125" y="221" fill="#fffdf4" font-size="19">Task</text>
+      <text x="125" y="247" fill="#c4d3cb" font-size="14">
+        Explain your role and responsibility.
+      </text>
+    </g>
+    <g>
+      <circle cx="77" cy="299" r="25" fill="#dce8c5" />
+      <text
+        x="77"
+        y="307"
+        text-anchor="middle"
+        fill="#173f36"
+        font-size="21"
+        font-weight="700"
+      >
+        A
+      </text>
+      <text x="125" y="295" fill="#fffdf4" font-size="19">Action</text>
+      <text x="125" y="321" fill="#c4d3cb" font-size="14">
+        Be specific about what you did and why.
+      </text>
+    </g>
+    <g>
+      <circle cx="77" cy="373" r="25" fill="#dce8c5" />
+      <text
+        x="77"
+        y="381"
+        text-anchor="middle"
+        fill="#173f36"
+        font-size="21"
+        font-weight="700"
+      >
+        R
+      </text>
+      <text x="125" y="369" fill="#fffdf4" font-size="19">Result</text>
+      <text x="125" y="395" fill="#c4d3cb" font-size="14">
+        Share the outcome and what you learned.
+      </text>
+    </g>
+    <path d="M48 436h544" stroke="#47685c" />
+    <text x="48" y="466" fill="#c4d3cb" font-size="13">
+      Use a real example. Make every sentence count.
+    </text>
+  </g>
+</svg>
