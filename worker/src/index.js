@@ -146,7 +146,8 @@ async function askGemini(env, messages, origin) {
     if (!r.ok) { console.error("Gemini API error", r.status, JSON.stringify(d).slice(0, 500)); return json({ error: "Assistant unavailable" }, 502, origin); }
     const cand = d.candidates?.[0];
     if (!cand || cand.finishReason === "SAFETY" || cand.finishReason === "PROHIBITED_CONTENT") return json({ text: REFUSED }, 200, origin);
-    const text = (cand.content?.parts || []).filter((p) => p.text && !p.thought).map((p) => p.text).join("").trim();
+    const text = (cand.content?.parts || []).filter((p) => p.text && !p.thought).map((p) => p.text).join("")
+      .replace(/\s*\[(?:C|cite|source)?\s*\d+(?:\s*,\s*(?:C)?\d+)*\]/gi, "").trim();   // grounding markers like [C1] / [1, 2]
     const sources = (cand.groundingMetadata?.groundingChunks || []).map((c) => c.web).filter((w) => w?.uri).slice(0, 4).map((w) => ({ url: w.uri, title: w.title || "source" }));
     return json({ text: text || EMPTY, sources }, 200, origin);
   } catch (e) {
