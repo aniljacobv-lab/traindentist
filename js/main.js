@@ -1,36 +1,120 @@
-/* Page behaviour: mobile menu, contact details from config, consultation form. */
+/* Navigation, program selection, and consultation requests. No build step required. */
 (function () {
   const C = window.TD_CONFIG || {};
-
-  const toggle = document.querySelector(".nav-toggle"), links = document.getElementById("nav-links");
-  toggle.addEventListener("click", () => { const open = links.classList.toggle("open"); toggle.setAttribute("aria-expanded", open); });
-  links.addEventListener("click", (e) => { if (e.target.closest("a")) { links.classList.remove("open"); toggle.setAttribute("aria-expanded", "false"); } });
-  addEventListener("scroll", () => document.querySelector(".nav").classList.toggle("scrolled", scrollY > 8), { passive: true });
-
+  const toggle = document.querySelector(".nav-toggle");
+  const links = document.getElementById("nav-links");
+  function setMenu(open) {
+    links.classList.toggle("open", open);
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  }
+  toggle.addEventListener("click", () =>
+    setMenu(toggle.getAttribute("aria-expanded") !== "true"),
+  );
+  links.addEventListener("click", (e) => {
+    if (e.target.closest("a")) setMenu(false);
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+      setMenu(false);
+      toggle.focus();
+    }
+  });
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".nav")) setMenu(false);
+  });
   for (const a of document.querySelectorAll("[data-cfg]")) {
     const k = a.dataset.cfg;
-    if (k === "email" && C.email) { a.href = "mailto:" + C.email; a.textContent = C.email; }
+    if (k === "location" && C.location) a.textContent = C.location;
+    if (k === "email" && C.email) {
+      a.href = "mailto:" + C.email;
+      a.textContent = C.email;
+    }
+    if (k === "phone" && C.phone) {
+      a.href = "tel:" + C.phoneHref;
+      a.textContent = C.phone;
+    }
+    if (k === "social" && C.social) {
+      a.href = C.socialUrl;
+      a.textContent = C.social;
+    }
   }
-  const yr = document.getElementById("year"); if (yr) yr.textContent = new Date().getFullYear();
-
-  const form = document.getElementById("contact-form"), note = document.getElementById("form-note");
+  document.getElementById("year").textContent = new Date().getFullYear();
+  const form = document.getElementById("contact-form");
+  const note = document.getElementById("form-note");
   if (!form) return;
-  /* package buttons preselect the interest; planner results prefill the message */
-  document.addEventListener("click", (e) => { const b = e.target.closest("[data-interest]"); if (b) form.interest.value = b.dataset.interest; });
-  try { const plan = sessionStorage.getItem("td_plan"); if (plan && !form.message.value) form.message.value = plan; } catch { /* private mode */ }
+  try {
+    const plan = sessionStorage.getItem("td_plan");
+    if (plan && !form.elements.message.value)
+      form.elements.message.value = plan;
+  } catch {
+    /* Storage can be unavailable in private browsing. */
+  }
+  const submit = form.querySelector('[type="submit"]');
+  document.querySelectorAll("[data-interest]").forEach((a) =>
+    a.addEventListener("click", () => {
+      form.elements.interest.value = a.dataset.interest;
+    }),
+  );
+  if (C.formEndpoint) {
+    document.getElementById("form-explainer").textContent =
+      "Tell us about your goals. We’ll be in touch to arrange your free consultation.";
+    submit.firstChild.textContent = "Request my free consultation ";
+  }
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
+    if (submit.disabled || !form.reportValidity()) return;
     const d = Object.fromEntries(new FormData(form));
-    if (!d.name.trim() || !/^\S+@\S+\.\S+$/.test(d.email)) { note.textContent = "Please enter your name and a valid email."; note.className = "form-note err"; return; }
-    if (C.formEndpoint) {
-      try {
-        const r = await fetch(C.formEndpoint, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(d) });
-        if (!r.ok) throw new Error();
-        form.reset(); note.textContent = "Thank you! Dr. Mathew's team will contact you within 1–2 business days."; note.className = "form-note ok"; return;
-      } catch { note.textContent = "Couldn't send right now. Opening your email app instead…"; }
+    if (!d.name.trim()) {
+      note.textContent = "Please enter your full name.";
+      note.className = "form-note err";
+      form.elements.name.focus();
+      return;
     }
-    const body = `Name: ${d.name}\nEmail: ${d.email}\nPhone: ${d.phone}\nCountry of degree: ${d.country}\nInterested in: ${d.interest}\n\n${d.message}`;
-    location.href = `mailto:${C.email}?subject=${encodeURIComponent("Consultation request: " + d.interest)}&body=${encodeURIComponent(body)}`;
-    note.textContent = "Your email app should open with the request filled in. Just press send."; note.className = "form-note ok";
+    if (C.formEndpoint) {
+      submit.disabled = true;
+      note.textContent = "Sending your request…";
+      note.className = "form-note";
+      try {
+        const r = await fetch(C.formEndpoint, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(d),
+          signal: AbortSignal.timeout(15000),
+        });
+        if (!r.ok) throw new Error("Request failed");
+        form.reset();
+        note.textContent =
+          "Thank you. Your consultation request has been sent. We’ll be in touch.";
+        note.className = "form-note ok";
+      } catch {
+        note.replaceChildren(
+          document.createTextNode(
+            "Your request could not be confirmed. Please email us at ",
+          ),
+        );
+        const fallback = document.createElement("a");
+        fallback.href = makeEmail(d);
+        fallback.textContent = C.email || "info@traindentist.com";
+        note.append(fallback, ". Your details are still here.");
+        note.className = "form-note err";
+      } finally {
+        submit.disabled = false;
+      }
+      return;
+    }
+    location.href = makeEmail(d);
+    note.textContent =
+      "Your email app should open with a draft. Review it and press Send to complete your request. If it does not open, email " +
+      (C.email || "info@traindentist.com") +
+      ".";
+    note.className = "form-note ok";
   });
+  function makeEmail(d) {
+    const body = `Name: ${d.name}\nEmail: ${d.email}\nPhone: ${d.phone}\nCountry of degree: ${d.country}\nInterested in: ${d.interest}\n\n${d.message}`;
+    return `mailto:${C.email || "info@traindentist.com"}?subject=${encodeURIComponent("Consultation request: " + d.interest)}&body=${encodeURIComponent(body)}`;
+  }
 })();

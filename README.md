@@ -67,7 +67,30 @@ By default, the form opens the visitor's email app with the request already fill
 
 ## Content to finish
 - [ ] Set up the **info@traindentist.com** mailbox (or forwarding) at your domain host, or change `email` in `js/config.js`
-- [ ] Optional: a smiling professional headshot to replace `assets/dr-mathew-portrait.jpg` / `assets/dr-mathew.jpg`
+- [x] Polished solo portrait in her original black dental outfit, with Dr Liji Mathew DMD embroidery, based on the owner-selected photograph, created with built-in image generation; originals retained.
 - [ ] Coaching rates for the Programs section (currently "Contact for current rates")
 - [ ] Student testimonials, once you have permission from real students
 - [ ] Re-check the Pathway Guide facts each cycle (CAAPID dates, fees, TOEFL minimums)
+
+## Design and graphics
+
+The responsive redesign uses an ivory, forest-green, and sage palette with an editorial layout. Programs lead into a six-stage admissions roadmap, followed by the mentor profile, visual learning guides, FAQs, and consultation form. Original photographs remain in the repository; current contact settings are preserved.
+
+Original, editable SVG graphics are in `assets/`:
+- `admissions-roadmap.svg`: downloadable six-stage planning guide, also linked from the page.
+- `bench-focus.svg`: conceptual illustration of precision, protection, and timing. It is not a clinical preparation guide.
+- `interview-framework.svg`: the STAR structure for behavioral interview answers.
+- `icons.svg`: reusable interface icon symbols.
+- `favicon.svg`: updated tooth brand mark.
+
+The roadmap displayed on the page is semantic HTML, so it adapts from a horizontal graphic to a vertical sequence on phones. Illustration descriptions are available to screen readers. The mobile menu supports Escape; reduced-motion preferences are respected. The chat identifies itself as an automated guide.
+
+With `formEndpoint` empty, the form prepares an email draft and explicitly asks the visitor to send it. If an endpoint is configured, it submits directly, prevents duplicate requests, and preserves entered details if submission fails.
+
+### Verification
+
+Run `node --test tests/consultation.test.cjs` for consultation request tests (no dependencies or external requests). Preview with any static HTTP server, for example `python -m http.server 4173`, and visit `http://localhost:4173`.
+
+## Portrait update
+
+The current homepage, mentor profile, and chat use `assets/dr-mathew-professional.webp` and `assets/dr-mathew-avatar.webp`. `assets/dr-mathew-professional.jpg` is used for social previews. This is an AI-polished portrait based on the clinical photograph selected by the site owner, preserving her broad smile and black dental outfit. The jacket embroidery reads Dr Liji Mathew, with DMD below. The original photographs remain in the repository. The newer Pathway Guide, Planner, credentials, contact settings, knowledge base, and worker updates from main are retained. The guide has a matching stylesheet in `css/pathway.css`.
