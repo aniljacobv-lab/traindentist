@@ -1,0 +1,6 @@
+name = "drmathew-chat"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Secret (never commit it):  npx wrangler secret put ANTHROPIC_API_KEY
