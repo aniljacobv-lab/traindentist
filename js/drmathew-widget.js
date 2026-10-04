@@ -37,7 +37,9 @@
       if (L.trim()) out.push(`<p>${L}</p>`);
     }
     if (list) out.push(`</${list}>`);
-    return out.join("").replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>");
+    return out.join("").replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>")
+      .replace(/\[([^\]]+)\]\((https:\/\/[^\s)"'<]+)\)/g, '<a href="$2" target="_blank" rel="noopener nofollow">$1</a>')   // [label](url)
+      .replace(/(?<!["'>])(https:\/\/[^\s<"']+[^\s<"'.,;:)])/g, '<a href="$1" target="_blank" rel="noopener nofollow">$1</a>');   // bare urls; text was escaped above
   }
   const store = { get(k) { try { return localStorage.getItem(k); } catch { return null; } }, set(k, v) { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch { /* private mode */ } } };
   const readPos = () => { try { const v = JSON.parse(store.get(POS_KEY) || "null"); return v && Number.isFinite(v.x) && Number.isFinite(v.y) ? v : null; } catch { return null; } };
@@ -130,8 +132,12 @@
     const r = await fetch(CFG.chatApi, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ question, history: state.history.slice(-8), page: location.pathname }) });
     const d = await r.json().catch(() => ({}));
     if (!r.ok || !d.text) throw new Error(d.error || "HTTP " + r.status);
-    return d.text;
+    const src = (d.sources || []).filter((s) => /^https:\/\//.test(s.url)).map((s) => `- [${String(s.title || "source").replace(/[\[\]]/g, "")}](${s.url})`).join("\n");
+    return src ? `${d.text}\n\n**Sources:**\n${src}` : d.text;
   }
+  /* with the AI connected, the built-in guide answers only the simple practical questions; everything else gets a
+     context-aware answer from the model (which remembers what the visitor said earlier) */
+  const GUIDE_ONLY = new Set(["greeting", "book", "pricing", "format", "services", "planner"]);
 
   async function ask(given) {
     const text = String(typeof given === "string" ? given : input.value).trim();
@@ -149,10 +155,13 @@
     };
     const routed = KB.route(text);
     const related = (fact) => routed.candidates.filter((c) => c.fact !== fact).map((c) => c.fact.examples[0]).filter(Boolean).slice(0, 3);
-    if (routed.confident) { setTimeout(() => finish(routed.fact.answer, "FROM DR. MATHEW'S GUIDE", related(routed.fact)), 350); return; }
+    const guideFirst = routed.confident && (!CFG.chatApi || GUIDE_ONLY.has(routed.fact.id));
+    if (guideFirst) { setTimeout(() => finish(routed.fact.answer, "FROM DR. MATHEW'S GUIDE", related(routed.fact)), 350); return; }
     if (CFG.chatApi) {
+      pending.querySelector(".drm-bubble").textContent = "Thinking it through…";
       try { finish(await callModel(text), "DR. MATHEW · AI ASSISTANT"); return; } catch (e) { console.warn("Dr. Mathew AI unavailable:", e.message); }
     }
+    if (routed.confident) { finish(routed.fact.answer, "FROM DR. MATHEW'S GUIDE", related(routed.fact)); return; }
     if (routed.fact && routed.score >= 2) { finish(routed.fact.answer, "FROM DR. MATHEW'S GUIDE", related(routed.fact)); return; }
     finish(`I don't have a ready answer for that here. If it's about your own application, a short **free consultation** is the best next step, so I can hear your background. Email **${CFG.email}**, or use the consultation form on the home page.\n\nI can already help with these:`, null, STARTERS.slice(0, 4));
   }

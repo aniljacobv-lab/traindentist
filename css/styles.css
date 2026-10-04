@@ -2242,6 +2242,11 @@ details p {
   border-radius: 14px 14px 4px 14px;
   white-space: pre-wrap;
 }
+.drm-bubble a {
+  color: var(--blue);
+  word-break: break-all;
+  font-weight: 600;
+}
 .drm-bot .drm-bubble {
   background: #fff;
   border: 1px solid var(--line);

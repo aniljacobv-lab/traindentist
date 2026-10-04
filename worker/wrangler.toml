@@ -3,4 +3,10 @@ main = "src/index.js"
 compatibility_date = "2026-09-01"
 compatibility_flags = ["nodejs_compat"]
 
-# Secret (never commit it):  npx wrangler secret put ANTHROPIC_API_KEY
+# The AI key is a Cloudflare secret (never commit it). Set ONE of these:
+#   npx wrangler secret put GEMINI_API_KEY       (Google AI Studio key)
+#   npx wrangler secret put ANTHROPIC_API_KEY    (Claude; used first if both are set)
+
+[vars]
+# Optional: pin a Gemini model (default gemini-flash-latest, falling back to gemini-2.5-flash)
+# GEMINI_MODEL = "gemini-2.5-flash"
