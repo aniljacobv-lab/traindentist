@@ -10,5 +10,5 @@ window.TD_CONFIG = {
 
   /* Optional: the deployed Dr. Mathew AI worker (see /worker/README.md).
      Empty = Dr. Mathew answers from the built-in guide only (still works on plain GitHub Pages). */
-  chatApi: "",
+  chatApi: "https://drmathew-chat.aniljacobv.workers.dev",
 };
