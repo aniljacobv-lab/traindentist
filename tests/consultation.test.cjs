@@ -5,7 +5,14 @@ const fs = require("node:fs");
 const path = require("node:path");
 const source = fs.readFileSync(path.join(__dirname, "../js/main.js"), "utf8");
 
-function setup({ endpoint = "", fetch, name = "Test Dentist" } = {}) {
+function setup({
+  endpoint = "",
+  fetch,
+  name = "Test Dentist",
+  savedPlan = null,
+  message = "",
+  hasForm = true,
+} = {}) {
   function element() {
     return {
       listeners: {},
@@ -39,14 +46,18 @@ function setup({ endpoint = "", fetch, name = "Test Dentist" } = {}) {
   const submit = element(),
     note = element(),
     form = element();
-  form.elements = { name: element(), interest: { value: "Interview Prep" } };
+  form.elements = {
+    name: element(),
+    interest: { value: "Interview Prep" },
+    message: { value: message },
+  };
   form.querySelector = () => submit;
   form.reportValidity = () => true;
   form.reset = () => {
     form.wasReset = true;
   };
   const elements = {
-    "contact-form": form,
+    "contact-form": hasForm ? form : null,
     "form-note": note,
     "nav-links": element(),
     year: element(),
@@ -66,6 +77,7 @@ function setup({ endpoint = "", fetch, name = "Test Dentist" } = {}) {
     },
     document,
     location: { href: "" },
+    sessionStorage: { getItem: () => savedPlan },
     fetch,
     FormData: class {
       [Symbol.iterator]() {
@@ -157,4 +169,21 @@ test("repeated clicks do not submit concurrent requests", async () => {
   assert.equal(calls, 1);
   resolve({ ok: true });
   await pending;
+});
+test("the guide page initializes without a consultation form", () => {
+  assert.doesNotThrow(() => setup({ hasForm: false }));
+});
+test("planner results fill an empty consultation message", () => {
+  const app = setup({ savedPlan: "My planner results: invited to interview" });
+  assert.equal(
+    app.form.elements.message.value,
+    "My planner results: invited to interview",
+  );
+});
+test("planner restoration preserves an existing message", () => {
+  const app = setup({
+    savedPlan: "My planner results",
+    message: "My own question",
+  });
+  assert.equal(app.form.elements.message.value, "My own question");
 });

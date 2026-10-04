@@ -12,7 +12,7 @@
 (function () {
   const CFG = window.TD_CONFIG || {};
   const KB = window.DrMathewKB;
-  const AVATAR = "assets/dr-mathew.jpg";
+  const AVATAR = "assets/dr-mathew-avatar.webp";
   const POS_KEY = "td_drm_pos", HIDE_KEY = "td_drm_hidden", WAVE_KEY = "td_drm_waved";
 
   const GREETING = "Hello! I'm **Train Dentist's automated admissions guide**. I can share information about Dr. Mathew's programs and help you explore your next steps.\n\nWhere are you in the process: preparing for exams, applying through CAAPID, or invited to a bench test or interview? For personal advice from Dr. Mathew, book a free consultation.";
@@ -154,7 +154,7 @@
       try { finish(await callModel(text), "DR. MATHEW · AI ASSISTANT"); return; } catch (e) { console.warn("Dr. Mathew AI unavailable:", e.message); }
     }
     if (routed.fact && routed.score >= 2) { finish(routed.fact.answer, "FROM DR. MATHEW'S GUIDE", related(routed.fact)); return; }
-    finish(`I don't have a ready answer for that here. If it's about your own application, a short **free consultation** is the best next step, so I can hear your background. Email **${CFG.email}** or call **${CFG.phone}**, or use the form on this page.\n\nI can already help with these:`, null, STARTERS.slice(0, 4));
+    finish(`I don't have a ready answer for that here. If it's about your own application, a short **free consultation** is the best next step, so I can hear your background. Email **${CFG.email}**, or use the consultation form on the home page.\n\nI can already help with these:`, null, STARTERS.slice(0, 4));
   }
   send.addEventListener("click", () => ask());
   input.addEventListener("keydown", (e) => { if (e.key === "Enter") ask(); });

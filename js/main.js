@@ -25,6 +25,7 @@
   });
   for (const a of document.querySelectorAll("[data-cfg]")) {
     const k = a.dataset.cfg;
+    if (k === "location" && C.location) a.textContent = C.location;
     if (k === "email" && C.email) {
       a.href = "mailto:" + C.email;
       a.textContent = C.email;
@@ -41,6 +42,14 @@
   document.getElementById("year").textContent = new Date().getFullYear();
   const form = document.getElementById("contact-form");
   const note = document.getElementById("form-note");
+  if (!form) return;
+  try {
+    const plan = sessionStorage.getItem("td_plan");
+    if (plan && !form.elements.message.value)
+      form.elements.message.value = plan;
+  } catch {
+    /* Storage can be unavailable in private browsing. */
+  }
   const submit = form.querySelector('[type="submit"]');
   document.querySelectorAll("[data-interest]").forEach((a) =>
     a.addEventListener("click", () => {
@@ -89,7 +98,7 @@
         );
         const fallback = document.createElement("a");
         fallback.href = makeEmail(d);
-        fallback.textContent = C.email || "info@usdentalprep.com";
+        fallback.textContent = C.email || "info@traindentist.com";
         note.append(fallback, ". Your details are still here.");
         note.className = "form-note err";
       } finally {
@@ -100,12 +109,12 @@
     location.href = makeEmail(d);
     note.textContent =
       "Your email app should open with a draft. Review it and press Send to complete your request. If it does not open, email " +
-      (C.email || "info@usdentalprep.com") +
+      (C.email || "info@traindentist.com") +
       ".";
     note.className = "form-note ok";
   });
   function makeEmail(d) {
     const body = `Name: ${d.name}\nEmail: ${d.email}\nPhone: ${d.phone}\nCountry of degree: ${d.country}\nInterested in: ${d.interest}\n\n${d.message}`;
-    return `mailto:${C.email || "info@usdentalprep.com"}?subject=${encodeURIComponent("Consultation request: " + d.interest)}&body=${encodeURIComponent(body)}`;
+    return `mailto:${C.email || "info@traindentist.com"}?subject=${encodeURIComponent("Consultation request: " + d.interest)}&body=${encodeURIComponent(body)}`;
   }
 })();

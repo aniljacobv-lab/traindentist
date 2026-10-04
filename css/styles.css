@@ -2672,3 +2672,580 @@ details p {
     font-size: 12px;
   }
 }
+/* Solo portrait, current credentials, and guided entry points. */
+.hero {
+  padding: 52px 0 65px;
+}
+.hero-in {
+  grid-template-columns: 1.13fr 0.87fr;
+  gap: 76px;
+}
+.portrait-hero {
+  padding: 15px 0 48px;
+  max-width: 430px;
+  justify-self: end;
+  width: 100%;
+}
+.portrait-hero .hero-orbit {
+  width: 430px;
+  height: 470px;
+  right: -35px;
+  top: -8px;
+}
+.portrait-hero .hero-media {
+  border-radius: 100px 14px 14px 14px;
+}
+.portrait-hero .hero-media > img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/4.5;
+  object-fit: cover;
+  object-position: 50% 23%;
+}
+.portrait-hero .hero-media figcaption {
+  justify-content: space-between;
+  padding: 18px 23px;
+}
+.portrait-hero .hero-media figcaption strong {
+  font-size: 25px;
+}
+.portrait-hero .hero-media figcaption span:not(.caption-icon) {
+  font-size: 11px;
+  margin-top: 5px;
+}
+.portrait-hero .visual-label {
+  font-size: 8px;
+  margin-left: 27px;
+}
+.credential-pill {
+  left: -25px;
+  bottom: 0;
+  gap: 14px;
+  padding: 13px 20px;
+  background: #fffef9;
+}
+.credential-pill > .icon {
+  display: block;
+  border-radius: 0;
+  background: none;
+  color: #67865a;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+}
+.credential-pill strong {
+  font-size: 12px;
+}
+.credential-pill span {
+  font-size: 10px;
+}
+.hero-note {
+  font-size: 11px;
+}
+.hero-copy .lead {
+  max-width: 520px;
+}
+.hero-copy .lead em {
+  font-style: normal;
+  font-weight: 600;
+}
+.trust-in.credentials-strip {
+  grid-template-columns: repeat(4, 1fr);
+  padding-block: 25px;
+}
+.credentials-strip > div {
+  display: block;
+  text-align: center;
+  border-left: 1px solid #d1daca;
+  padding: 0 12px;
+}
+.credentials-strip > div:first-child {
+  border: 0;
+}
+.credentials-strip strong {
+  display: block;
+  font: 500 21px var(--serif);
+  letter-spacing: -0.02em;
+}
+.credentials-strip span {
+  display: block;
+  margin-top: 7px;
+  font-size: 10px;
+  color: var(--ink2);
+}
+.journey-entry {
+  padding: 48px 0 0;
+}
+.entry-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 23px;
+}
+.entry-heading .eyebrow {
+  margin: 0;
+  font-size: 9px;
+}
+.entry-heading h2 {
+  font: 500 25px var(--serif);
+  letter-spacing: -0.025em;
+}
+.entry-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.entry-options > a {
+  display: block;
+  padding: 22px 23px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  text-decoration: none;
+  background: #f7f7f0;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+}
+.entry-options > a:hover {
+  background: #ecf2e6;
+  border-color: #8ba47b;
+}
+.entry-options > a > span {
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  color: #6a7b5f;
+}
+.entry-options strong {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0 6px;
+  font-size: 14px;
+  letter-spacing: -0.025em;
+}
+.entry-options .icon {
+  width: 17px;
+  height: 17px;
+}
+.entry-options p {
+  font-size: 12px;
+}
+.program-options {
+  padding-top: 0;
+}
+.program-options .section-heading {
+  padding-top: 12px;
+}
+.packages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.pkg {
+  display: flex;
+  flex-direction: column;
+  padding: 27px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fafbf5;
+}
+.pkg.best {
+  background: #eaf1e3;
+  border-color: #a9bd97;
+}
+.pkg h3 {
+  font-size: 19px;
+  min-height: 50px;
+  margin-bottom: 15px;
+}
+.pkg .price {
+  font-size: 11px;
+  color: var(--ink3);
+}
+.pkg ul {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 25px;
+  display: grid;
+  align-content: start;
+  gap: 9px;
+}
+.pkg li {
+  font-size: 12px;
+  padding-left: 18px;
+  position: relative;
+  color: var(--ink2);
+}
+.pkg li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--green);
+  font-size: 11px;
+}
+.pkg .btn {
+  font-size: 12px;
+}
+.about {
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 70px;
+  align-items: start;
+}
+.mentor-portrait {
+  max-width: 365px;
+  width: 100%;
+  margin: 0;
+}
+.portrait-frame {
+  padding: 0;
+  border-radius: 70px 12px 12px 12px;
+  background: #e5e9dd;
+}
+.portrait-frame > img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  border-radius: 0;
+}
+.portrait-caption {
+  padding-top: 18px;
+}
+.portrait-caption span {
+  font-size: 11px;
+}
+.about-copy h2 {
+  font-size: 46px;
+}
+.about-copy .mentor-credentials {
+  flex-direction: column;
+  gap: 15px;
+}
+.credentials-details {
+  border-block: 1px solid var(--line);
+  margin-bottom: 25px;
+}
+.credentials-details summary {
+  font-size: 13px;
+}
+.credentials-details p {
+  font-size: 13px;
+  padding-right: 0;
+}
+.award-evidence {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 28px;
+  background: #f0f3e9;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  text-decoration: none;
+}
+.award-evidence > img {
+  width: 78px;
+  height: 104px;
+  object-fit: contain;
+  flex: none;
+  border-radius: 4px;
+}
+.award-evidence span {
+  font-size: 7px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: var(--ink3);
+}
+.award-evidence strong {
+  display: block;
+  font-size: 13px;
+  margin: 6px 0;
+}
+.award-evidence p {
+  font-size: 10px;
+  line-height: 1.6;
+}
+.award-evidence small {
+  display: block;
+  font-size: 10px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  margin-top: 8px;
+}
+.career-journey {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  padding: 0;
+  margin: 48px 0 0;
+  gap: 26px;
+}
+.career-journey li {
+  border-top: 2px solid #b6c6a4;
+  padding-top: 16px;
+}
+.career-journey li:last-child {
+  border-color: var(--blue);
+}
+.career-journey span {
+  font-size: 8px;
+  letter-spacing: 0.07em;
+  color: var(--ink3);
+}
+.career-journey strong {
+  display: block;
+  font-size: 13px;
+  margin: 9px 0 4px;
+}
+.career-journey p {
+  font-size: 11px;
+}
+.contact-detail p {
+  font-size: 13px;
+  color: #e1e9d9;
+  max-width: 300px;
+  margin-top: 4px;
+}
+@media (max-width: 1100px) {
+  .hero-in {
+    gap: 55px;
+  }
+  .hero h1 {
+    font-size: 60px;
+  }
+  .hero-cta {
+    gap: 18px;
+  }
+  .entry-options {
+    gap: 14px;
+  }
+  .entry-options > a {
+    padding: 20px;
+  }
+  .entry-options strong {
+    font-size: 13px;
+  }
+  .about {
+    gap: 45px;
+  }
+  .about-copy h2 {
+    font-size: 39px;
+  }
+  .packages {
+    gap: 16px;
+  }
+  .pkg {
+    padding: 22px;
+  }
+  .pkg h3 {
+    font-size: 18px;
+  }
+  .portrait-hero {
+    max-width: 390px;
+  }
+}
+@media (max-width: 900px) {
+  .hero-in {
+    gap: 40px;
+  }
+  .hero h1 {
+    font-size: 51px;
+  }
+  .credential-pill {
+    left: -12px;
+  }
+  .entry-options {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .entry-options strong {
+    font-size: 12px;
+  }
+  .entry-options p {
+    font-size: 11px;
+  }
+  .entry-options > a > span {
+    font-size: 7px;
+  }
+  .career-journey {
+    gap: 18px;
+  }
+  .career-journey strong {
+    font-size: 12px;
+  }
+  .pkg {
+    padding: 19px;
+  }
+  .pkg h3 {
+    font-size: 17px;
+  }
+}
+@media (max-width: 820px) {
+  .hero {
+    padding: 43px 0 40px;
+  }
+  .hero-in {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .hero h1 {
+    font-size: clamp(46px, 9vw, 66px);
+  }
+  .portrait-hero {
+    justify-self: center;
+    max-width: 420px;
+    padding: 12px 8px 53px 0;
+  }
+  .portrait-hero .hero-orbit {
+    width: 360px;
+    height: 430px;
+    right: -17px;
+  }
+  .hero-copy .lead {
+    max-width: 600px;
+  }
+  .portrait-hero .hero-media > img {
+    aspect-ratio: 4/4.4;
+  }
+  .credential-pill {
+    left: 12px;
+    bottom: 0;
+  }
+  .trust-in.credentials-strip {
+    grid-template-columns: 1fr 1fr;
+    gap: 23px 0;
+  }
+  .credentials-strip > div:nth-child(3) {
+    border: 0;
+  }
+  .credentials-strip strong {
+    font-size: 20px;
+  }
+  .credentials-strip span {
+    font-size: 10px;
+  }
+  .entry-options {
+    grid-template-columns: 1fr;
+  }
+  .entry-options strong {
+    font-size: 16px;
+  }
+  .entry-options p {
+    font-size: 13px;
+  }
+  .entry-options > a > span {
+    font-size: 9px;
+  }
+  .entry-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .entry-options > a {
+    padding: 23px;
+  }
+  .packages {
+    grid-template-columns: 1fr;
+  }
+  .pkg {
+    padding: 26px;
+  }
+  .pkg h3 {
+    min-height: 0;
+    font-size: 22px;
+  }
+  .pkg ul {
+    gap: 11px;
+  }
+  .pkg li {
+    font-size: 13px;
+  }
+  .pkg .price {
+    font-size: 12px;
+  }
+  .pkg .btn {
+    width: fit-content;
+    padding-inline: 24px;
+  }
+  .program-options {
+    padding-top: 0;
+  }
+  .about {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .mentor-portrait {
+    max-width: 390px;
+    margin: auto;
+  }
+  .about-copy h2 {
+    font-size: 39px;
+  }
+  .career-journey {
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
+  }
+  .career-journey strong {
+    font-size: 13px;
+  }
+  .career-journey p {
+    font-size: 12px;
+  }
+  .award-evidence strong {
+    font-size: 15px;
+  }
+  .award-evidence p {
+    font-size: 12px;
+  }
+  .award-evidence small {
+    font-size: 11px;
+  }
+}
+@media (max-width: 540px) {
+  .hero-note {
+    font-size: 9px;
+  }
+  .portrait-hero .hero-media figcaption {
+    padding: 17px;
+  }
+  .portrait-hero .hero-media figcaption strong {
+    font-size: 23px;
+  }
+  .portrait-hero .hero-media figcaption span:not(.caption-icon) {
+    font-size: 9px;
+  }
+  .portrait-hero .visual-label {
+    font-size: 7px;
+  }
+  .hero-copy .lead {
+    font-size: 15px;
+  }
+  .credential-pill strong {
+    font-size: 11px;
+  }
+  .credential-pill span {
+    font-size: 9px;
+  }
+  .credentials-strip strong {
+    font-size: 18px;
+  }
+  .credentials-strip span {
+    font-size: 9px;
+  }
+  .journey-entry {
+    padding-top: 38px;
+  }
+  .career-journey {
+    grid-template-columns: 1fr;
+  }
+  .career-journey span {
+    font-size: 9px;
+  }
+  .contact-detail p {
+    font-size: 13px;
+  }
+}

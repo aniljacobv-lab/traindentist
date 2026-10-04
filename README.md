@@ -3,7 +3,9 @@
 The website for Dr. Liji Mathew, DMD: mentorship for internationally trained dentists applying to U.S. dental schools. It's a static site (plain HTML, CSS and JS with no build step), hosted free on **GitHub Pages**, and includes the **Dr. Mathew** chat assistant.
 
 ```
-index.html               the page
+index.html               home page
+pathway.html             the U.S. Pathway Guide + Pathway Planner
+js/planner.js            the Pathway Planner checklist
 css/styles.css           all styles, including the chat widget
 js/config.js             EDIT ME: email, phone, form endpoint, chat API URL
 js/main.js               menu and consultation form
@@ -63,14 +65,15 @@ Then set `chatApi: "https://drmathew-chat.<you>.workers.dev"` in `js/config.js` 
 By default, the form opens the visitor's email app with the request already filled in. To receive submissions directly instead, create a free form at formspree.io and paste its endpoint into `formEndpoint` in `js/config.js`.
 
 ## Content to finish
-- [ ] Dr. Mathew's specifics: dental school and year, state license, years in practice (see the TODO comment in `index.html`, section `#about`)
-- [ ] A professional headshot (`assets/dr-mathew.jpg`) and hero photo (`assets/hero-mentorship.jpg`); the current images are cropped from the flyer
-- [ ] Confirm the email: the flyer uses info@usdentalprep.com. Change it in `js/config.js` and `index.html` if you set up an @traindentist.com address
-- [ ] Testimonials, once you have permission from real students
+- [ ] Set up the **info@traindentist.com** mailbox (or forwarding) at your domain host, or change `email` in `js/config.js`
+- [x] Professional angled portrait in teal dental scrubs based on the owner-supplied photograph, created with built-in image generation; originals retained.
+- [ ] Coaching rates for the Programs section (currently "Contact for current rates")
+- [ ] Student testimonials, once you have permission from real students
+- [ ] Re-check the Pathway Guide facts each cycle (CAAPID dates, fees, TOEFL minimums)
 
 ## Design and graphics
 
-The responsive redesign uses an ivory, forest-green, and sage palette with an editorial layout. Programs lead into a six-stage admissions roadmap, followed by the mentor profile, visual learning guides, FAQs, and consultation form. The existing photographs and contact settings are retained.
+The responsive redesign uses an ivory, forest-green, and sage palette with an editorial layout. Programs lead into a six-stage admissions roadmap, followed by the mentor profile, visual learning guides, FAQs, and consultation form. Original photographs remain in the repository; current contact settings are preserved.
 
 Original, editable SVG graphics are in `assets/`:
 - `admissions-roadmap.svg`: downloadable six-stage planning guide, also linked from the page.
@@ -86,3 +89,7 @@ With `formEndpoint` empty, the form prepares an email draft and explicitly asks 
 ### Verification
 
 Run `node --test tests/consultation.test.cjs` for consultation request tests (no dependencies or external requests). Preview with any static HTTP server, for example `python -m http.server 4173`, and visit `http://localhost:4173`.
+
+## Portrait update
+
+The current homepage, mentor profile, and chat use `assets/dr-mathew-professional.webp` and `assets/dr-mathew-avatar.webp`. `assets/dr-mathew-professional.jpg` is used for social previews. This is an AI-edited studio portrait based on a photograph supplied by the site owner. The original photographs remain in the repository. The newer Pathway Guide, Planner, credentials, contact settings, knowledge base, and worker updates from main are retained. The guide has a matching stylesheet in `css/pathway.css`.
