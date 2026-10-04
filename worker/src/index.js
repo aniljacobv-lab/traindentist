@@ -66,8 +66,19 @@ export default {
     const question = String(body.question || "").trim().slice(0, MAX_QUESTION);
     if (!question) return json({ error: "Empty question" }, 400, origin);
 
-    const client = new Anthropic({ apiKey: env.ANTHROPIC_API_KEY });
     const messages = buildMessages(body.history, question);
+    if (env.ANTHROPIC_API_KEY) return askClaude(env, messages, origin);
+    if (env.GEMINI_API_KEY) return askGemini(env, messages, origin);
+    return json({ error: "Assistant not configured" }, 503, origin);
+  },
+};
+
+const REFUSED = "I'm not able to help with that one here. For anything about U.S. dental admissions, licensure, interviews or bench tests, just ask, or book a free consultation.";
+const EMPTY = "Could you rephrase that? I want to give you a useful answer.";
+
+/** Claude: knowledge as a cached system block + web search restricted to SEARCH_DOMAINS. */
+async function askClaude(env, messages, origin) {
+    const client = new Anthropic({ apiKey: env.ANTHROPIC_API_KEY });
     const params = {
       model: "claude-opus-5-5",
       max_tokens: 6000,
@@ -87,16 +98,47 @@ export default {
       for (let i = 0; response.stop_reason === "pause_turn" && i < MAX_CONTINUATIONS; i++) {
         response = await client.beta.messages.create({ ...params, messages: [...messages, { role: "assistant", content: response.content }] });
       }
-      if (response.stop_reason === "refusal") return json({ text: "I'm not able to help with that one here. For anything about U.S. dental admissions, licensure, interviews or bench tests, just ask, or book a free consultation." }, 200, origin);
+      if (response.stop_reason === "refusal") return json({ text: REFUSED }, 200, origin);
 
       const textBlocks = response.content.filter((b) => b.type === "text");
       const text = textBlocks.map((b) => b.text).join("").trim();
       const sources = [...new Map(textBlocks.flatMap((b) => b.citations || []).filter((c) => c.url).map((c) => [c.url, { url: c.url, title: c.title || c.url }])).values()].slice(0, 4);
-      return json({ text: text || "Could you rephrase that? I want to give you a useful answer.", sources }, 200, origin);
+      return json({ text: text || EMPTY, sources }, 200, origin);
     } catch (e) {
       if (e instanceof Anthropic.RateLimitError) return json({ error: "Busy right now, please retry shortly." }, 503, origin);
       if (e instanceof Anthropic.APIError) { console.error("Anthropic API error", e.status, e.message); return json({ error: "Assistant unavailable" }, 502, origin); }
       console.error(e); return json({ error: "Assistant unavailable" }, 500, origin);
     }
-  },
-};
+}
+
+/** Gemini: same rules and knowledge, Google Search grounding (the prompt steers it to official sources).
+ *  Model is GEMINI_MODEL (wrangler.toml var) or gemini-flash-latest; falls back to gemini-2.5-flash if that name is unavailable. */
+async function askGemini(env, messages, origin) {
+  const contents = messages.map((m) => ({ role: m.role === "assistant" ? "model" : "user", parts: [{ text: m.content }] }));
+  const system = RULES.replace("Use the web_search tool", "Use Google Search")
+    + "\nWhen you search, prefer and cite official sources: " + SEARCH_DOMAINS.slice(0, 12).join(", ") + ", state dental boards and dental-school websites. Ignore forums and commercial blogs unless nothing official exists.\n\n" + KNOWLEDGE;
+  const call = async (model) => {
+    const gen = { maxOutputTokens: 4096, temperature: 0.4 };
+    if (/^gemini-3|-latest$/.test(model)) gen.thinkingConfig = { thinkingLevel: "low" };
+    else if (/^gemini-2\.5/.test(model)) gen.thinkingConfig = { thinkingBudget: 512 };
+    return fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "x-goog-api-key": env.GEMINI_API_KEY },
+      body: JSON.stringify({ systemInstruction: { parts: [{ text: system }] }, contents, tools: [{ google_search: {} }], generationConfig: gen }),
+    });
+  };
+  try {
+    let r = await call(env.GEMINI_MODEL || "gemini-flash-latest");
+    if (r.status === 404 || r.status === 400) { console.warn("Gemini model fallback", r.status, (await r.text()).slice(0, 300)); r = await call("gemini-2.5-flash"); }
+    const d = await r.json().catch(() => ({}));
+    if (r.status === 429) return json({ error: "Busy right now, please retry shortly." }, 503, origin);
+    if (!r.ok) { console.error("Gemini API error", r.status, JSON.stringify(d).slice(0, 500)); return json({ error: "Assistant unavailable" }, 502, origin); }
+    const cand = d.candidates?.[0];
+    if (!cand || cand.finishReason === "SAFETY" || cand.finishReason === "PROHIBITED_CONTENT") return json({ text: REFUSED }, 200, origin);
+    const text = (cand.content?.parts || []).filter((p) => p.text && !p.thought).map((p) => p.text).join("").trim();
+    const sources = (cand.groundingMetadata?.groundingChunks || []).map((c) => c.web).filter((w) => w?.uri).slice(0, 4).map((w) => ({ url: w.uri, title: w.title || "source" }));
+    return json({ text: text || EMPTY, sources }, 200, origin);
+  } catch (e) {
+    console.error(e); return json({ error: "Assistant unavailable" }, 500, origin);
+  }
+}

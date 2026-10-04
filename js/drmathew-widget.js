@@ -38,7 +38,8 @@
     }
     if (list) out.push(`</${list}>`);
     return out.join("").replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>")
-      .replace(/(https:\/\/[^\s<"']+[^\s<"'.,;:)])/g, '<a href="$1" target="_blank" rel="noopener nofollow">$1</a>');   // text was escaped above
+      .replace(/\[([^\]]+)\]\((https:\/\/[^\s)"'<]+)\)/g, '<a href="$2" target="_blank" rel="noopener nofollow">$1</a>')   // [label](url)
+      .replace(/(?<!["'>])(https:\/\/[^\s<"']+[^\s<"'.,;:)])/g, '<a href="$1" target="_blank" rel="noopener nofollow">$1</a>');   // bare urls; text was escaped above
   }
   const store = { get(k) { try { return localStorage.getItem(k); } catch { return null; } }, set(k, v) { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch { /* private mode */ } } };
   const readPos = () => { try { const v = JSON.parse(store.get(POS_KEY) || "null"); return v && Number.isFinite(v.x) && Number.isFinite(v.y) ? v : null; } catch { return null; } };
@@ -131,7 +132,7 @@
     const r = await fetch(CFG.chatApi, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ question, history: state.history.slice(-8), page: location.pathname }) });
     const d = await r.json().catch(() => ({}));
     if (!r.ok || !d.text) throw new Error(d.error || "HTTP " + r.status);
-    const src = (d.sources || []).filter((s) => /^https:\/\//.test(s.url)).map((s) => `- ${s.url}`).join("\n");
+    const src = (d.sources || []).filter((s) => /^https:\/\//.test(s.url)).map((s) => `- [${String(s.title || "source").replace(/[\[\]]/g, "")}](${s.url})`).join("\n");
     return src ? `${d.text}\n\n**Sources:**\n${src}` : d.text;
   }
   /* with the AI connected, the built-in guide answers only the simple practical questions; everything else gets a
