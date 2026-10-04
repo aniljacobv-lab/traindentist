@@ -117,21 +117,30 @@ async function askGemini(env, messages, origin) {
   const contents = messages.map((m) => ({ role: m.role === "assistant" ? "model" : "user", parts: [{ text: m.content }] }));
   const system = RULES.replace("Use the web_search tool", "Use Google Search")
     + "\nWhen you search, prefer and cite official sources: " + SEARCH_DOMAINS.slice(0, 12).join(", ") + ", state dental boards and dental-school websites. Ignore forums and commercial blogs unless nothing official exists.\n\n" + KNOWLEDGE;
-  const call = async (model) => {
+  const call = async (model, search) => {
     const gen = { maxOutputTokens: 4096, temperature: 0.4 };
     if (/^gemini-3|-latest$/.test(model)) gen.thinkingConfig = { thinkingLevel: "low" };
-    else if (/^gemini-2\.5/.test(model)) gen.thinkingConfig = { thinkingBudget: 512 };
+    else if (/^gemini-2\.5-flash$/.test(model)) gen.thinkingConfig = { thinkingBudget: 512 };
     return fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
       method: "POST",
       headers: { "Content-Type": "application/json", "x-goog-api-key": env.GEMINI_API_KEY },
-      body: JSON.stringify({ systemInstruction: { parts: [{ text: system }] }, contents, tools: [{ google_search: {} }], generationConfig: gen }),
+      body: JSON.stringify({ systemInstruction: { parts: [{ text: system }] }, contents, ...(search ? { tools: [{ google_search: {} }] } : {}), generationConfig: gen }),
     });
   };
+  /* free-tier keys often have no quota for the newest model or for Search grounding: walk down the list, and as a
+     last resort answer from the knowledge base without search */
+  const attempts = [...new Set([env.GEMINI_MODEL || "gemini-flash-latest", "gemini-2.5-flash", "gemini-2.5-flash-lite"])].map((m) => [m, true]);
+  attempts.push(["gemini-2.5-flash", false], ["gemini-2.5-flash-lite", false]);
   try {
-    let r = await call(env.GEMINI_MODEL || "gemini-flash-latest");
-    if (r.status === 404 || r.status === 400) { console.warn("Gemini model fallback", r.status, (await r.text()).slice(0, 300)); r = await call("gemini-2.5-flash"); }
-    const d = await r.json().catch(() => ({}));
-    if (r.status === 429) { console.error("Gemini 429", JSON.stringify(d).slice(0, 600)); return json({ error: "Busy right now, please retry shortly." }, 503, origin); }
+    let r, d;
+    for (const [model, search] of attempts) {
+      r = await call(model, search);
+      d = await r.json().catch(() => ({}));
+      if (r.ok) break;
+      console.warn("Gemini attempt failed", model, search ? "search" : "no-search", r.status, JSON.stringify(d).slice(0, 1500));
+      if (![400, 403, 404, 429].includes(r.status)) break;
+    }
+    if (r.status === 429) return json({ error: "Busy right now, please retry shortly." }, 503, origin);
     if (!r.ok) { console.error("Gemini API error", r.status, JSON.stringify(d).slice(0, 500)); return json({ error: "Assistant unavailable" }, 502, origin); }
     const cand = d.candidates?.[0];
     if (!cand || cand.finishReason === "SAFETY" || cand.finishReason === "PROHIBITED_CONTENT") return json({ text: REFUSED }, 200, origin);
