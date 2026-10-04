@@ -131,7 +131,7 @@ async function askGemini(env, messages, origin) {
     let r = await call(env.GEMINI_MODEL || "gemini-flash-latest");
     if (r.status === 404 || r.status === 400) { console.warn("Gemini model fallback", r.status, (await r.text()).slice(0, 300)); r = await call("gemini-2.5-flash"); }
     const d = await r.json().catch(() => ({}));
-    if (r.status === 429) return json({ error: "Busy right now, please retry shortly." }, 503, origin);
+    if (r.status === 429) { console.error("Gemini 429", JSON.stringify(d).slice(0, 600)); return json({ error: "Busy right now, please retry shortly." }, 503, origin); }
     if (!r.ok) { console.error("Gemini API error", r.status, JSON.stringify(d).slice(0, 500)); return json({ error: "Assistant unavailable" }, 502, origin); }
     const cand = d.candidates?.[0];
     if (!cand || cand.finishReason === "SAFETY" || cand.finishReason === "PROHIBITED_CONTENT") return json({ text: REFUSED }, 200, origin);
