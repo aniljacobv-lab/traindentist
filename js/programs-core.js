@@ -25,7 +25,12 @@
         (f.duration === "short" ? p.months <= 30 : p.months > 30)) &&
       (!f.bench || p.bench === f.bench) &&
       (!f.cycle || cycle(p, today) === f.cycle) &&
-      (!f.cost || (f.cost === "published" ? !!p.cost.value : !p.cost.value)) &&
+      (!f.cost ||
+        (f.cost === "published"
+          ? p.cost.coverage === "estimate" && Number.isFinite(p.cost.total)
+          : f.cost === "conflict"
+            ? p.cost.coverage === "conflict"
+            : p.cost.total === null)) &&
       (!f.saved || f.saved.includes(p.id))
     );
   }

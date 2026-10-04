@@ -23,11 +23,21 @@
       "visa": "U.S. citizenship or permanent residence required; visa holders are excluded by the profile.",
       "dateNote": "",
       "cost": {
-        "value": "$97,266",
-        "label": "Annual ASID tuition",
+        "total": null,
+        "coverage": "partial",
+        "value": null,
+        "label": "Full program cost not confirmed",
+        "summary": "$243,166 tuition before fees and living.",
         "year": "2026–27",
-        "note": "ASID years 1 and 2 each list $97,266 tuition. The introductory NDS term lists $48,634. Fees and living costs are additional.",
-        "source": "https://www.atsu.edu/tuition"
+        "tuition": "$48,634 introductory NDS term + $97,266 in each of two ASID years = $243,166 tuition. Listed technology and equipment/lab charges add $18,326.",
+        "living": "A complete ASID living allowance was not verified; add housing, food, transport, insurance and personal costs for 28.5 months.",
+        "initial": "$49,376 introductory tuition and technology charge, before living and other expenses.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [],
+        "note": "The introductory term is included in the tuition sum; do not add it again. Full cost of attendance is higher.",
+        "source": "https://www.atsu.edu/tuition",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/a.t.-still-missouri-school-of-dentistry-and-oral-health",
       "website": "https://www.atsu.edu/missouri-school-of-dentistry-and-oral-health/academics/advanced-standing-dentist-track",
@@ -54,11 +64,30 @@
       "visa": "Foreign nationals may apply. BU describes help with I-20 or DS-2019 documentation after admission.",
       "dateNote": "",
       "cost": {
-        "value": "$170,235",
-        "label": "First-year attendance budget",
+        "total": 325167,
+        "coverage": "estimate",
+        "value": "$325,167",
+        "label": "Program attendance estimate",
+        "summary": "Two 12-month AS budgets; insurance may be extra.",
         "year": "2026–27",
-        "note": "AS I tuition is $101,676; published attendance budgets are $170,235 for AS I and $154,932 for AS II. Health insurance may require a budget adjustment.",
-        "source": "https://www.bumc.bu.edu/osfs/cost-of-attendance-bot/as-coa/"
+        "tuition": "$203,352 tuition across AS I and AS II. Published budgets also include instruments, fees and living.",
+        "living": "$64,800 housing/utilities and food across both years; personal and transport allowances are additional lines already included in the budgets.",
+        "initial": "AS I attendance budget: $170,235, including $101,676 tuition. This is a first-year budget, not an acceptance deposit.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [
+          {
+            "label": "AS I · 12 months",
+            "amount": 170235
+          },
+          {
+            "label": "AS II · 12 months",
+            "amount": 154932
+          }
+        ],
+        "note": "Health insurance is listed at $0 in the budget; add the required premium unless you qualify for a waiver. Future-year increases and borrowing interest are extra.",
+        "source": "https://www.bumc.bu.edu/osfs/cost-of-attendance-bot/as-coa/",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/boston-university-henry-m.-goldman-school-of-dental-medicine",
       "website": "https://www.bu.edu/dental/admissions/as/",
@@ -85,11 +114,34 @@
       "visa": "The profile does not restrict admission to U.S. citizens or permanent residents. This does not establish visa sponsorship; confirm permitted status and documents.",
       "dateNote": "",
       "cost": {
-        "value": "$104,207",
-        "label": "Initial 6-month attendance budget",
+        "total": null,
+        "coverage": "partial",
+        "value": null,
+        "label": "Full program cost not confirmed",
+        "summary": "$504,364 across published phases; living-month coverage needs confirmation.",
         "year": "2026–27",
-        "note": "Initial tuition is $74,394. Later-year tuition is $148,788 per year, with attendance budgets of $200,917 and $199,240. International service fees may be additional.",
-        "source": "https://www.vagelos.columbia.edu/file/41345/download?token=59J9P81m"
+        "tuition": "$371,970 tuition across initial, third and fourth years; mandatory fees and supplies are additional and included in the phase budgets.",
+        "living": "$84,988 published living allowance across 6, 12 and 10.5 months. Confirm coverage for the full 30-month program.",
+        "initial": "Initial 6-month budget: $104,207, including $74,394 tuition.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [
+          {
+            "label": "Initial · 6 months",
+            "amount": 104207
+          },
+          {
+            "label": "Third year · 12 months",
+            "amount": 200917
+          },
+          {
+            "label": "Fourth year · 10.5 months",
+            "amount": 199240
+          }
+        ],
+        "note": "The sum uses three cohorts at one academic year’s prices. International services fees of $175 per term may be additional. A “resident” housing budget does not establish in-state tuition.",
+        "source": "https://www.vagelos.columbia.edu/file/41345/download?token=59J9P81m",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/columbia-university-college-of-dental-medicine",
       "website": "https://www.dental.columbia.edu/education/advanced-standing-program-foreign-trained-dentists",
@@ -116,11 +168,34 @@
       "visa": "The profile states that Harvard offers visa sponsorship to accepted students; confirm document and funding requirements.",
       "dateNote": "",
       "cost": {
-        "value": "$95,725",
-        "label": "Initial ASID attendance budget · off campus",
+        "total": null,
+        "coverage": "partial",
+        "value": null,
+        "label": "Full program cost not confirmed",
+        "summary": "$426,737 published off-campus phase budgets; confirm uncovered months.",
         "year": "2026–27",
-        "note": "Tuition by phase: $50,894 / $101,788 / $101,788. Off-campus attendance budgets: $95,725 / $165,410 / $165,602. Dependent budgets differ.",
-        "source": "https://www.hsdm.harvard.edu/dmd-cost-attendance"
+        "tuition": "$254,470 ASID tuition across the three phases; fees and equipment are included in attendance budgets.",
+        "living": "Off-campus housing and food: $65,098 across the published periods. Confirm the difference between budget months and the 29-month program.",
+        "initial": "Initial off-campus phase budget: $95,725, including $50,894 tuition.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [
+          {
+            "label": "Initial ASID · off campus",
+            "amount": 95725
+          },
+          {
+            "label": "Next ASID phase · off campus",
+            "amount": 165410
+          },
+          {
+            "label": "Final ASID phase · off campus",
+            "amount": 165602
+          }
+        ],
+        "note": "Housing choices change the budget: published on-campus phases total $422,646; on-campus with dependent totals $455,950. These are housing categories, not state tuition rates.",
+        "source": "https://www.hsdm.harvard.edu/dmd-cost-attendance",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/harvard-school-of-dental-medicine",
       "website": "https://www.hsdm.harvard.edu/advanced-standing-international-dentists-dmd-track",
@@ -147,11 +222,30 @@
       "visa": "The profile does not restrict admission to U.S. citizens or permanent residents. This does not establish visa sponsorship; confirm permitted status and documents.",
       "dateNote": "",
       "cost": {
-        "value": "$186,945",
-        "label": "First-year ASPID attendance budget",
+        "total": 362953,
+        "coverage": "estimate",
+        "value": "$362,953",
+        "label": "Program attendance estimate",
+        "summary": "Two full ASPID year budgets, including living.",
         "year": "2026–27",
-        "note": "Annual ASPID tuition is $128,547. Attendance estimates are $186,945 in year 1 and $176,008 in year 2.",
-        "source": "https://financialaid.usc.edu/graduate-professional-financial-aid/cost-of-attendance/"
+        "tuition": "$257,094 tuition across two years; fees, books, instruments and insurance are included in the attendance budgets.",
+        "living": "$52,924 housing/dining across both years. Personal and transportation allowances are also included.",
+        "initial": "First-year budget: $186,945, including $128,547 tuition. Confirm the deposit and first payment deadline.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [
+          {
+            "label": "ASPID first year",
+            "amount": 186945
+          },
+          {
+            "label": "ASPID second year",
+            "amount": 176008
+          }
+        ],
+        "note": "Sum of two published year budgets at 2026–27 rates; future increases and loan interest are not included.",
+        "source": "https://financialaid.usc.edu/graduate-professional-financial-aid/cost-of-attendance/",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/herman-ostrow-school-of-dentistry-of-usc",
       "website": "https://dentistry.usc.edu/educational-programs/advanced-standing-program-for-international-dentists-dds/",
@@ -178,11 +272,21 @@
       "visa": "The profile does not restrict admission to U.S. citizens or permanent residents. This does not establish visa sponsorship; confirm permitted status and documents.",
       "dateNote": "",
       "cost": {
+        "total": null,
+        "coverage": "partial",
         "value": null,
-        "label": "Program budget needs confirmation",
-        "year": "Current amount not verified",
-        "note": "Request the two-year IDP budget, including summer charges; the program page does not supply a complete program-specific cost.",
-        "source": "https://dentistry.howard.edu/education/programs-and-admissions/predoctoral-programs/international-dentist-program"
+        "label": "Full program cost not confirmed",
+        "summary": "IDP rates found; complete semester count and living budget need confirmation.",
+        "year": "2026–27",
+        "tuition": "$29,950 per IDP semester and $11,980 per summer term. Confirm every billable term before calculating a program tuition total.",
+        "living": "An IDP-specific full-program living allowance was not verified.",
+        "initial": "The schedule lists $14,360 for IDP2 summer books/instruments, in addition to summer tuition. Confirm required deposits and other opening charges.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [],
+        "note": "Central materials are $1,565 per semester; university fees and insurance also apply. Do not substitute the regular DDS tuition rate for IDP.",
+        "source": "https://financialservices.howard.edu/official-notice/student-charges-2026-27",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/howard-university-college-of-dentistry",
       "website": "https://dentistry.howard.edu/",
@@ -209,11 +313,21 @@
       "visa": "Citizens, Canadian citizens, permanent residents and applicants with a valid visa may be considered. Status documentation follows a provisional offer.",
       "dateNote": "",
       "cost": {
+        "total": null,
+        "coverage": "unconfirmed",
         "value": null,
-        "label": "Program budget needs confirmation",
+        "label": "Full program cost not confirmed",
+        "summary": "Request the IDP-specific budget from Indiana.",
         "year": "Current amount not verified",
-        "note": "IU describes a program-specific flat fee. Request that amount and its current full attendance budget; do not substitute regular DDS tuition.",
-        "source": "https://dentistry.iu.edu/academics/degrees-programs/international-dentist-program/index.html"
+        "tuition": "Not verified.",
+        "living": "Full-program living allowance not verified.",
+        "initial": "$70 supplemental application fee; enrollment deposit and initial tuition need confirmation.",
+        "residency": "IDP-specific resident/nonresident rates were not verified.",
+        "phases": [],
+        "note": "The program describes a distinct flat tuition rate. Regular DDS resident rates cannot establish this program’s total.",
+        "source": "https://dentistry.iu.edu/academics/degrees-programs/international-dentist-program/index.html",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/indiana-university-school-of-dentistry",
       "website": "https://dentistry.iu.edu/admissions/how-to-apply/international-dentist-program.html",
@@ -240,11 +354,21 @@
       "visa": "The school describes F-1 documentation and proof of funding. Confirm advance tuition payments and the amount needed for the visa document.",
       "dateNote": "",
       "cost": {
-        "value": "$260,740",
-        "label": "Tuition & fees · sum of three published phases",
-        "year": "Year not stated",
-        "note": "Published tuition and fees: $29,114 / $115,338 / $116,288. Their sum is $260,740; equipment, books and living costs are extra. Confirm the applicable entering class.",
-        "source": "https://home.llu.edu/academics/programs/international-dentist-program-dds"
+        "total": null,
+        "coverage": "partial",
+        "value": null,
+        "label": "Full program cost not confirmed",
+        "summary": "$284,840 published tuition, fees and supplies before living.",
+        "year": "2025–26 · older budget",
+        "tuition": "$260,740 tuition/fees + $24,100 books/equipment across three periods.",
+        "living": "$60,236 off-campus food/housing, or $34,431 dorm food/housing, over 25 budget months. Confirm the remaining months of the 27-month program.",
+        "initial": "Initial 3-month tuition/fees $29,114 plus books/equipment $21,100, before living, insurance and other costs.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [],
+        "note": "Published transport totals $9,100 and personal expenses $9,490. Licensing and financing charges can add more. The older budget is not a current all-in quotation.",
+        "source": "https://llu.edu/academics/programs/school-dentistry/international-dentist-program-dds",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/loma-linda-university-school-of-dentistry",
       "website": "https://home.llu.edu/academics/programs/international-dentist-program-dds",
@@ -271,11 +395,21 @@
       "visa": "The profile does not restrict admission to U.S. citizens or permanent residents. This does not establish visa sponsorship; confirm permitted status and documents.",
       "dateNote": "",
       "cost": {
-        "value": "$92,287",
-        "label": "Tuition per program year",
+        "total": null,
+        "coverage": "partial",
+        "value": null,
+        "label": "Full program cost not confirmed",
+        "summary": "$298,548 tuition and academic fees before living.",
         "year": "Year not stated",
-        "note": "The IEDP page lists $92,287 for each of three years. Instruments, level-specific fees and living costs are additional.",
-        "source": "https://www.lsusd.lsuhsc.edu/admissions/iedp/default.aspx"
+        "tuition": "$276,861 tuition over three years + $21,687 listed academic fees = $298,548.",
+        "living": "Full 36-month housing, food, insurance, transport and personal budget not verified.",
+        "initial": "Year 1 tuition $92,287 plus $12,094 academic fees, before living and other costs.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [],
+        "note": "Uniforms and other required purchases may be additional; obtain an itemized IEDP attendance budget.",
+        "source": "https://www.lsusd.lsuhsc.edu/admissions/iedp/default.aspx",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/louisiana-state-university-school-of-dentistry",
       "website": "https://www.lsusd.lsuhsc.edu/internationally_Educated_Dentist_Program.html",
@@ -302,11 +436,21 @@
       "visa": "Immigration requirements must be satisfied before enrollment; ask the international office which status and documents apply.",
       "dateNote": "",
       "cost": {
+        "total": null,
+        "coverage": "unconfirmed",
         "value": null,
-        "label": "Program budget needs confirmation",
-        "year": "Current amount not verified",
-        "note": "The admissions page publishes regular DDS rates. Confirm advanced-standing tuition, initial training fees and whether resident rates apply before using them.",
-        "source": "https://www.marquette.edu/dentistry/admissions/index.php#tuition"
+        "label": "Full program cost not confirmed",
+        "summary": "Advanced-standing costs need a program-specific quotation.",
+        "year": "2026–27 regular DDS schedule; ASP not confirmed",
+        "tuition": "Not verified.",
+        "living": "Full 36-month living allowance not verified.",
+        "initial": "Deposit, payment due dates and cash needed before aid disbursement need confirmation.",
+        "residency": "Regular DDS tuition is $62,890 resident / $71,550 nonresident annually. Their application to this advanced-standing route was not verified.",
+        "phases": [],
+        "note": "The published regular DDS rates are not sufficient to calculate an Advanced Standing Program budget.",
+        "source": "https://www.marquette.edu/dentistry/admissions/index.php#tuition",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/marquette-university-school-of-dentistry",
       "website": "https://www.marquette.edu/dentistry/admissions/international-students.php",
@@ -333,11 +477,30 @@
       "visa": "The profile does not restrict admission to U.S. citizens or permanent residents. This does not establish visa sponsorship; confirm permitted status and documents.",
       "dateNote": "",
       "cost": {
-        "value": "$196,162",
-        "label": "First-year IDP attendance budget",
+        "total": null,
+        "coverage": "partial",
+        "value": null,
+        "label": "Full program cost not confirmed",
+        "summary": "$367,928 across published ID3/ID4 budgets; confirm all 24 months.",
         "year": "2025–26 · older budget",
-        "note": "Tuition is $119,146 per year. ID3 attendance is $196,162 and ID4 is $171,766. Request an updated budget before planning for a new intake.",
-        "source": "https://meharry.edu/wp-content/uploads/2025/07/IDP-25-26-COA-2.pdf"
+        "tuition": "$238,292 tuition plus $38,786 fees across ID3 and ID4.",
+        "living": "$53,900 housing and food across 12 + 10 budget months; confirm the remaining months. Transport and personal allowances are included separately.",
+        "initial": "ID3 attendance budget: $196,162, including $119,146 tuition.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [
+          {
+            "label": "ID3 · 12 months",
+            "amount": 196162
+          },
+          {
+            "label": "ID4 · 10 months",
+            "amount": 171766
+          }
+        ],
+        "note": "Older published budgets include other charges and financing allowances. Reconfirm current rates and actual loan fees.",
+        "source": "https://meharry.edu/wp-content/uploads/2025/07/IDP-25-26-COA-2.pdf",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/meharry-medical-college-school-of-dentistry",
       "website": "https://home.mmc.edu/school-of-dentistry/",
@@ -364,11 +527,34 @@
       "visa": "The profile does not restrict admission to U.S. citizens or permanent residents. This does not establish visa sponsorship; confirm permitted status and documents.",
       "dateNote": "",
       "cost": {
-        "value": "$87,455",
-        "label": "Initial 6-month attendance budget",
+        "total": 433234,
+        "coverage": "estimate",
+        "value": "$433,234",
+        "label": "Program attendance estimate",
+        "summary": "Three advanced-standing phase budgets, including living.",
         "year": "2026–27",
-        "note": "Advanced Standing tuition is $55,620 initially, then $111,240 per year. Attendance budgets: $87,455 / $174,999 / $170,780. The budget and admissions duration descriptions differ; confirm your schedule.",
-        "source": "https://bulletins.nyu.edu/graduate/dentistry/cost-attendance/"
+        "tuition": "$278,100 tuition across initial D2, D3 and D4. Other academic fees and supplies are included in attendance budgets.",
+        "living": "$103,810 housing and food across the published periods, plus transport and personal allowances.",
+        "initial": "Initial D2 6-month budget: $87,455, including $55,620 tuition.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [
+          {
+            "label": "Advanced standing D2 · 6 months",
+            "amount": 87455
+          },
+          {
+            "label": "Advanced standing D3",
+            "amount": 174999
+          },
+          {
+            "label": "Advanced standing D4",
+            "amount": 170780
+          }
+        ],
+        "note": "The budget periods differ from the listed 28-month curriculum. Confirm actual enrollment dates and housing needs. Health-insurance estimates use earlier rates; replace with the current bill.",
+        "source": "https://bulletins.nyu.edu/graduate/dentistry/cost-attendance/",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/new-york-university-college-of-dentistry",
       "website": "https://dental.nyu.edu/education/dds-program/advanced-standing.html",
@@ -395,11 +581,21 @@
       "visa": "The profile does not restrict admission to U.S. citizens or permanent residents. This does not establish visa sponsorship; confirm permitted status and documents.",
       "dateNote": "",
       "cost": {
-        "value": "$106,014",
-        "label": "Tuition for each full program year",
+        "total": null,
+        "coverage": "partial",
+        "value": null,
+        "label": "Full program cost not confirmed",
+        "summary": "$353,380 tuition before fees and living.",
         "year": "Published current table · year not stated",
-        "note": "International Dental Medicine tuition lists $35,338 for the initial summer, then $106,014 for each of three full years. Fees and living costs are extra.",
-        "source": "https://dental.nova.edu/admissions/tuition-fees.html"
+        "tuition": "$35,338 initial summer + three years at $106,014 = $353,380 tuition.",
+        "living": "A complete 39-month advanced-standing living allowance was not verified.",
+        "initial": "$35,338 summer tuition, before fees, equipment and living.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [],
+        "note": "Include the initial summer only once. Obtain the international-program attendance budget and mandatory fee schedule.",
+        "source": "https://dental.nova.edu/admissions/tuition-fees.html",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/nova-southeastern-university-college-of-dental-medicine",
       "website": "https://dental.nova.edu/international/index.html",
@@ -426,11 +622,30 @@
       "visa": "The profile discusses F-1 or J-1 status for international students. Confirm issuance and financial evidence with the school.",
       "dateNote": "",
       "cost": {
-        "value": "$124,831",
-        "label": "Year 3 attendance budget · nonresident",
+        "total": null,
+        "coverage": "partial",
+        "value": null,
+        "label": "Full program cost not confirmed",
+        "summary": "Two-year COA: $213,398 resident / $247,310 nonresident; bridge pending.",
         "year": "2026–27",
-        "note": "Nonresident tuition is $73,880 per year. Attendance budgets are $124,831 (year 3) and $122,479 (year 4). Resident tuition is $56,924. Confirm initial bridging-period charges.",
-        "source": "https://phsu.edu/_resources/documents/2627_cost_of_attendance/Doctor_of_Dental_Medicine_Advanced_Standing_COA_2026-27.pdf"
+        "tuition": "$113,848 resident / $147,760 nonresident tuition across the two published years; mandatory fees total $18,498.",
+        "living": "$58,500 living allowance across the two published years; confirm coverage for the full 26 months.",
+        "initial": "Initial bridge-period charges and deposit were not verified.",
+        "residency": "Two published year budgets total $213,398 resident / $247,310 nonresident. Do not assume resident status from citizenship or a green card.",
+        "phases": [
+          {
+            "label": "Nonresident year 3",
+            "amount": 124831
+          },
+          {
+            "label": "Nonresident year 4",
+            "amount": 122479
+          }
+        ],
+        "note": "The two-year sum includes books, transport, personal expenses and loan-fee allowances, but initial bridge coverage is unconfirmed.",
+        "source": "https://phsu.edu/_resources/documents/2627_cost_of_attendance/Doctor_of_Dental_Medicine_Advanced_Standing_COA_2026-27.pdf",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/ponce-health-sciences-university",
       "website": "https://phsu.edu/",
@@ -457,11 +672,26 @@
       "visa": "The profile does not restrict admission to U.S. citizens or permanent residents. This does not establish visa sponsorship; confirm permitted status and documents.",
       "dateNote": "",
       "cost": {
+        "total": null,
+        "coverage": "partial",
         "value": null,
-        "label": "Program budget needs confirmation",
-        "year": "Current amount not verified",
-        "note": "Request the current Internationally Educated DMD budget and preparatory-term charges. A complete advanced-standing amount was not verified in this review.",
-        "source": "https://financialaid.rutgers.edu/cost-of-attendance/rbhs/rsdm/"
+        "label": "Full program cost not confirmed",
+        "summary": "$192,933 resident / $231,775 nonresident tuition; fees and living extra.",
+        "year": "2026–27",
+        "tuition": "Pre-session + two academic years: $192,933 resident / $231,775 nonresident tuition. Annual student, campus, health and applicable international fees are additional.",
+        "living": "An IDMD-specific full-program living allowance was not verified.",
+        "initial": "Pre-session tuition: $18,493 resident / $22,671 nonresident, before fees. The program requires tuition/fees before each academic period; confirm the exact payment schedule.",
+        "residency": "Annual IDMD tuition: $87,220 resident / $104,552 nonresident; pre-session rates also differ.",
+        "phases": [],
+        "note": "Do not use regular DMD tuition in place of IDMD rates. F-1/J-1 international fees are listed separately.",
+        "source": "https://finance.rutgers.edu/sites/default/files/2026-05/RSDM%20Tuition%20and%20Fees%202026-2027.pdf",
+        "additionalSources": [
+          {
+            "label": "IDMD payment requirements",
+            "url": "https://sdm.rutgers.edu/admissions/predoctoral-admissions/international-dmd-program"
+          }
+        ],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/rutgers-the-state-university-of-new-jersey-school-of-dental-medicine",
       "website": "https://sdm.rutgers.edu/admissions/predoctoral-admissions/international-dmd-program",
@@ -488,11 +718,34 @@
       "visa": "The profile does not restrict admission to U.S. citizens or permanent residents. This does not establish visa sponsorship; confirm permitted status and documents.",
       "dateNote": "",
       "cost": {
+        "total": 308849.34,
+        "coverage": "estimate",
         "value": "$308,849",
-        "label": "Attendance budget · sum of published phases",
-        "year": "Year not stated",
-        "note": "Clinical certification course: $44,017.32; integrated year 3: $135,606.25; year 4: $129,225.77. Combined estimate $308,849.34, including published living allowances.",
-        "source": "https://www.siue.edu/dental/iapp/projected-costs.shtml"
+        "label": "Program attendance estimate",
+        "summary": "Clinical certification + two integrated years, including living.",
+        "year": "Year not stated on source · reconfirm",
+        "tuition": "$242,947.34 published tuition/fees across all three phases.",
+        "living": "$45,764 living allowance; transport, personal and other allowances are included separately.",
+        "initial": "Clinical certification attendance budget: $44,017.32, including $36,592.32 tuition/fees.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [
+          {
+            "label": "Clinical certification",
+            "amount": 44017.32
+          },
+          {
+            "label": "Integrated third year",
+            "amount": 135606.25
+          },
+          {
+            "label": "Integrated fourth year",
+            "amount": 129225.77
+          }
+        ],
+        "note": "Sum of published phases, rounded to the nearest dollar in the headline. Confirm the applicable intake, current charges and deposit.",
+        "source": "https://www.siue.edu/dental/iapp/projected-costs.shtml",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/southern-illinois-university-school-of-dental-medicine",
       "website": "https://www.siue.edu/dental/iapp/",
@@ -519,11 +772,30 @@
       "visa": "The profile does not restrict admission to U.S. citizens or permanent residents. This does not establish visa sponsorship; confirm permitted status and documents.",
       "dateNote": "",
       "cost": {
-        "value": "$178,285",
-        "label": "First advanced-standing phase · attendance",
+        "total": 323957,
+        "coverage": "estimate",
+        "value": "$323,957",
+        "label": "Program attendance estimate",
+        "summary": "Estimate applies to the 24-month placement only.",
         "year": "2025–26 · older budget",
-        "note": "Two-year track tuition is $104,602 in each phase. Attendance estimates are $178,285 and $145,672. International fees are separately listed. Placement can affect duration and cost.",
-        "source": "https://dentistry.temple.edu/academics-and-admissions/tuition-fees-and-scholarships"
+        "tuition": "$209,204 tuition; published direct charges total $232,149 across the two advanced-standing years.",
+        "living": "$84,908 living-related allowances across 15 + 9 budget months, including housing, food, transport, insurance and personal expenses.",
+        "initial": "First 15-month phase budget: $178,285. Confirm the deposit and pre-enrollment cash requirement.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [
+          {
+            "label": "Advanced standing D3 · 15 months",
+            "amount": 178285
+          },
+          {
+            "label": "Advanced standing D4 · 9 months",
+            "amount": 145672
+          }
+        ],
+        "note": "This estimate does not cover a 36-month placement. A separate $350 annual F-1 international fee is listed; confirm whether it is additional. Request current-year rates.",
+        "source": "https://dentistry.temple.edu/academics-and-admissions/tuition-fees-and-scholarships",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/the-maurice-h.-kornberg-school-of-dentistry-temple-university-international-program",
       "website": "https://dentistry.temple.edu/",
@@ -550,11 +822,21 @@
       "visa": "The profile requires U.S. citizenship or lawful permanent residence. Confirm proof and timing with admissions.",
       "dateNote": "",
       "cost": {
+        "total": null,
+        "coverage": "unconfirmed",
         "value": null,
-        "label": "Program budget needs confirmation",
+        "label": "Full program cost not confirmed",
+        "summary": "Request an ASPID-specific all-term budget.",
         "year": "Current amount not verified",
-        "note": "Request the ASPID budget including the initial preparatory period. A current program-specific amount was not verified in this review.",
-        "source": "https://dentistry.osu.edu/"
+        "tuition": "Not verified.",
+        "living": "Full 28-month living allowance not verified.",
+        "initial": "Deposit, payment due dates and cash needed before aid disbursement need confirmation.",
+        "residency": "ASPID-specific resident and nonresident rates were not verified.",
+        "phases": [],
+        "note": "A traditional four-year DDS price is not a verified budget for this pathway.",
+        "source": "https://dentistry.osu.edu/",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/the-ohio-state-university-college-of-dentistry",
       "website": "https://dentistry.osu.edu/",
@@ -581,11 +863,21 @@
       "visa": "The profile does not restrict admission to U.S. citizens or permanent residents. This does not establish visa sponsorship; confirm permitted status and documents.",
       "dateNote": "",
       "cost": {
-        "value": "$256,301",
-        "label": "Tuition & university fees · full program",
-        "year": "2025–26 · older projection",
-        "note": "Published program tuition and university fees total $256,301. The broader listed educational-expense total is $286,776; living expenses are additional. Request updated figures.",
-        "source": "https://dentistry.uiowa.edu/education/advanced-standing-program/application-requirements/tuition-and-fees"
+        "total": null,
+        "coverage": "partial",
+        "value": null,
+        "label": "Full program cost not confirmed",
+        "summary": "$286,776 published academic charges; living extra.",
+        "year": "2025–26 · older budget",
+        "tuition": "$256,301 tuition/fees across spring, summer, D3 and D4. Published broader academic expenses total $286,776.",
+        "living": "Living, housing, food and personal costs are not included in that academic total.",
+        "initial": "Initial spring tuition/fees: $46,614; subsequent summer tuition/fees: $23,231. Supplies and initial cash requirements are additional.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [],
+        "note": "The page separately lists a $250 application fee and $1,500 interview/testing fee. Confirm inclusion before adding them to the academic sum.",
+        "source": "https://dentistry.uiowa.edu/education/advanced-standing-program/application-requirements/tuition-and-fees",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/the-university-of-iowa-college-of-dentistry-and-dental-clinics",
       "website": "https://dentistry.uiowa.edu/education/advanced-standing-program",
@@ -612,11 +904,26 @@
       "visa": "The profile allows citizenship, permanent residence and a legal visa permitting study; includes conditional/temporary permanent residence.",
       "dateNote": "",
       "cost": {
+        "total": null,
+        "coverage": "partial",
         "value": null,
-        "label": "Program budget needs confirmation",
-        "year": "Current amount not verified",
-        "note": "Request the IDEP budget, including initial training charges and resident versus nonresident fees. A complete program-specific amount was not verified.",
-        "source": "https://students.uthscsa.edu/financial-aid/cost-of-attendance/school-of-dentistry-cost-of-attendance/"
+        "label": "Full program cost not confirmed",
+        "summary": "Resident/nonresident academic schedules verified; full living budget pending.",
+        "year": "2026–27 / spring 2027",
+        "tuition": "Published initial spring + years 3/4 tuition-and-fee rows sum to $184,298.99 resident / $219,938.99 nonresident, before separately listed charges and living.",
+        "living": "A full 29-month IDEP living allowance was not verified.",
+        "initial": "Spring 2027 tuition/fees: $37,412.99 resident / $49,292.99 nonresident. Separate items include a $5,000 acceptance fee, $2,500 loupes and $3,634 handpiece/teeth kit; confirm credits and due dates.",
+        "residency": "Year 3 tuition/fees: $73,481 Texas resident / $85,361 nonresident. Year 4: $73,405 / $85,285.",
+        "phases": [],
+        "note": "The source also lists curriculum support, laptop and other charges outside the row totals. Ask which are assessed once and whether the acceptance fee is credited. Future rates may rise.",
+        "source": "https://students.uthscsa.edu/wp-content/uploads/sites/210/2026/06/International-Dentist-Education-Program.pdf",
+        "additionalSources": [
+          {
+            "label": "Initial spring charges",
+            "url": "https://students.uthscsa.edu/wp-content/uploads/sites/210/2026/05/International-Dentist-Education-Program-Spring-2027.pdf"
+          }
+        ],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/ut-health-san-antonio-school-of-dentistry",
       "website": "https://uthscsa.edu/dental/programs/international-dentist-program",
@@ -643,11 +950,21 @@
       "visa": "Appropriate study authorization and evidence of financial commitment for two years are required. Confirm sponsorship and the published timeline.",
       "dateNote": "The profile lists a start before its application deadline. Confirm the intended intake with Touro.",
       "cost": {
+        "total": null,
+        "coverage": "unconfirmed",
         "value": null,
-        "label": "Program budget needs confirmation",
+        "label": "Full program cost not confirmed",
+        "summary": "Request the advanced-standing budget for your campus.",
         "year": "Current amount not verified",
-        "note": "Touro publishes DDS year-by-year budgets. Confirm the advanced-standing entry term, campus and any introductory charges before applying these rates.",
-        "source": "https://dental.touro.edu/education/dds-program/tuition/"
+        "tuition": "Not verified.",
+        "living": "New York and New Mexico budgets differ; a complete advanced-standing living budget was not verified.",
+        "initial": "Deposit, payment due dates and cash needed before aid disbursement need confirmation.",
+        "residency": "Campus-specific and advanced-standing tuition classification need confirmation.",
+        "phases": [],
+        "note": "Regular DDS year budgets do not resolve advanced-standing entry charges or full program coverage.",
+        "source": "https://dental.touro.edu/education/dds-program/tuition/",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/touro-college-of-dental-medicine",
       "website": "http://www.dental.touro.edu/",
@@ -674,11 +991,34 @@
       "visa": "U.S. citizens, permanent residents and applicants eligible for a student visa are considered.",
       "dateNote": "",
       "cost": {
-        "value": "$113,708",
-        "label": "Initial DIS attendance budget",
-        "year": "Published table · confirm academic year",
-        "note": "Tuition by phase is $60,954 / $121,908 / $121,908. Attendance budgets are $113,708 / $185,946 / $172,535; health insurance may be additional. Confirm applicability of loan-fee allowances.",
-        "source": "https://dental.tufts.edu/academics-admissions/financial-aid/forms-and-costs-dmd-and-dis-programs"
+        "total": 472189,
+        "coverage": "estimate",
+        "value": "$472,189",
+        "label": "Program attendance estimate",
+        "summary": "All three DIS phase budgets; health insurance extra unless waived.",
+        "year": "2026–27",
+        "tuition": "$304,770 tuition; billed costs across all phases total $351,402.",
+        "living": "$104,025 off-campus allowance across the published phases. Confirm coverage through graduation and any gaps between terms.",
+        "initial": "Initial DIS attendance budget: $113,708, including $60,954 tuition.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [
+          {
+            "label": "Initial DIS phase",
+            "amount": 113708
+          },
+          {
+            "label": "Second DIS phase",
+            "amount": 185946
+          },
+          {
+            "label": "Final DIS phase",
+            "amount": 172535
+          }
+        ],
+        "note": "Health insurance is excluded. Add the premium unless waived. Published loan-fee allowances may assume financing unavailable to a new borrower; replace them with actual loan fees.",
+        "source": "https://dental.tufts.edu/academics-admissions/financial-aid/forms-and-costs-dmd-and-dis-programs",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/tufts-university-school-of-dental-medicine",
       "website": "https://dental.tufts.edu/academics/international-student-dmd",
@@ -705,11 +1045,21 @@
       "visa": "The profile does not restrict admission to U.S. citizens or permanent residents. This does not establish visa sponsorship; confirm permitted status and documents.",
       "dateNote": "",
       "cost": {
-        "value": "$72,420",
-        "label": "Annual nonresident DDS tuition · summer extra",
-        "year": "2026–27 · provisional",
-        "note": "IDP cost page lists $72,420 nonresident DDS tuition per year. Preparatory summer charges and other costs are additional. The page says final costs are pending; request a complete IDP budget.",
-        "source": "https://dental.buffalo.edu/education/idp-admissions/financial-aid-idp.html"
+        "total": null,
+        "coverage": "partial",
+        "value": null,
+        "label": "Full program cost not confirmed",
+        "summary": "Summer fee + DDS-year budgets: $264,537 resident / $330,957 nonresident; initial living extra.",
+        "year": "2026–27 · source notes budget pending",
+        "tuition": "$95,000 summer program fee, plus DDS-year tuition and fees. The summer fee is not the full program price.",
+        "living": "$51,804 living allowance across the two DDS-year budgets. Initial summer living/transport and required computer are extra; health insurance is listed as $0.",
+        "initial": "$95,000 summer program fee excludes summer living, transport and a required computer. Confirm deposit and payment timing.",
+        "residency": "Annual DDS tuition: $39,130 NY resident / $72,420 nonresident. Eligibility for NY residency must be established separately; do not assume an F-1 visa or green card guarantees it.",
+        "phases": [],
+        "note": "The displayed sums use the school’s published annual totals plus the summer fee. Confirm final figures and residency rules with the school before treating them as a complete budget.",
+        "source": "https://dental.buffalo.edu/education/idp-admissions/financial-aid-idp.html",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/university-at-buffalo-school-of-dental-medicine",
       "website": "https://dental.buffalo.edu/education/idp-admissions.html",
@@ -736,11 +1086,21 @@
       "visa": "U.S. citizens or permanent residents only. The profile specifies permanent residence valid for the program duration without renewal.",
       "dateNote": "",
       "cost": {
-        "value": "$212,210",
-        "label": "Tuition only · sum of three phases",
-        "year": "Year not stated",
-        "note": "Preparatory tuition $42,442 plus $84,884 in each of D3 and D4. Fees, insurance, books and living costs are additional. Published figures are subject to annual adjustment.",
-        "source": "https://www.uab.edu/dentistry/home/academics/idp/tuition-fees"
+        "total": null,
+        "coverage": "partial",
+        "value": null,
+        "label": "Full program cost not confirmed",
+        "summary": "$212,210 tuition before fees and living.",
+        "year": "Year not stated on source · reconfirm",
+        "tuition": "$42,442 preparatory phase + $84,884 in each of D3/D4 = $212,210 tuition. Instruments, insurance and mandatory fees add more.",
+        "living": "Books and living expenses are excluded from the published fee schedule.",
+        "initial": "Preparatory tuition $42,442, before insurance, laboratory/clinical charges and living.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [],
+        "note": "The schedule lists separate clinical, laboratory, insurance, dental and other charges. Request a dated full attendance budget.",
+        "source": "https://www.uab.edu/dentistry/home/academics/idp/tuition-fees",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/university-of-alabama-at-birmingham-school-of-dentistry",
       "website": "https://www.uab.edu/dentistry/home/academics/idp",
@@ -767,11 +1127,38 @@
       "visa": "The profile does not restrict admission to U.S. citizens or permanent residents. This does not establish visa sponsorship; confirm permitted status and documents.",
       "dateNote": "",
       "cost": {
-        "value": "$120,968",
-        "label": "Annual PPID program fee",
+        "total": null,
+        "coverage": "partial",
+        "value": null,
+        "label": "Full program cost not confirmed",
+        "summary": "$387,897 across four published PPID budgets; confirm month coverage.",
         "year": "2026–27",
-        "note": "Annual program fee only. Off-campus budget separately lists summer and academic-year expenses; equipment and living costs make the attendance budget substantially higher.",
-        "source": "https://dentistry.ucla.edu/academics-admissions/programs-for-international-dentists/professional-program-for-international-dentists-ppid/tuition-costs"
+        "tuition": "$241,936 program fees; equipment/materials total $50,481. Additional campus charges are included in the phase budgets.",
+        "living": "$76,712 housing/food across published summer and academic periods; confirm coverage of the full 25-month curriculum.",
+        "initial": "First summer attendance budget: $68,789, including $28,802 program fees and $28,052 equipment/materials.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [
+          {
+            "label": "D3 summer",
+            "amount": 68789
+          },
+          {
+            "label": "D3 academic year",
+            "amount": 139158
+          },
+          {
+            "label": "D4 summer",
+            "amount": 41737
+          },
+          {
+            "label": "D4 academic year",
+            "amount": 138213
+          }
+        ],
+        "note": "The published periods cover two summer/academic-year cycles. Confirm any additional orientation or living month and future rate increases.",
+        "source": "https://dentistry.ucla.edu/academics-admissions/programs-for-international-dentists/professional-program-for-international-dentists-ppid/tuition-costs",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/university-of-california-los-angeles-school-of-dentistry",
       "website": "https://dentistry.ucla.edu/academics-admissions/programs-international-dentists",
@@ -798,11 +1185,34 @@
       "visa": "The profile does not restrict admission to U.S. citizens or permanent residents. This does not establish visa sponsorship; confirm permitted status and documents.",
       "dateNote": "",
       "cost": {
-        "value": "$148,719",
-        "label": "ID2 attendance budget",
+        "total": 415599,
+        "coverage": "estimate",
+        "value": "$415,599",
+        "label": "Program attendance estimate",
+        "summary": "Three 12-month IDP budgets, including living.",
         "year": "2026–27",
-        "note": "International Dentist attendance estimates: ID2 $148,719, ID3 $136,055, ID4 $130,825. Annual program and other fees are $86,319, plus initial summer fees. Future rates can change.",
-        "source": "https://finaid.ucsf.edu/application-process/student-coa"
+        "tuition": "$258,957 program fees across three years; kits, campus fees, insurance and other charges are included in attendance budgets.",
+        "living": "$116,208 living allowance across 36 months, before personal circumstances or dependents.",
+        "initial": "ID2 attendance budget: $148,719. The initial $2,715 summer fee is included in that budget; do not add it twice.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [
+          {
+            "label": "International Dentist 2",
+            "amount": 148719
+          },
+          {
+            "label": "International Dentist 3",
+            "amount": 136055
+          },
+          {
+            "label": "International Dentist 4",
+            "amount": 130825
+          }
+        ],
+        "note": "Uses current rates for three cohorts, not a locked multi-year price. Regular DDS nonresident supplements are not substituted for the separate IDP schedule.",
+        "source": "https://finaid.ucsf.edu/application-process/student-coa",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/university-of-california-san-francisco-school-of-dentistry",
       "website": "https://dentistry.ucsf.edu/programs/international-dentist-pathway",
@@ -829,11 +1239,30 @@
       "visa": "The profile does not restrict admission to U.S. citizens or permanent residents. This does not establish visa sponsorship; confirm permitted status and documents.",
       "dateNote": "School application page confirms the newer cycle: September 18, 2026–January 29, 2027.",
       "cost": {
-        "value": "$152,358",
-        "label": "First-year ISP attendance budget",
-        "year": "Class of 2028",
-        "note": "Tuition and fees: $98,957 / $96,744. Attendance budgets: $152,358 / $142,195. Ask for the Class of 2029 budget if applying in the newer cycle.",
-        "source": "https://dental.cuanschutz.edu/prospective-students/tuition-financial-info"
+        "total": 294553,
+        "coverage": "estimate",
+        "value": "$294,553",
+        "label": "Program attendance estimate",
+        "summary": "Class of 2028 two-year ISP budget, including living.",
+        "year": "ISP class of 2028",
+        "tuition": "$195,701 tuition/fees plus $28,100 books, supplies and insurance across both years.",
+        "living": "$70,752 living allowance across two years.",
+        "initial": "$4,000 deposit credited toward first-semester tuition. Financial aid is not available for this deposit. First-year attendance budget: $152,358.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [
+          {
+            "label": "ISP first year",
+            "amount": 152358
+          },
+          {
+            "label": "ISP second year",
+            "amount": 142195
+          }
+        ],
+        "note": "The deposit changes when cash is needed, not the total tuition. Obtain the budget for your own entering class; regular DDS resident tables are separate.",
+        "source": "https://dental.cuanschutz.edu/prospective-students/tuition-financial-info",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/university-of-colorado-school-of-dental-medicine",
       "website": "https://dental.cuanschutz.edu/prospective-students/programs-of-study/advanced-standing-international-student-program",
@@ -860,11 +1289,21 @@
       "visa": "The profile requires U.S. citizenship or lawful permanent residence. Confirm proof and timing with admissions.",
       "dateNote": "",
       "cost": {
+        "total": null,
+        "coverage": "unconfirmed",
         "value": null,
-        "label": "Program budget needs confirmation",
+        "label": "Full program cost not confirmed",
+        "summary": "Request the full four-year international DMD budget.",
         "year": "Current amount not verified",
-        "note": "This CAAPID route is a longer DMD program. Request its full multi-year budget; Florida’s separate Hialeah AEGD fees do not represent this DMD route.",
-        "source": "https://admissions.dental.ufl.edu/iedp/programs-application-process/4-year-d-m-d-program/"
+        "tuition": "Not verified.",
+        "living": "Full 45-month living allowance not verified.",
+        "initial": "Deposit, payment due dates and cash needed before aid disbursement need confirmation.",
+        "residency": "Resident/nonresident eligibility and rates for the four-year international DMD route need confirmation.",
+        "phases": [],
+        "note": "This listing is the longer international DMD route, not the Hialeah AEGD program. Avoid comparing only two years of DDS tuition.",
+        "source": "https://admissions.dental.ufl.edu/iedp/programs-application-process/4-year-d-m-d-program/",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/university-of-florida-college-of-dentistry",
       "website": "https://admissions.dental.ufl.edu/iedp/programs-application-process/4-year-d-m-d-program/",
@@ -891,11 +1330,21 @@
       "visa": "Applicants must currently be in the U.S. with a status permitting study. A tourist visa does not meet the stated requirement.",
       "dateNote": "",
       "cost": {
-        "value": "$41,500",
-        "label": "Tuition per listed semester",
+        "total": null,
+        "coverage": "conflict",
+        "value": null,
+        "label": "Full program cost not confirmed",
+        "summary": "Published UIC table has a term-count inconsistency.",
         "year": "2026–27",
-        "note": "The DMDAS budget lists $41,500 tuition per semester plus university, clinic and educational expenses. Semester-count headings and totals need school clarification; no full-program total is inferred. Living expenses are extra.",
-        "source": "https://dentistry.uic.edu/wp-content/uploads/sites/741/2026/03/AY26_27-DMDAS-Program-Costs_-new.pdf"
+        "tuition": "Printed academic rows total $357,679 resident / $398,811 nonresident, excluding living. The table describes 8 semesters but its populated cost rows account for 7.",
+        "living": "Source suggests $30,000 per year for living. At $2,500/month, 28 months would add $70,000 as a planning assumption, before individual adjustments.",
+        "initial": "Initial AS2 tuition/fees: $102,194 resident / $113,946 nonresident, before living.",
+        "residency": "Per-semester tuition: $41,500 resident / $47,376 nonresident. Published fees add $9,597 per semester.",
+        "phases": [],
+        "note": "A reliable total requires UIC to resolve the missing/inconsistent semester. Do not treat either printed subtotal plus living as a confirmed full-program budget.",
+        "source": "https://dentistry.uic.edu/wp-content/uploads/sites/741/2026/03/AY26_27-DMDAS-Program-Costs_-new.pdf",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/university-of-illinois-chicago-college-of-dentistry",
       "website": "https://dentistry.uic.edu/programs/doctor-of-dental-medicine-advanced-standing-dmd-as/",
@@ -922,11 +1371,26 @@
       "visa": "The profile does not restrict admission to U.S. citizens or permanent residents. This does not establish visa sponsorship; confirm permitted status and documents.",
       "dateNote": "",
       "cost": {
+        "total": null,
+        "coverage": "unconfirmed",
         "value": null,
-        "label": "Program budget needs confirmation",
+        "label": "Full program cost not confirmed",
+        "summary": "Confirm DMD rate category, entry period and living allowance.",
         "year": "Current amount not verified",
-        "note": "The school provides a DMD cost and aid page. Request the advanced-standing entering-cohort budget, including its additional preparatory charges.",
-        "source": "https://dentistry.louisville.edu/academics-programs/dmd/cost-aid-dmd"
+        "tuition": "Not verified.",
+        "living": "Full 28-month living allowance not verified.",
+        "initial": "Deposit, payment due dates and cash needed before aid disbursement need confirmation.",
+        "residency": "The AS page says tuition matches the traditional program. Confirm the resident/nonresident category and every required AS term.",
+        "phases": [],
+        "note": "The published DMD schedule alone does not establish the initial advanced-standing period or its complete cost.",
+        "source": "https://dentistry.louisville.edu/academics-programs/dmd/cost-aid-dmd",
+        "additionalSources": [
+          {
+            "label": "Advanced-standing tuition policy",
+            "url": "https://dentistry.louisville.edu/admission/dmd-admissions/ways-apply/advanced-standing-internationally-trained-dentists"
+          }
+        ],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/university-of-louisville-school-of-dentistry",
       "website": "https://dentistry.louisville.edu/admission/dmd-admissions/ways-apply/advanced-standing-internationally-trained-dentists",
@@ -953,11 +1417,34 @@
       "visa": "Applicants who need F-1 status are eligible to apply; confirm document issuance and required funding evidence.",
       "dateNote": "",
       "cost": {
-        "value": "$58,808",
-        "label": "Initial 4-month ITDP attendance budget",
-        "year": "2026–27 · nonresident",
-        "note": "Tuition and fees: $30,611 initially, then $89,588 per full year. Attendance budgets: $58,808 / $149,320 / $148,514. Loan fees can increase the allowance.",
-        "source": "https://finaid.umich.edu/internationally-trained-dentist-program"
+        "total": 356642,
+        "coverage": "estimate",
+        "value": "$356,642",
+        "label": "Program attendance estimate",
+        "summary": "Nonresident ITDP budget across 4 + 12 + 12 months.",
+        "year": "2026–27",
+        "tuition": "$209,787 tuition/fees across all three phases.",
+        "living": "$89,264 housing, meals and utilities over 28 months. Personal allowances, including insurance, are included separately.",
+        "initial": "Initial January–April budget: $58,808. The school describes separate loan certification for this winter period.",
+        "residency": "This ITDP table explicitly uses international/out-of-state nonresident rates. A resident ITDP alternative was not verified.",
+        "phases": [
+          {
+            "label": "D2 · 4 months",
+            "amount": 58808
+          },
+          {
+            "label": "D3 · 12 months",
+            "amount": 149320
+          },
+          {
+            "label": "D4 · 12 months",
+            "amount": 148514
+          }
+        ],
+        "note": "Published rates are estimates. The figure includes academic, living, books, transportation and personal allowances; future increases and loan interest are additional.",
+        "source": "https://finaid.umich.edu/internationally-trained-dentist-program",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/university-of-michigan-school-of-dentistry",
       "website": "https://www.dent.umich.edu/education/internationally-trained-dentist-program-itdp",
@@ -984,11 +1471,50 @@
       "visa": "All citizenship categories may apply. The profile describes F-1/F-2 documentation support after admission.",
       "dateNote": "",
       "cost": {
+        "total": 475183,
+        "coverage": "estimate",
         "value": "$475,183",
-        "label": "Estimated full 29-month attendance budget",
-        "year": "PASS Class of 2029",
-        "note": "Official PASS worksheet lists $350,893 tuition and $475,183 total estimated expenses. Dependents, elective charges and fee changes can alter costs.",
-        "source": "https://docs.google.com/spreadsheets/d/1Cv5vEYhZMqAe2jLDkJ2Rs_Z6m1I88Rbp7rnEV9NdfE4/edit?usp=sharing"
+        "label": "Program attendance estimate",
+        "summary": "School’s complete 29-month class budget.",
+        "year": "Class of 2029 · 29 months",
+        "tuition": "$350,893 tuition across seven terms.",
+        "living": "$60,510 room/board, $6,566 transport and $12,000 personal allowances; insurance and other school charges are included separately.",
+        "initial": "First spring budget: $77,735, including $57,371 tuition. Confirm acceptance deposit and cash needed before disbursement.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [
+          {
+            "label": "Initial spring",
+            "amount": 77735
+          },
+          {
+            "label": "First summer",
+            "amount": 44164
+          },
+          {
+            "label": "First fall",
+            "amount": 77280
+          },
+          {
+            "label": "Second spring",
+            "amount": 77280
+          },
+          {
+            "label": "Second summer",
+            "amount": 44164
+          },
+          {
+            "label": "Second fall",
+            "amount": 77280
+          },
+          {
+            "label": "Final spring",
+            "amount": 77280
+          }
+        ],
+        "note": "The school states tuition is fixed for the 29-month cohort; other costs can change. Dependents and personal spending can increase the budget.",
+        "source": "https://docs.google.com/spreadsheets/d/1Cv5vEYhZMqAe2jLDkJ2Rs_Z6m1I88Rbp7rnEV9NdfE4/edit?usp=sharing",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/university-of-minnesota-school-of-dentistry",
       "website": "https://dentistry.umn.edu/degrees-programs/umn-program-advanced-standing-students-pass",
@@ -1015,11 +1541,21 @@
       "visa": "The profile requires U.S. citizenship or lawful permanent residence. Confirm proof and timing with admissions.",
       "dateNote": "",
       "cost": {
-        "value": "$249,000",
-        "label": "Tuition only · full program calculation",
-        "year": "2024–25 · older estimate",
-        "note": "Five fall/spring terms at $41,500 plus two summer terms at $20,750 total $249,000. Fees, materials and living expenses are extra. Obtain a current quote.",
-        "source": "https://dentistry.umkc.edu/academics/dds/dds-advanced-standing.html"
+        "total": null,
+        "coverage": "partial",
+        "value": null,
+        "label": "Full program cost not confirmed",
+        "summary": "$280,325 older academic-charge estimate; living extra.",
+        "year": "2024–25 · older rates",
+        "tuition": "Five full semesters + two summers total $249,000 tuition. Seven terms of listed fees and initial materials bring academic charges to $280,325.",
+        "living": "A full 29-month living allowance was not verified.",
+        "initial": "Confirm initial summer tuition, material charges, deposit and payment date against an updated schedule.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [],
+        "note": "This calculation applies the source’s listed term rates; it is not a current cost-of-attendance budget.",
+        "source": "https://dentistry.umkc.edu/academics/dds/dds-advanced-standing.html",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/university-of-missouri-kansas-city-school-of-dentistry",
       "website": "https://dentistry.umkc.edu/academics/dds/dds-advanced-standing.html",
@@ -1046,11 +1582,21 @@
       "visa": "U.S. citizens or permanent residents only; the program does not sponsor student visas.",
       "dateNote": "",
       "cost": {
-        "value": "$103,715",
-        "label": "Year 2 advanced-standing tuition",
+        "total": null,
+        "coverage": "conflict",
+        "value": null,
+        "label": "Full program cost not confirmed",
+        "summary": "Published Nebraska initial-year arithmetic needs clarification.",
         "year": "Current catalog · confirm academic year",
-        "note": "The advanced-standing schedule lists $62,230 initial-year tuition and $103,715 for year 2. Published initial-year total appears inconsistent with its components; obtain a corrected complete budget.",
-        "source": "https://catalog.unmc.edu/dentistry/tuition-and-fees/"
+        "tuition": "$248,915 tuition across the three AS years; fees and living add more. The first-year fee components total $67,365, but the printed total says $62,635.",
+        "living": "Full 29-month living allowance not verified.",
+        "initial": "First semester tuition/fees $46,215 and second/summer $21,150 by listed components. Ask the school to reconcile the annual total.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [],
+        "note": "Do not use the inconsistent first-year total to build a full-program estimate. Confirm current AS tuition and every required fee.",
+        "source": "https://catalog.unmc.edu/dentistry/tuition-and-fees/",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/university-of-nebraska-medical-center-college-of-dentistry",
       "website": "https://www.unmc.edu/dentistry/programs/advanced-standing/index.html",
@@ -1077,11 +1623,21 @@
       "visa": "The profile includes citizens, permanent residents, Canadian residents and applicants eligible for F-1 status.",
       "dateNote": "",
       "cost": {
-        "value": "$33,767",
-        "label": "Tuition & special fee per semester",
+        "total": null,
+        "coverage": "partial",
+        "value": null,
+        "label": "Full program cost not confirmed",
+        "summary": "$202,602 tuition and special fees before living.",
         "year": "Year not stated",
-        "note": "Six-semester program: $28,667 tuition plus $5,100 special fee per semester. Six times the combined rate is $202,602 before other costs or increases.",
-        "source": "https://www.unlv.edu/dental/admissions/surgery-app-tuition"
+        "tuition": "Six semesters × ($28,667 tuition + $5,100 special fee) = $202,602.",
+        "living": "Full 24-month living, insurance, transport and other personal costs were not verified.",
+        "initial": "$33,767 per listed semester before other fees and living. Confirm deposit and initial payment.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [],
+        "note": "The program’s published academic charges do not constitute a full attendance budget.",
+        "source": "https://www.unlv.edu/dental/admissions/surgery-app-tuition",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/university-of-nevada-las-vegas-school-of-dental-medicine",
       "website": "https://www.unlv.edu/dental/academic-programs/dds",
@@ -1108,11 +1664,21 @@
       "visa": "The profile flags citizen/GC eligibility but also mentions other appropriate immigration documents. Confirm your category directly before applying.",
       "dateNote": "",
       "cost": {
-        "value": "$59,645",
-        "label": "Initial advanced-standing direct costs",
-        "year": "Published table · confirm academic year",
-        "note": "Advanced Standing table lists tuition of $53,080 / $106,160 / $106,160 and direct costs of $59,645 / $119,745 / $119,745. Living expenses and insurance are extra.",
-        "source": "https://www.une.edu/sfs/graduate/costs/doctor-dental-medicine-costs"
+        "total": null,
+        "coverage": "partial",
+        "value": null,
+        "label": "Full program cost not confirmed",
+        "summary": "$299,135 published direct charges; some fees still pending.",
+        "year": "2026–27 · some fees pending",
+        "tuition": "$265,400 tuition; published direct-cost rows total $299,135 across all three phases.",
+        "living": "The source gives $2,250/month off-campus housing, food and utilities. At 29 months this is $65,250; transport, personal, insurance and other costs are extra.",
+        "initial": "Initial phase direct charges $59,645, plus $3,500 listed equipment allowance and living. Confirm deposit and billing dates.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [],
+        "note": "Some program/malpractice fees are not finalized. Add health insurance unless waived, final examinations and rotations; do not use the direct-charge total as all-in.",
+        "source": "https://www.une.edu/sfs/graduate/costs/doctor-dental-medicine-costs",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/university-of-new-england-college-of-dental-medicine",
       "website": "https://www.une.edu/dentalmedicine/program/advanced-standing-track-foreign-trained-dentists",
@@ -1139,11 +1705,21 @@
       "visa": "The profile does not restrict admission to U.S. citizens or permanent residents. This does not establish visa sponsorship; confirm permitted status and documents.",
       "dateNote": "",
       "cost": {
+        "total": null,
+        "coverage": "unconfirmed",
         "value": null,
-        "label": "Program budget needs confirmation",
+        "label": "Full program cost not confirmed",
+        "summary": "UNC provides the detailed budget at interview.",
         "year": "Current amount not verified",
-        "note": "Request the current advanced-standing budget and residency classification. A complete program-specific amount was not verified in this review.",
-        "source": "https://dentistry.unc.edu/doctor-of-dental-surgery/advanced-standing-for-international-dentists-aspid/"
+        "tuition": "Not verified.",
+        "living": "The webpage’s expense wording does not establish an unambiguous full-program living allowance.",
+        "initial": "Deposit, payment due dates and cash needed before aid disbursement need confirmation.",
+        "residency": "ASPID resident/nonresident tuition rates were not verified.",
+        "phases": [],
+        "note": "Request the dated interview budget, initial bridge charges and proof-of-funds requirement. Do not interpret the isolated expense figure on the page as total attendance cost.",
+        "source": "https://dentistry.unc.edu/doctor-of-dental-surgery/advanced-standing-for-international-dentists-aspid/",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/university-of-north-carolina-at-chapel-hill-adams-school-of-dentistry",
       "website": "https://dentistry.unc.edu/doctor-of-dental-surgery/advanced-standing-for-international-dentists-aspid/",
@@ -1170,11 +1746,30 @@
       "visa": "The school restricts this route to permanent residents and naturalized U.S. citizens; confirm any other citizenship circumstance.",
       "dateNote": "",
       "cost": {
-        "value": "$175,594",
-        "label": "Third-year tuition & fees · resident",
+        "total": null,
+        "coverage": "partial",
+        "value": null,
+        "label": "Full program cost not confirmed",
+        "summary": "$436,236 resident / $436,238 nonresident across older published budgets.",
         "year": "2024–25 · older budget",
-        "note": "ASPID resident year-3 tuition, fees and kits are $175,594 in the published older worksheet. This is not the full program budget. Request current costs for your placement and residency.",
-        "source": "https://dentistry.ouhsc.edu/Portals/1328/assets/2024-2025%20DENT%20ASPID.pdf"
+        "tuition": "Published D3/D4 tuition/fees: $352,022 resident / $352,024 nonresident, before living and other costs.",
+        "living": "$43,200 living allowance across the published years; confirm that every month of the 29-month program is covered.",
+        "initial": "D3 initial summer attendance budget: $62,686 resident / $56,713 nonresident, already included in the published D3 total.",
+        "residency": "Published full D3/D4 budgets total $436,236 resident / $436,238 nonresident. Initial term allocations differ; current classification needs confirmation.",
+        "phases": [
+          {
+            "label": "Resident D3",
+            "amount": 218429
+          },
+          {
+            "label": "Resident D4",
+            "amount": 217807
+          }
+        ],
+        "note": "The source is an older ASPID budget. Confirm current rates, full month coverage and preparatory-period inclusion before relying on the sum.",
+        "source": "https://dentistry.ouhsc.edu/Portals/1328/assets/2024-2025%20DENT%20ASPID.pdf",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/university-of-oklahoma-college-of-dentistry",
       "website": "https://dentistry.ouhsc.edu/Academic-Programs/Advanced-Standing-for-International-Dentists-ASPID",
@@ -1201,11 +1796,34 @@
       "visa": "U.S. citizenship or permanent residence is required when the application is submitted.",
       "dateNote": "",
       "cost": {
-        "value": "$82,567",
-        "label": "Initial PASS spring attendance budget",
+        "total": 405155,
+        "coverage": "estimate",
+        "value": "$405,155",
+        "label": "Program attendance estimate",
+        "summary": "Initial PASS spring + D3/D4 budgets, including living.",
         "year": "2026–27",
-        "note": "The initial PASS spring semester includes $48,924 tuition. Later billing follows DMD years 3 and 4: current tuition is $97,848 per year, with attendance budgets of $160,904 and $161,684. Future academic-year charges may increase.",
-        "source": "https://srfs.upenn.edu/costs-budgeting/graduate-cost-attendance/school-dental-medicine/dmd-pass"
+        "tuition": "$244,620 tuition across initial spring and D3/D4; other mandatory costs are included in attendance budgets.",
+        "living": "$69,860 housing and food across the published phases. Personal, transport and insurance allowances are included separately.",
+        "initial": "Initial PASS spring attendance budget: $82,567, including $48,924 tuition.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [
+          {
+            "label": "Initial PASS spring",
+            "amount": 82567
+          },
+          {
+            "label": "D3",
+            "amount": 160904
+          },
+          {
+            "label": "D4",
+            "amount": 161684
+          }
+        ],
+        "note": "Uses the PASS initial period and D3/D4 only, not the regular four-year DDS sequence. Confirm budget dates, actual insurance costs and future increases.",
+        "source": "https://srfs.upenn.edu/costs-budgeting/graduate-cost-attendance/school-dental-medicine/dmd-pass",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/university-of-pennsylvania-school-of-dental-medicine",
       "website": "https://www.dental.upenn.edu/admissions-academics/program-for-advanced-standing-students/admissions-requirements/",
@@ -1232,11 +1850,21 @@
       "visa": "Conditional: the profile allows applicants legally authorized to study without F-1 sponsorship. Its citizen/GC checkbox is more restrictive; obtain written clarification.",
       "dateNote": "",
       "cost": {
+        "total": null,
+        "coverage": "unconfirmed",
         "value": null,
-        "label": "Program budget needs confirmation",
+        "label": "Full program cost not confirmed",
+        "summary": "Request an advanced-standing budget directly from Pikeville.",
         "year": "Current amount not verified",
-        "note": "Request the Advanced Placement International Dental Program budget. The regular three-year DMD cost is not automatically the same as this pathway.",
-        "source": "https://www.upike.edu/dental-medicine/"
+        "tuition": "Not verified.",
+        "living": "Full 25.5-month living allowance not verified.",
+        "initial": "Deposit, payment due dates and cash needed before aid disbursement need confirmation.",
+        "residency": "Program-specific resident/nonresident rates were not verified.",
+        "phases": [],
+        "note": "The general dental-program webpage does not establish a complete budget for the advanced-standing route.",
+        "source": "https://www.upike.edu/dental-medicine/",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/university-of-pikeville-tanner-college-of-dental-medicine",
       "website": "https://www.upike.edu/dental-medicine/",
@@ -1263,11 +1891,21 @@
       "visa": "The profile does not restrict admission to U.S. citizens or permanent residents. This does not establish visa sponsorship; confirm permitted status and documents.",
       "dateNote": "",
       "cost": {
-        "value": "$122,119",
-        "label": "D3 attendance budget · nonresident",
+        "total": null,
+        "coverage": "partial",
+        "value": null,
+        "label": "Full program cost not confirmed",
+        "summary": "Initial summer and D3/D4 overlap needs clarification.",
         "year": "2026–27",
-        "note": "Published budgets: D3 $122,119, D4 $103,544; initial summer is separately listed at $55,692. Confirm whether your aid-year schedule overlaps before combining figures.",
-        "source": "https://www.dental.pitt.edu/education/international-advanced-standing-program/budgets"
+        "tuition": "Published D3/D4 budgets sum to $212,413 resident / $225,663 nonresident. A separate initial summer budget is $55,692; whether it overlaps needs confirmation.",
+        "living": "Summer allowance $10,000; D3 $32,000 and D4 $24,000. Confirm the covered dates before adding these amounts.",
+        "initial": "Initial summer budget: $55,692, including $33,318 tuition and $10,000 living.",
+        "residency": "D3 tuition: $29,346 resident / $37,296 nonresident; D4: $19,564 / $24,864. A $34,428 annual professional fee is additional in both categories.",
+        "phases": [],
+        "note": "Ask whether the separate summer is already included in D3. Adding it without confirmation could double-count costs; omitting it could understate them.",
+        "source": "https://www.dental.pitt.edu/education/international-advanced-standing-program/budgets",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/university-of-pittsburgh-school-of-dental-medicine",
       "website": "https://www.dental.pitt.edu/education/international-advanced-standing-program",
@@ -1294,11 +1932,30 @@
       "visa": "The profile does not restrict admission to U.S. citizens or permanent residents. This does not establish visa sponsorship; confirm permitted status and documents.",
       "dateNote": "",
       "cost": {
+        "total": null,
+        "coverage": "partial",
         "value": null,
-        "label": "Program budget needs confirmation",
-        "year": "Current amount not verified",
-        "note": "An official 2026–27 advanced-placement cost PDF is linked. Confirm its residency category and included terms with the school; a comparable total was not verified here.",
-        "source": "https://dental.rcm.upr.edu/wp-content/uploads/2026/06/EMD-ADVANCE-PLACEMENT-PROGRAM-ESTIMADOS-DE-COSTOS-DMD-2026-20271-June-12-v4.pdf"
+        "label": "Full program cost not confirmed",
+        "summary": "$200,095 published D3/D4 budgets; additional months need confirmation.",
+        "year": "2026–27",
+        "tuition": "$120,000 tuition; tuition/fee rows total $127,300, with instruments, kits and other academic costs additional.",
+        "living": "$27,785 housing/per-diem across 11 + 10 budget months; confirm the remaining months of the 25-month program.",
+        "initial": "D3 attendance budget: $106,448, including initial kit, loupes and laptop allowances. A separate entry-period charge was not verified.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [
+          {
+            "label": "D3 · 11 months",
+            "amount": 106448
+          },
+          {
+            "label": "D4 · 10 months",
+            "amount": 93647
+          }
+        ],
+        "note": "Published two-year sum includes $2,781 annual health insurance unless waived. Confirm initial-period coverage, current charges and additional living months.",
+        "source": "https://dental.rcm.upr.edu/wp-content/uploads/2026/06/EMD-ADVANCE-PLACEMENT-PROGRAM-ESTIMADOS-DE-COSTOS-DMD-2026-20271-June-12-v4.pdf",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/university-of-puerto-rico-school-of-dental-medicine",
       "website": "https://dental.rcm.upr.edu/advanced-placement-program/",
@@ -1325,11 +1982,30 @@
       "visa": "The profile directs international applicants to the international student office. Confirm study authorization and financial certification.",
       "dateNote": "",
       "cost": {
-        "value": null,
-        "label": "Program budget needs confirmation",
-        "year": "Current amount not verified",
-        "note": "Request the two-year IDS cost of attendance, instrument charges and San Francisco living allowance. A current IDS-specific total was not verified here.",
-        "source": "https://dental.pacific.edu/dental/academic-programs/international-dental-studies"
+        "total": 398758,
+        "coverage": "estimate",
+        "value": "$398,758",
+        "label": "Program attendance estimate",
+        "summary": "Two IDS year budgets with 24 months of living.",
+        "year": "2026–27",
+        "tuition": "$271,400 tuition; total direct charges $313,630 across both years.",
+        "living": "$85,128 living allowance over 24 months ($3,547/month), including food, housing, transport and personal expenses.",
+        "initial": "First-year attendance estimate: $206,312, including $163,748 direct charges.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [
+          {
+            "label": "IDS first year · direct + living",
+            "amount": 206312
+          },
+          {
+            "label": "IDS second year · direct + living",
+            "amount": 192446
+          }
+        ],
+        "note": "Calculated from school direct costs plus its published living allowance. Confirm your campus, actual housing expenses, deposit and future-year increases.",
+        "source": "https://www.pacific.edu/dental/academic-programs/cost-of-attendance",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/university-of-the-pacific-arthur-a.-dugoni-school-of-dentistry",
       "website": "https://dental.pacific.edu/dental/academic-programs/international-dental-studies",
@@ -1356,11 +2032,21 @@
       "visa": "The profile requires lawful status allowing attendance; confirm sponsorship and when documentation must be supplied.",
       "dateNote": "",
       "cost": {
+        "total": null,
+        "coverage": "unconfirmed",
         "value": null,
-        "label": "Program budget needs confirmation",
+        "label": "Full program cost not confirmed",
+        "summary": "Initial $5,000 fee confirmed; full UWIDDS budget still needed.",
         "year": "Current amount not verified",
-        "note": "Request the UWIDDS-specific budget. The acceptance page separately lists a $5,000 deposit that does not reduce tuition. Regular DDS estimates are not a complete IDDS quote.",
-        "source": "https://dental.washington.edu/students/international-dds-program/acceptancenotification-phase/"
+        "tuition": "Not verified.",
+        "living": "A complete 30-month UWIDDS-specific living allowance was not verified.",
+        "initial": "$5,000 nonrefundable acceptance deposit is explicitly NOT applied toward tuition; include it as an additional cost.",
+        "residency": "UWIDDS-specific resident/nonresident classification and complete tuition schedule were not verified.",
+        "phases": [],
+        "note": "Regular DDS projected costs do not establish every UWIDDS entry-period charge. Request the complete program budget and proof-of-funds amount.",
+        "source": "https://dental.washington.edu/students/international-dds-program/acceptancenotification-phase/",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/university-of-washington-school-of-dentistry",
       "website": "https://dental.washington.edu/students/dds-programs/international-dds-program/",
@@ -1387,11 +2073,21 @@
       "visa": "The profile requires U.S. citizenship or lawful permanent residence. Confirm proof and timing with admissions.",
       "dateNote": "",
       "cost": {
-        "value": "Up to $100,000",
-        "label": "Indicative annual tuition & fees",
+        "total": null,
+        "coverage": "unconfirmed",
+        "value": null,
+        "label": "Full program cost not confirmed",
+        "summary": "Launch announcement is not a complete IDEP budget.",
         "year": "2025 program announcement",
-        "note": "UTHealth’s launch announcement estimates annual tuition and fees up to $100,000 depending on Texas residency. This is an indicative figure, not a current individualized attendance budget.",
-        "source": "https://dentistry.uth.edu/news/story/uthealth-houston-school-of-dentistry-announces-new-international-dentist-education-program"
+        "tuition": "Not verified.",
+        "living": "Full 27-month living allowance not verified.",
+        "initial": "Deposit, payment due dates and cash needed before aid disbursement need confirmation.",
+        "residency": "The announcement says tuition/fees depend on Texas residency; exact resident and nonresident schedules were not verified.",
+        "phases": [],
+        "note": "The launch announcement mentions annual tuition/fees up to $100,000. This is not an all-term quotation and excludes a verified living-cost calculation.",
+        "source": "https://dentistry.uth.edu/news/story/uthealth-houston-school-of-dentistry-announces-new-international-dentist-education-program",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/uthealth-houston-school-of-dentistry",
       "website": "https://dentistry.uth.edu/",
@@ -1418,11 +2114,26 @@
       "visa": "The profile does not restrict admission to U.S. citizens or permanent residents. This does not establish visa sponsorship; confirm permitted status and documents.",
       "dateNote": "",
       "cost": {
+        "total": null,
+        "coverage": "conflict",
         "value": null,
-        "label": "Program budget needs confirmation",
-        "year": "Current amount not verified",
-        "note": "VCU’s dental aid office links an International Dentist budget. Request the latest IDP cohort estimate including initial and summer terms.",
-        "source": "https://dentistry.vcu.edu/programs/sod-financial-aid-office/"
+        "label": "Full program cost not confirmed",
+        "summary": "VCU’s published IDP budget contains conflicting totals.",
+        "year": "2026–27",
+        "tuition": "The 2026–27 tuition/mandatory-fee year rows sum to $347,163, while the printed program total says $344,835. Other totals also differ.",
+        "living": "Published room/board rows total $97,470; transport and personal allowances add more. Resolve the budget arithmetic before using a full total.",
+        "initial": "Footnote lists initial summer tuition $5,000 plus estimated fees $1,166; confirm whether included in the first-year budget.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [],
+        "note": "Printed annual attendance totals sum to $556,443, but the first-year direct + indirect rows do not match its printed total. Ask VCU for a corrected IDP budget; no verified full-program total is shown here.",
+        "source": "https://drive.google.com/file/d/1-rZqpoZZ-vpPhlB062V-gLHZIiE8lsbL/view?usp=drive_link",
+        "additionalSources": [
+          {
+            "label": "VCU financial aid / budget links",
+            "url": "https://dentistry.vcu.edu/programs/sod-financial-aid-office/"
+          }
+        ],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/virginia-commonwealth-university-school-of-dentistry",
       "website": "https://dentistry.vcu.edu/programs/internationaldentists/",
@@ -1449,15 +2160,26 @@
       "visa": "F-1 applicants may apply; legal U.S. residency documentation is required before matriculation. Confirm your exact status with admissions.",
       "dateNote": "The school also publishes a March 8–July 20, 2027 application window for its next cycle; the ADEA snapshot below is for 2026.",
       "cost": {
-        "value": "$180,174",
-        "label": "Second-year IDP tuition & fees",
+        "total": null,
+        "coverage": "partial",
+        "value": null,
+        "label": "Full program cost not confirmed",
+        "summary": "$378,420 academic charges; living-period alignment needs confirmation.",
         "year": "2026–27",
-        "note": "Published phase totals for tuition and fees: $49,817 / $180,174 / $148,429. Living, equipment and other budget items are additional; confirm the length of each budget period.",
-        "source": "https://www.westernu.edu/financial/student-budgets/dmd-idp/"
+        "tuition": "$330,664 tuition; three published tuition/fee rows total $378,420, before books and living.",
+        "living": "Each of the three published phases repeats an annual living allowance, despite the 26-month curriculum. Confirm actual funded months before multiplying or adding those rows.",
+        "initial": "Initial tuition/fees $49,817, including $40,320 tuition; initial books/computer and living add more.",
+        "residency": "One program rate is published; no in-state/out-of-state split is shown. Confirm your classification with the school.",
+        "phases": [],
+        "note": "Summing three annual living budgets could overstate this 26-month route. Loan-fee assumptions may also differ from the loans now available to new borrowers.",
+        "source": "https://www.westernu.edu/financial/student-budgets/dmd-idp/",
+        "additionalSources": [],
+        "checked": "2026-10-04"
       },
       "source": "https://programs.adea.org/CAAPID/programs/western-university-health-sciences-college-of-dental-medicine",
       "website": "https://prospective.westernu.edu/dentistry/dmd-idp/",
       "checked": "2026-10-04"
     }
-  ]
+  ],
+  "costMethodology": "Only a reconciled program attendance estimate receives a numeric headline. Partial tuition, annual and initial-term figures are shown as components, never as a full-program total. Phase sums use published rates and allowances, not future guaranteed prices. Missing costs remain unconfirmed rather than being assigned an artificial minimum."
 }

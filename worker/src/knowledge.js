@@ -7,16 +7,16 @@ export const KNOWLEDGE = `
 # TRAIN DENTIST: REFERENCE KNOWLEDGE (verified October 2026)
 
 ## A. About Dr. Liji Mathew and Train Dentist
-- Dr. Liji Mathew, DMD, MDS. She grew up in Kochi (Cochin), Kerala, India.
+- Dr. Liji Mathew, DMD, MDS. Dentist, educator and admissions mentor; her biography and photographs are at https://traindentist.com/my-story.html.
 - Education and career:
-  - BDS with distinction, Christian Medical College (Christian Dental College), Ludhiana, Punjab.
-  - MDS in Prosthodontics and Implantology, Amrita School of Dentistry, Kochi, with the Gold Medal for the graduate with the highest academic and clinical skills.
+  - BDS, 2004, Christian Dental College and Hospital, Ludhiana, India; all-round best outgoing student of her class.
+  - MDS in Prosthodontics and Crown & Bridge, 2013, Amrita School of Dentistry, India; university Gold Medal for the highest MDS examination score. Implant dentistry preceptorship at UT Health San Antonio, completed in 2014.
   - Taught restorative dentistry, prosthodontics and endodontics at dental schools in India.
   - Served underserved patients in the Himalayan foothills (Herbertpur Christian Hospital).
   - Did oral pathology research involvement at the University of Michigan (2008).
 - Moved to the U.S. and earned her DMD from Temple University's Maurice H. Kornberg School of Dentistry, Philadelphia, Class of 2019, summa cum laude.
   - She received the Dean's Award, given to the senior student from Cluster 3 who provided the most clinical care.
-- Other credentials: Fellow of the International Congress of Oral Implantologists (ICOI); master's degree in clinical research and data management; published author and conference presenter; member of the ADA, Texas Dental Association and Greater Houston Dental Society.
+- Other credentials: Fellow of the International Congress of Oral Implantologists (ICOI); postgraduate diploma in Clinical Research and Data Management; published author and conference presenter; member of the ADA, Texas Dental Association and Greater Houston Dental Society.
 - Speaks English, Malayalam, Hindi and Punjabi. Practices in the Houston / Katy, Texas area.
 - Her own words (2024, on her journey as a newcomer dentist): "Dentistry is a great career option, provided that you are ready to put a lot of time."
 - Train Dentist services (all 1-on-1; online worldwide, or in person in Houston/Katy):
@@ -111,24 +111,26 @@ export const KNOWLEDGE = `
 ## E. Program examples (school sites, 2026; confirm each cycle)
 - **Howard University IDP:** 24 months; up to 10 students; enters at D3; deadline July 31; TOEFL 100+ (no waivers); NBDE I&II or INBDE (preferably within 5 years); 3 letters (ideally one from the dean); ECE or WES; CAAPID; $200 supplemental fee.
 - **University of Michigan ITDP:** 28 months; about 20 students; January start; INBDE or NBDE I passed; TOEFL 94 min / 100+ competitive (new scale about 5); ADAT recommended, not required; dental work experience expected; possible manikin practical.
-- **UMKC Advanced Standing DDS:** 29 months; up to 9; January start; U.S. citizens/permanent residents only; dental GPA 3.0; TOEFL 90 (4.5 new scale; MyBest not accepted); ECE or WES; CAAPID March 1 – June 1; letters from dean, faculty and a practicing U.S. dentist; shadowing expected; multi-day selection with bench exam ($2,500); tuition about $41,500 per regular semester (about $249k total) plus fees.
+- **UMKC Advanced Standing DDS:** 29 months; up to 9; January start; U.S. citizens/permanent residents only; dental GPA 3.0; TOEFL 90 (4.5 new scale; MyBest not accepted); ECE or WES; CAAPID March 1 – June 1; letters from dean, faculty and a practicing U.S. dentist; shadowing expected; multi-day selection with bench exam ($2,500); older 2024–25 tuition rates of $41,500 per regular semester and $20,750 per summer imply $249,000 tuition over five full semesters and two summers; about $280,325 with listed academic fees/materials, before living. Request current costs.
 - **USC Ostrow ASPID:** about 2 years (about 8 months foundation, then D3); class of 34; INBDE; TOEFL 100+ preferred (5.0 new; no Home Edition or MyBest); 3 letters; CAAPID deadline July 31; practical exam in fixed prosthodontics and operative dentistry.
-- **UCLA:** 25 months, class of 30. **NYU:** 28 months. **Columbia:** 30 months. **Pacific:** 2 years (tuition $135,700/yr; 2-year cost of attendance about $398,758). **UB:** 24 months. **Oklahoma ASPID:** about $185k total tuition and fees.
+- **UCLA:** 25 months, class of 30. **NYU:** 28 months. **Columbia:** 30 months. **Pacific:** 2 years (tuition $135,700/yr; 2-year cost of attendance about $398,758). **UB:** 24 months. **Oklahoma ASPID:** 29 months in the reviewed CAAPID profile. The former $185k full tuition/fee estimate was incorrect. Its older 2024–25 published D3/D4 tuition/fees total $352,022 resident / $352,024 nonresident; broader budgets total $436,236 / $436,238, but full-period coverage and current rates need confirmation.
 - **University of Florida:** (a) 4-year DMD, up to 2 international seats, requires the DAT (Academic Average about 330), INBDE optional, TOEFL 80 (4.0), deadline Oct 1, interview in Gainesville; (b) 2-year AEGD in Hialeah, 12 seats, via ADEA PASS + direct application, bench test, about $139k, Florida-only licensure eligibility. Both tracks are for U.S. citizens/permanent residents only.
 
 ## F. Costs and money
 - ECE Course-by-Course $199. INBDE $890 + $435. TOEFL varies by country.
 - CAAPID $264 + $115 per extra school; school fees about $75–$200; selection or workshop fees at some schools ($1,200–$2,500).
 - Bench instruments and typodonts, plus travel for tests and interviews.
-- Program tuition and fees: about $185k (Oklahoma) to $250k+ (UMKC about $249k). Total cost of attendance can approach $400k (Pacific, 2 years).
+- Rechecked October 4, 2026: https://traindentist.com/schools.html separates 12 program attendance estimates from 35 incomplete or conflicting full budgets. Never present one term, one year, tuition-only or a missing-living subtotal as a full-program total. Never invent a universal $150k minimum or a guaranteed maximum.
+- Attendance examples at published rates: Colorado $294,553 (ISP class of 2028); Boston University $325,167 (2026–27, insurance may be extra); Michigan $356,642 (2026–27 nonresident); Minnesota $475,183 (class of 2029); Pacific $398,758 (2026–27). Future rates, household circumstances, uncovered costs and loan interest can add more. These are examples, not a universal range.
+- UIC's 2026–27 table describes 8 semesters but populates costs for 7. Resident tuition $41,500 per semester / nonresident $47,376, plus fees and living. VCU and Nebraska also have conflicting printed arithmetic. Their full program totals remain unconfirmed; explain why rather than guessing.
+- Budget all introductory/bridge terms, later terms, mandatory fees, instruments, insurance, licensure and all living months, including gaps. Residency for tuition is separate from citizenship/green-card status. Do not promise a later switch to in-state tuition.
+- Cash before aid: Colorado's $4,000 deposit is credited toward tuition; UWIDDS's $5,000 acceptance deposit is not. Count credited deposits once. Confirm payment and disbursement dates, and keep an emergency reserve. See https://traindentist.com/finances.html#complete-budget.
 - ADEX licensure exam $2,995 + facility fee.
 - Average U.S. dental school debt was about $301,583 for 2022 graduates (ADEA data).
-- Loans: federal student loans are generally for U.S. citizens and permanent residents only. Private loans usually need a U.S. citizen/permanent-resident co-signer, at higher rates. Plan financing early.
-- Salary (U.S. Bureau of Labor Statistics, May 2022 data):
-  - General dentists: median about $163,220; top 10% over $237,570; bottom 10% under $67,540.
-  - Specialists: orthodontists median about $174,380; oral surgeons about $309,410.
-  - Public health / community clinics: roughly $100k–$180k.
-  - Pay varies by state. Highest-paying include Delaware, Rhode Island, Alaska and Vermont; lowest include West Virginia, Louisiana and Kentucky.
+- Federal aid may be available to citizens, permanent residents and certain other eligible noncitizens; F-1 alone is insufficient. From July 1, 2026, new professional borrowing is generally limited to $50,000/year and $200,000 aggregate, with prior borrowing affecting limits and a $257,500 lifetime cap. New Grad PLUS borrowing ended except for qualifying transition cases. Confirm individual eligibility and program limits with the aid office; https://studentaid.gov/ and https://traindentist.com/finances.html explain the source basis.
+- Sallie Mae considers international borrowers residing/studying in the U.S. with a creditworthy U.S. citizen or permanent-resident co-signer, subject to all other requirements. Other lenders differ. No-co-signer products may not cover a specific DDS/DMD or the full cost. Never guarantee approval, rates, school certification, or future annual renewals.
+- The repayment calculator at https://traindentist.com/finances.html#calculator models tuition + fees + all living months + other costs, less savings; monthly loan draws; school/grace interest; fixed-rate 5/10/15/20-year examples; initial cash timing; and take-home cash flow. It is not a lender quote or an income-driven federal repayment calculation.
+- Salary: BLS May 2025 median annual wage for general dentists is $170,950 (https://www.bls.gov/ooh/healthcare/dentists.htm). This is not entry-level pay, owner profit or take-home income; self-employed owners are excluded. Avoid inferring an offer from a national median. Compare actual guarantees, collections assumptions, hours, taxes, expenses and debt; https://traindentist.com/careers.html#income.
 
 ## G. Licensure after the DDS/DMD
 - **ADEX dental exam** (administered via CDCA-WREB-CITA, now merging as the American Board of Dental Examiners):
@@ -184,13 +186,59 @@ export const KNOWLEDGE = `
 
 /** Domains the assistant may search: official bodies, testing agencies, state boards and dental schools. */
 export const SEARCH_DOMAINS = [
-  "ada.org", "adea.org", "liaisonedu.com", "ece.org", "ets.org", "adextesting.org", "cdcaexams.org",
-  "studyinthestates.dhs.gov", "uscis.gov", "bls.gov", "knowledge.wes.org",
-  "mn.gov", "tsbde.texas.gov", "flsenate.gov", "floridasdentistry.gov", "doh.wa.gov", "dbc.ca.gov", "op.nysed.gov", "mass.gov",
-  "dental.upenn.edu", "dental.nyu.edu", "dental.columbia.edu", "dentistry.ucla.edu", "dentistry.usc.edu", "dent.umich.edu",
-  "dentistry.howard.edu", "dentistry.umkc.edu", "dental.ufl.edu", "bu.edu", "dental.washington.edu", "pacific.edu",
-  "dental.buffalo.edu", "dentistry.uic.edu", "dental.temple.edu", "ouhsc.edu", "cuanschutz.edu", "urmc.rochester.edu",
-  "dental.tufts.edu", "dentistry.uthscsa.edu", "uth.edu", "tamu.edu", "dental.rutgers.edu", "dental.umaryland.edu",
-  "dental.pitt.edu", "dentistry.unc.edu", "dentistry.uiowa.edu", "dental.uiowa.edu", "lsusd.lsuhsc.edu", "dentistry.osu.edu",
-  "dental.case.edu", "nova.edu", "llu.edu", "ucsf.edu", "roseman.edu", "midwestern.edu",
+  "ada.org",
+  "adea.org",
+  "liaisonedu.com",
+  "ece.org",
+  "ets.org",
+  "adextesting.org",
+  "cdcaexams.org",
+  "studyinthestates.dhs.gov",
+  "uscis.gov",
+  "bls.gov",
+  "knowledge.wes.org",
+  "mn.gov",
+  "tsbde.texas.gov",
+  "flsenate.gov",
+  "floridasdentistry.gov",
+  "doh.wa.gov",
+  "dbc.ca.gov",
+  "op.nysed.gov",
+  "mass.gov",
+  "dental.upenn.edu",
+  "dental.nyu.edu",
+  "dental.columbia.edu",
+  "dentistry.ucla.edu",
+  "dentistry.usc.edu",
+  "dent.umich.edu",
+  "dentistry.howard.edu",
+  "dentistry.umkc.edu",
+  "dental.ufl.edu",
+  "bu.edu",
+  "dental.washington.edu",
+  "pacific.edu",
+  "dental.buffalo.edu",
+  "dentistry.uic.edu",
+  "dental.temple.edu",
+  "ouhsc.edu",
+  "cuanschutz.edu",
+  "urmc.rochester.edu",
+  "dental.tufts.edu",
+  "dentistry.uthscsa.edu",
+  "uth.edu",
+  "tamu.edu",
+  "dental.rutgers.edu",
+  "dental.umaryland.edu",
+  "dental.pitt.edu",
+  "dentistry.unc.edu",
+  "dentistry.uiowa.edu",
+  "dental.uiowa.edu",
+  "lsusd.lsuhsc.edu",
+  "dentistry.osu.edu",
+  "dental.case.edu",
+  "nova.edu",
+  "llu.edu",
+  "ucsf.edu",
+  "roseman.edu",
+  "midwestern.edu",
 ];

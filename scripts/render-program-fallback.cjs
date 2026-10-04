@@ -3,6 +3,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 const root = path.join(__dirname, "..");
 const { programs } = require("../data/programs.json");
+const costs = require("../js/program-costs.js");
 const escape = (value) =>
   String(value ?? "").replace(
     /[&<>"']/g,
@@ -16,7 +17,7 @@ const link = (url, label) =>
 const cards = programs
   .map(
     (p) =>
-      `<article class="program-card"><span class="tag">${escape(p.city)}, ${escape(p.state)}</span><h3>${escape(p.short)}</h3><p class="school-full">${escape(p.name)}</p><p>${escape(p.degree)} · ${escape(p.length)}</p><div class="cost-block"><strong>${escape(p.cost.value || "Confirm with school")}</strong><span>${escape(p.cost.label)}</span><span>${escape(p.cost.year)}</span></div><p class="micro">${escape(p.visa)}</p><div class="source-links">${link(p.source, "Program requirements")}${link(p.cost.source, "Cost source")}</div></article>`,
+      `<article class="program-card"><span class="tag">${escape(p.city)}, ${escape(p.state)}</span><h3>${escape(p.short)}</h3><p class="school-full">${escape(p.name)}</p><p>${escape(p.degree)} · ${escape(p.length)}</p>${costs.summary(p.cost)}<details class="static-cost-details"><summary>Initial costs, living & residency</summary>${costs.breakdown(p.cost)}</details><p class="micro">${escape(p.visa)}</p><div class="source-links">${link(p.source, "Program requirements")}${link(p.cost.source, "Cost source")}${p.cost.additionalSources.map((s) => link(s.url, escape(s.label))).join("")}</div></article>`,
   )
   .join("\n");
 const file = path.join(root, "schools.html");

@@ -399,6 +399,91 @@
   display: block;
   margin-top: 3px;
 }
+.cost-block .cost-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+.cost-block p {
+  font-size: 13px;
+  line-height: 1.55;
+  margin: 8px 0;
+}
+.cost-pending strong {
+  font-size: 19px;
+}
+.modal .cost-breakdown,
+.cost-breakdown {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  background: var(--bg-alt);
+  border: 1px solid var(--line);
+  padding: 0 18px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+.cost-breakdown > div {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+.cost-breakdown > div:last-child {
+  border: 0;
+}
+.cost-breakdown dt {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ink2);
+  margin-bottom: 6px;
+}
+.modal .cost-breakdown dd,
+.cost-breakdown dd {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.65;
+}
+.cost-phases summary,
+.static-cost-details > summary {
+  cursor: pointer;
+  padding: 12px 0;
+  min-height: 44px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.cost-phases ul {
+  padding: 0;
+  list-style: none;
+}
+.cost-phases li {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  border-bottom: 1px solid var(--line);
+  padding: 10px 0;
+  font-size: 13px;
+}
+.cost-phases li strong {
+  white-space: nowrap;
+}
+.cost-caveat {
+  font-size: 13px;
+  margin: 14px 0;
+}
+.static-cost-details .cost-breakdown {
+  padding: 0 12px;
+}
+.cost-legend {
+  margin-top: 16px;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.cash-plan {
+  border-top: 1px solid var(--line);
+  margin-top: 20px;
+  padding-top: 18px;
+}
 .program-card .card-actions {
   display: flex;
   gap: 10px;

@@ -11,3 +11,11 @@ After editing the JSON, run `node scripts/render-program-fallback.cjs` to update
 Finance and career guidance is maintained in its respective HTML page. Review lender terms, federal rules and dated salary data before changing the review date. Repayment calculations are illustrative and use the documented assumptions beside the calculator.
 
 Map geography is derived from U.S. Atlas 3.0.1, based on U.S. Census geography. See `assets/map-geography-LICENSE.txt` for attribution.
+
+## Cost coverage model
+
+`cost.total` is numeric only for a reconciled attendance estimate that includes the published program phases and living allowances. `coverage` is `estimate`, `partial`, `unconfirmed`, or `conflict`. Missing totals and the legacy `value` remain null, even if a tuition or initial-term amount is known. Never impose an invented minimum to fill missing data. `phases` contains labeled school attendance budgets; summing them does not establish complete coverage when dates or introductory terms are unclear.
+
+Every profile includes `initial`, `tuition`, `living`, `residency`, source year/cohort, limitations and official links. Individual households, insurance waivers, future increases and loan interest alter the actual cost. Same-year budgets for different cohorts are planning inputs, not a price commitment for one future student. Private program rates without a residency split must not be replaced with ordinary DDS resident/nonresident fees.
+
+`js/program-costs.js` applies the same headline/breakdown policy to cards, dialogs, comparisons and generated static HTML. The cost filter selects usable attendance estimates, incomplete totals, or conflicting source figures. When correcting costs or biographical facts, also check `pathway.html`, `js/drmathew-knowledge.js`, and `worker/src/knowledge.js` so the guide and chatbot do not retain an old claim. A worker knowledge change needs deployment to the existing Cloudflare Worker; a GitHub Pages push alone does not update that service.

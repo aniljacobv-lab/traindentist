@@ -77,7 +77,18 @@
     }
     return balance > 0.000001 ? null : { months, interest, total, balances };
   }
-  const api = { payment, budget, amortize };
+  function cashTiming(upfront, available, total, savings) {
+    [upfront, available, total, savings].forEach((n) => valid(n));
+    if (upfront > total || available > savings)
+      throw new RangeError(
+        "Initial costs must be part of the total budget and available cash must be part of savings.",
+      );
+    return {
+      gap: Math.max(0, upfront - available),
+      remaining: Math.max(0, available - upfront),
+    };
+  }
+  const api = { payment, budget, amortize, cashTiming };
   if (typeof module !== "undefined") module.exports = api;
   else root.TDFinance = api;
 })(typeof window !== "undefined" ? window : globalThis);
