@@ -5,6 +5,10 @@ The website for Dr. Liji Mathew, DMD: mentorship for internationally trained den
 ```
 index.html               home page
 pathway.html             the U.S. Pathway Guide + Pathway Planner
+schools.html             47-program explorer, U.S. map and school comparison
+finances.html            funding guide and education-loan calculator
+careers.html             graduate, associate, DSO and ownership guide
+data/programs.json       reviewed school facts, cost bases and official sources
 js/planner.js            the Pathway Planner checklist
 css/styles.css           all styles, including the chat widget
 js/config.js             EDIT ME: email, phone, form endpoint, chat API URL
@@ -89,7 +93,9 @@ With `formEndpoint` empty, the form prepares an email draft and explicitly asks 
 
 ### Verification
 
-Run `node --test tests/consultation.test.cjs` for consultation request tests (no dependencies or external requests). Preview with any static HTTP server, for example `python -m http.server 4173`, and visit `http://localhost:4173`.
+Run `node --test tests/*.test.cjs` for consultation, repayment, school filtering and local-link checks (no dependencies or external requests). Preview with any static HTTP server, for example `python -m http.server 4173`, and visit `http://localhost:4173`.
+
+The resource pages use `css/resources.css`. School summaries remain available if interactive loading fails. The calculator and shortlist stay in the visitor's browser. See `data/README.md` for source review rules and the command to refresh static school summaries after editing the catalog. Loan terms and admission rules are dated editorial snapshots; confirm them with the original source before changing a review date.
 
 ## Portrait update
 
