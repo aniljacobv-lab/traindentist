@@ -66,7 +66,7 @@ By default, the form opens the visitor's email app with the request already fill
 
 ## Content to finish
 - [ ] Set up the **info@traindentist.com** mailbox (or forwarding) at your domain host, or change `email` in `js/config.js`
-- [x] Professional angled portrait in teal dental scrubs based on the owner-supplied photograph, created with built-in image generation; originals retained.
+- [x] Polished solo portrait in her original black dental outfit, with Dr Liji Mathew DMD embroidery, based on the owner-selected photograph, created with built-in image generation; originals retained.
 - [ ] Coaching rates for the Programs section (currently "Contact for current rates")
 - [ ] Student testimonials, once you have permission from real students
 - [ ] Re-check the Pathway Guide facts each cycle (CAAPID dates, fees, TOEFL minimums)
@@ -92,4 +92,4 @@ Run `node --test tests/consultation.test.cjs` for consultation request tests (no
 
 ## Portrait update
 
-The current homepage, mentor profile, and chat use `assets/dr-mathew-professional.webp` and `assets/dr-mathew-avatar.webp`. `assets/dr-mathew-professional.jpg` is used for social previews. This is an AI-edited studio portrait based on a photograph supplied by the site owner. The original photographs remain in the repository. The newer Pathway Guide, Planner, credentials, contact settings, knowledge base, and worker updates from main are retained. The guide has a matching stylesheet in `css/pathway.css`.
+The current homepage, mentor profile, and chat use `assets/dr-mathew-professional.webp` and `assets/dr-mathew-avatar.webp`. `assets/dr-mathew-professional.jpg` is used for social previews. This is an AI-polished portrait based on the clinical photograph selected by the site owner, preserving her broad smile and black dental outfit. The jacket embroidery reads Dr Liji Mathew, with DMD below. The original photographs remain in the repository. The newer Pathway Guide, Planner, credentials, contact settings, knowledge base, and worker updates from main are retained. The guide has a matching stylesheet in `css/pathway.css`.
