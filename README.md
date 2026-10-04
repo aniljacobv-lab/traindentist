@@ -59,7 +59,7 @@ npx wrangler login
 npx wrangler secret put ANTHROPIC_API_KEY     # paste your key from console.anthropic.com
 npx wrangler deploy                           # prints https://drmathew-chat.<you>.workers.dev
 ```
-Then set `chatApi: "https://drmathew-chat.<you>.workers.dev"` in `js/config.js` and push. The worker accepts requests only from traindentist.com, limits each visitor to 30 questions per hour, and has a strict system prompt: no admission guarantees, no visa advice, and no invented school statistics. Set a monthly spend limit in the Anthropic Console as well.
+Then set `chatApi: "https://drmathew-chat.<you>.workers.dev"` in `js/config.js` and push. How the AI answers: it uses Claude (Opus 5.5) and is grounded in `worker/src/knowledge.js`, a verified reference covering every route, exam, fee, deadline, program example, licensure and visa basics, sent as a cached system block. When a question needs something newer or more specific (a school's current deadline, a state's rules), it runs a **live web search restricted to official sources and dental-school websites** (`SEARCH_DOMAINS`) and shows its sources. It remembers the conversation, so follow-ups are personal. The worker accepts requests only from traindentist.com, limits each visitor to 30 questions per hour, and has strict rules: no admission guarantees, no immigration advice, and no invented statistics. Update `knowledge.js` each application cycle. Set a monthly spend limit in the Anthropic Console as well.
 
 ## 4. Contact form
 By default, the form opens the visitor's email app with the request already filled in. To receive submissions directly instead, create a free form at formspree.io and paste its endpoint into `formEndpoint` in `js/config.js`.

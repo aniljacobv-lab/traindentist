@@ -334,3 +334,4 @@ table.cost { width: 100%; border-collapse: collapse; font-size: .94rem; }
 .quote cite { font-style: normal; font-weight: 700; color: var(--ink3); font-size: .9rem; }
 .about-photo img { aspect-ratio: 4 / 5; height: auto; object-position: top; }
 @media (max-width: 880px) { .proof { grid-template-columns: 1fr 1fr; } .quote { grid-column: 1 / -1; } .proof img { height: 240px; } }
+.drm-bubble a { color: var(--blue); word-break: break-all; font-weight: 600; }

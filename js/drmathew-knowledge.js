@@ -38,6 +38,18 @@
       answer: "State routes that don't require a U.S. DDS (verify each one with the board, since rules change):\n- **Minnesota**: Limited General License after credential review, INBDE, TOEFL/OET, jurisprudence and a clinical exam, then 3 years of supervised practice before you can petition for a full license\n- **Texas**: at least 2 years in a CODA-accredited ADA **specialty** program, plus INBDE, a clinical exam and jurisprudence. GPR/AEGD don't qualify.\n- **Florida**: 2 consecutive years in a CODA \"supplemental general dentistry\" program (for example UF's 2-year AEGD in Hialeah, which leads to Florida eligibility only)\n- **Washington**: 2 or more extra academic years in a CODA program with clinical training\n- **Massachusetts**: a limited \"dental intern\" license, for example at community health centers\n- **California**: requires a 2-year program at a board-approved school ending in a DDS/DMD\n- **New York**: accepts a 1-year CODA residency in place of a clinical exam, but you still need the education requirement\n\nA license from these routes often won't transfer to other states." + guide("routes", "Choose your route"),
     },
     {
+      id: "canada", label: "Canadian-trained dentists",
+      keywords: ["canada", "canadian", "cdac", "canadian dds", "dds from canada", "ndeb", "canadian license"],
+      examples: ["I have a DDS from Canada. Can I work in the US?", "Is a Canadian dental degree accepted in the US?"],
+      answer: "Good news. CODA recognises dental programs accredited by the **Commission on Dental Accreditation of Canada (CDAC)**, so graduates of accredited Canadian DDS/DMD programs are treated like U.S. graduates:\n- Pass the **INBDE**\n- Pass a **clinical licensure exam** (e.g. ADEX through CDCA-WREB-CITA)\n- Meet the state's other requirements (jurisprudence, BLS, background check)\n\nThen you can apply for a license in the state you choose, with **no advanced standing program needed**. Double-check that your specific program is accredited. If you trained outside the U.S./Canada and then did a Canadian qualifying program, check how your target state treats it.",
+    },
+    {
+      id: "dat", label: "DAT / ADAT",
+      keywords: ["dat", "dental admission test", "adat", "advanced dental admission test"],
+      examples: ["Do I need the DAT?", "Do advanced standing programs require the ADAT?"],
+      answer: "Most advanced standing programs **don't require the DAT or ADAT**. They focus on the INBDE, TOEFL and your evaluation. Exceptions exist: the **University of Florida's 4-year DMD** for international dentists requires the DAT, and **Michigan recommends** (not requires) the ADAT. The **ADAT** (200 items, 4.5 hours) is mainly used by specialty and residency programs. Always check each program's page.",
+    },
+    {
       id: "caapid", label: "CAAPID application",
       keywords: ["caapid", "application", "apply", "adea", "deadline", "deadlines", "cycle", "when does caapid open", "application fee"],
       examples: ["How does CAAPID work?", "When does CAAPID open?", "What are the deadlines?"],
