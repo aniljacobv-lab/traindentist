@@ -10,15 +10,15 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { KNOWLEDGE, SEARCH_DOMAINS } from "./knowledge.js";
 
-const ALLOWED_ORIGINS = ["https://traindentist.com", "https://www.traindentist.com", "http://localhost:8080", "http://127.0.0.1:8080"];
+const ALLOWED_ORIGINS = ["https://traindentist.com", "https://www.traindentist.com"];   // local testing: set DEV_ORIGIN in .dev.vars
 const MAX_QUESTION = 600, MAX_HISTORY = 8, PER_IP_PER_HOUR = 30, MAX_CONTINUATIONS = 3;
 
-const RULES = `You are "Dr. Mathew", the website assistant for TrainDentist.com, speaking in the first person as Dr. Liji Mathew, DMD, MDS: an internationally trained dentist and prosthodontist (India) who earned her U.S. DMD summa cum laude from Temple University and now mentors international dentists. Visitors are mostly foreign-trained dentists (and their families) figuring out how to practise in the U.S.
+const RULES = `You are Train Dentist's automated admissions guide on TrainDentist.com. You are an AI assistant, not Dr. Mathew: never speak as her or say "I coach" or "my experience". Refer to her in the third person ("Dr. Mathew"). She is Dr. Liji Mathew, DMD, MDS: an internationally trained dentist with an MDS in Prosthodontics from India (do not call her a prosthodontist or a specialist) who earned her U.S. DMD summa cum laude from Temple University and now mentors international dentists. Visitors are mostly foreign-trained dentists (and their families) figuring out how to practise in the U.S.
 
 Your reference knowledge follows this message. Answer from it first. Use the web_search tool only when the visitor asks about something the reference doesn't cover or that may have changed (a specific school's current requirements or deadline, a specific state's rules, this cycle's dates or fees, new laws). Prefer official sources (ADA, ADEA, JCNDE, ECE, ETS, ADEX, state boards, school websites), and mention the source and year of anything you looked up.
 
 How to answer:
-- Be warm, encouraging and practical, like a mentor who has been through it. Usually under 170 words; use a short list when it helps. End with one concrete next step when natural.
+- Be warm, encouraging and practical. Usually under 170 words; use a short list when it helps. End with one concrete next step when natural.
 - Personalise: use what the visitor told you earlier in the conversation (country, degree, exam status, target state, visa situation). If a good answer depends on something you don't know, ask one short clarifying question.
 - Be precise and honest. Never invent requirements, scores, deadlines, fees or statistics. If something varies by school or state, or you couldn't verify it, say so and point to the official source. Flag that rules change.
 - Never promise or imply guaranteed admission. Don't give individual immigration or legal advice, or clinical advice about a specific patient. On visas, give only the general facts in the reference and never state what a visitor's specific visa (H-4, H-1B, F-1, OPT, etc.) does or doesn't allow them to do; say it depends on their situation and refer them to the school's international office or an immigration attorney.
@@ -57,9 +57,14 @@ export default {
     const origin = request.headers.get("Origin") || "";
     if (request.method === "OPTIONS") return new Response(null, { headers: cors(origin) });
     if (request.method !== "POST") return json({ error: "POST only" }, 405, origin);
-    if (!ALLOWED_ORIGINS.includes(origin)) return json({ error: "Origin not allowed" }, 403, origin);
+    if (!ALLOWED_ORIGINS.includes(origin) && origin !== env.DEV_ORIGIN) return json({ error: "Origin not allowed" }, 403, origin);
 
-    const ip = request.headers.get("CF-Connecting-IP") || "unknown", now = Date.now();
+        const ip = request.headers.get("CF-Connecting-IP") || "unknown", now = Date.now();
+    /* Cloudflare rate limiting (wrangler.toml): per visitor, and a site-wide ceiling so a script cannot run up the AI bill */
+    for (const [limiter, key] of [[env.CHAT_LIMITER, ip], [env.SITE_LIMITER, "all"]]) {
+      if (limiter && !(await limiter.limit({ key })).success) return json({ error: "Too many questions right now. Please try again in a minute or book a consultation." }, 429, origin);
+    }
+    if (hits.size > 5000) hits.clear();
     const recent = (hits.get(ip) || []).filter((t) => now - t < 3600_000);
     if (recent.length >= PER_IP_PER_HOUR) return json({ error: "Too many questions. Please try again later or book a consultation." }, 429, origin);
     hits.set(ip, [...recent, now]);
@@ -83,7 +88,7 @@ async function askClaude(env, messages, origin) {
     const client = new Anthropic({ apiKey: env.ANTHROPIC_API_KEY });
     const params = {
       model: "claude-opus-5-5",
-      max_tokens: 6000,
+      max_tokens: 2500,
       output_config: { effort: "low" },             // chat answers; Opus 5.5 always thinks, low effort keeps replies quick
       betas: ["server-side-fallback-2026-07-01"],
       fallbacks: "default",                           // a declined request is retried on Anthropic's recommended fallback model

@@ -8,7 +8,7 @@
   --navy: #183e34;
   --blue: #215d4e;
   --blue-soft: #edf3e8;
-  --gold: #95824f;
+  --gold: #75653a; /* 5.5:1 on the ivory page background */
   --gold-soft: #f3ecd9;
   --green: #316750;
   --green-soft: #e6eedf;
@@ -245,7 +245,7 @@ ul {
 }
 .brand small {
   display: block;
-  font-size: 7px;
+  font-size: 10px;
   letter-spacing: 1.65px;
   color: var(--ink3);
   margin-top: 7px;
@@ -350,7 +350,7 @@ ul {
 }
 .visual-label {
   position: relative;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.15em;
   display: flex;
@@ -431,7 +431,7 @@ ul {
 }
 .mentor-pill span {
   display: block;
-  font-size: 9px;
+  font-size: 10px;
   color: var(--ink3);
 }
 .mentor-pill > .icon {
@@ -446,7 +446,7 @@ ul {
   position: absolute;
   bottom: 3px;
   right: 0;
-  font-size: 7px;
+  font-size: 10px;
   letter-spacing: 0.15em;
   color: var(--ink3);
 }
@@ -537,7 +537,7 @@ ul {
   flex: none;
 }
 .program-type {
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.13em;
   color: #637761;
@@ -721,7 +721,7 @@ ul {
   font-size: 14px;
 }
 .roadmap-focus a {
-  font-size: 9px;
+  font-size: 10px;
   display: inline-block;
   margin-top: 16px;
   color: #193f35;
@@ -730,7 +730,7 @@ ul {
 }
 .focus-label {
   position: absolute;
-  font-size: 6px;
+  font-size: 10px;
   top: 68px;
   left: 17px;
   letter-spacing: 0.08em;
@@ -746,7 +746,7 @@ ul {
 }
 .roadmap-note p,
 .roadmap-note a {
-  font-size: 9px;
+  font-size: 10px;
   color: #c3d1c6;
 }
 .roadmap-note a {
@@ -824,7 +824,7 @@ ul {
   display: flex;
   gap: 12px;
   align-items: center;
-  font-size: 9px;
+  font-size: 10px;
   color: var(--ink3);
   line-height: 1.8;
 }
@@ -893,12 +893,12 @@ ul {
   gap: 5px;
 }
 .learning-figure figcaption span {
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 0.12em;
   font-weight: 800;
 }
 .learning-figure figcaption small {
-  font-size: 9px;
+  font-size: 10px;
   color: var(--ink3);
 }
 .interview {
@@ -914,7 +914,7 @@ ul {
   margin-top: 22px;
 }
 .question-card > span {
-  font-size: 7px;
+  font-size: 10px;
   letter-spacing: 0.1em;
   font-weight: 800;
   color: #61745a;
@@ -1057,7 +1057,7 @@ details p {
 }
 .contact-detail span {
   display: block;
-  font-size: 7px;
+  font-size: 10px;
   letter-spacing: 0.15em;
   color: #c0cebb;
   line-height: 1.4;
@@ -1091,7 +1091,7 @@ details p {
   font-weight: 500;
 }
 .contact-signoff span {
-  font-size: 9px;
+  font-size: 10px;
   color: #c0cebb;
 }
 .form {
@@ -1101,7 +1101,7 @@ details p {
   padding: 33px;
 }
 .form > .eyebrow {
-  font-size: 8px;
+  font-size: 10px;
   margin-bottom: 12px;
 }
 .form h3 {
@@ -1179,7 +1179,7 @@ details p {
 }
 .form-foot {
   text-align: center;
-  font-size: 8px;
+  font-size: 10px;
   color: #697368;
   margin-top: 13px;
 }
@@ -1219,12 +1219,12 @@ details p {
   padding-top: 25px;
 }
 .disclaimer {
-  font-size: 8px;
+  font-size: 10px;
   line-height: 1.9;
   max-width: 660px;
 }
 .copy {
-  font-size: 8px;
+  font-size: 10px;
   white-space: nowrap;
 }
 @media (min-width: 1450px) {
@@ -1285,7 +1285,7 @@ details p {
   }
   .focus-label {
     left: 12px;
-    font-size: 5.5px;
+    font-size: 10px;
   }
   .program {
     padding-inline: 27px;
@@ -1306,7 +1306,7 @@ details p {
     font-size: 21px;
   }
   .brand small {
-    font-size: 6px;
+    font-size: 10px;
     letter-spacing: 1.1px;
   }
   .nav-in {
@@ -1328,7 +1328,7 @@ details p {
     font-size: 51px;
   }
   .hero .eyebrow {
-    font-size: 8px;
+    font-size: 10px;
   }
   .hero-copy .lead {
     font-size: 12px;
@@ -1346,7 +1346,7 @@ details p {
     font-size: 19px;
   }
   .hero-media figcaption span:not(.caption-icon) {
-    font-size: 8px;
+    font-size: 10px;
   }
   .hero-orbit {
     width: 330px;
@@ -1355,7 +1355,7 @@ details p {
     top: 10px;
   }
   .visual-label {
-    font-size: 7px;
+    font-size: 10px;
     margin-left: 14px;
   }
   .mentor-pill {
@@ -1363,10 +1363,10 @@ details p {
     gap: 8px;
   }
   .mentor-pill strong {
-    font-size: 9px;
+    font-size: 10px;
   }
   .mentor-pill span {
-    font-size: 7px;
+    font-size: 10px;
   }
   .mentor-pill > .icon {
     display: none;
@@ -1385,14 +1385,14 @@ details p {
     gap: 10px;
   }
   .trust-in > div {
-    font-size: 9px;
+    font-size: 10px;
     gap: 8px;
   }
   .trust-in p strong {
     font-size: 10px;
   }
   .program-type {
-    font-size: 7px;
+    font-size: 10px;
   }
   .program h3 {
     font-size: 21px;
@@ -1424,7 +1424,7 @@ details p {
     margin-bottom: -14px;
   }
   .focus-label {
-    font-size: 7px;
+    font-size: 10px;
     top: 61px;
   }
   .about {
@@ -1515,7 +1515,7 @@ details p {
     font-size: clamp(48px, 9vw, 66px);
   }
   .hero .eyebrow {
-    font-size: 8px;
+    font-size: 10px;
     letter-spacing: 0.12em;
     margin-bottom: 22px;
   }
@@ -1573,13 +1573,13 @@ details p {
     font-size: 11px;
   }
   .mentor-pill span {
-    font-size: 9px;
+    font-size: 10px;
   }
   .mentor-pill > .icon {
     display: block;
   }
   .visual-label {
-    font-size: 7px;
+    font-size: 10px;
     margin-left: 23px;
   }
   .trust-in {
@@ -1618,7 +1618,7 @@ details p {
   }
   .section-heading .eyebrow,
   .eyebrow {
-    font-size: 9px;
+    font-size: 10px;
     margin-bottom: 18px;
   }
   h2 {
@@ -1634,7 +1634,7 @@ details p {
     font-size: 21px;
   }
   .program-type {
-    font-size: 7px;
+    font-size: 10px;
   }
   .program-top {
     gap: 10px;
@@ -1661,7 +1661,7 @@ details p {
     font-size: 11px;
   }
   .compact .text-link {
-    font-size: 9px;
+    font-size: 10px;
   }
   .roadmap {
     gap: 38px 16px;
@@ -1674,7 +1674,7 @@ details p {
   }
   .roadmap-note p,
   .roadmap-note a {
-    font-size: 9px;
+    font-size: 10px;
   }
   .about {
     grid-template-columns: 1fr;
@@ -1702,7 +1702,7 @@ details p {
     justify-content: space-between;
   }
   .mentor-credentials > div {
-    font-size: 9px;
+    font-size: 10px;
   }
   .mentor-credentials strong {
     font-size: 10px;
@@ -1731,7 +1731,7 @@ details p {
     width: 100%;
   }
   .learning-figure figcaption span {
-    font-size: 9px;
+    font-size: 10px;
   }
   .learning-figure figcaption small {
     font-size: 10px;
@@ -1785,7 +1785,7 @@ details p {
     font-size: 13px;
   }
   .contact-detail span {
-    font-size: 8px;
+    font-size: 10px;
   }
   .contact-signoff {
     max-width: 450px;
@@ -1810,7 +1810,7 @@ details p {
     font-size: 12px;
   }
   .form-foot {
-    font-size: 9px;
+    font-size: 10px;
   }
   .foot-in {
     align-items: start;
@@ -1824,10 +1824,10 @@ details p {
     gap: 25px;
   }
   .disclaimer {
-    font-size: 9px;
+    font-size: 10px;
   }
   .copy {
-    font-size: 9px;
+    font-size: 10px;
   }
   .drm-fab-text {
     display: none;
@@ -1842,7 +1842,7 @@ details p {
     font-size: 13px;
   }
   .program-type {
-    font-size: 8px;
+    font-size: 10px;
   }
   .program h3 {
     font-size: 24px;
@@ -1913,7 +1913,7 @@ details p {
   .roadmap-focus .focus-label {
     position: static;
     display: block;
-    font-size: 7px;
+    font-size: 10px;
     margin-bottom: 4px;
     letter-spacing: 0.1em;
   }
@@ -2004,10 +2004,10 @@ details p {
     letter-spacing: -0.05em;
   }
   .brand small {
-    font-size: 6px;
+    font-size: 10px;
   }
   .hero .eyebrow {
-    font-size: 7px;
+    font-size: 10px;
     gap: 7px;
   }
   .eyebrow-line {
@@ -2020,10 +2020,10 @@ details p {
     font-size: 21px;
   }
   .hero-media figcaption span:not(.caption-icon) {
-    font-size: 8px;
+    font-size: 10px;
   }
   .hero-note {
-    font-size: 9px;
+    font-size: 10px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -2388,7 +2388,7 @@ details p {
   font-size: 12px;
 }
 .drm-fab-text small {
-  font-size: 9px;
+  font-size: 10px;
 }
 .drm-fab .drm-avatar {
   width: 38px;
@@ -2462,7 +2462,7 @@ details p {
   font-size: 14px;
 }
 .program-type {
-  font-size: 9px;
+  font-size: 10px;
 }
 .ticks li {
   font-size: 13px;
@@ -2486,7 +2486,7 @@ details p {
   font-size: 11px;
 }
 .focus-label {
-  font-size: 7px;
+  font-size: 10px;
 }
 .roadmap-note p,
 .roadmap-note a {
@@ -2508,7 +2508,7 @@ details p {
   font-size: 11px;
 }
 .learning-figure figcaption span {
-  font-size: 9px;
+  font-size: 10px;
 }
 .faq-layout > div > p:not(.eyebrow) {
   font-size: 13px;
@@ -2558,7 +2558,7 @@ details p {
     font-size: 11px;
   }
   .focus-label {
-    font-size: 6px;
+    font-size: 10px;
   }
   .mentor-credentials {
     flex-direction: column;
@@ -2579,7 +2579,7 @@ details p {
     font-size: 13px;
   }
   .focus-label {
-    font-size: 7px;
+    font-size: 10px;
   }
   .hero-copy .lead {
     font-size: 14px;
@@ -2623,7 +2623,7 @@ details p {
     font-size: 16px;
   }
   .program-type {
-    font-size: 8px;
+    font-size: 10px;
   }
   .section-heading > p {
     font-size: 14px;
@@ -2656,7 +2656,7 @@ details p {
     font-size: 23px;
   }
   .program-type {
-    font-size: 9px;
+    font-size: 10px;
   }
   .program.compact h3 {
     font-size: 18px;
@@ -2668,7 +2668,7 @@ details p {
     gap: 16px;
   }
   .roadmap-focus .focus-label {
-    font-size: 8px;
+    font-size: 10px;
   }
   .form .btn {
     font-size: 12px;
@@ -2719,7 +2719,7 @@ details p {
   margin-top: 5px;
 }
 .portrait-hero .visual-label {
-  font-size: 8px;
+  font-size: 10px;
   margin-left: 27px;
 }
 .credential-pill {
@@ -2791,7 +2791,7 @@ details p {
 }
 .entry-heading .eyebrow {
   margin: 0;
-  font-size: 9px;
+  font-size: 10px;
 }
 .entry-heading h2 {
   font: 500 25px var(--serif);
@@ -2818,7 +2818,7 @@ details p {
   border-color: #8ba47b;
 }
 .entry-options > a > span {
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 0.12em;
   font-weight: 700;
   color: #6a7b5f;
@@ -2961,7 +2961,7 @@ details p {
   border-radius: 4px;
 }
 .award-evidence span {
-  font-size: 7px;
+  font-size: 10px;
   letter-spacing: 0.1em;
   font-weight: 700;
   color: var(--ink3);
@@ -2998,7 +2998,7 @@ details p {
   border-color: var(--blue);
 }
 .career-journey span {
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 0.07em;
   color: var(--ink3);
 }
@@ -3074,7 +3074,7 @@ details p {
     font-size: 11px;
   }
   .entry-options > a > span {
-    font-size: 7px;
+    font-size: 10px;
   }
   .career-journey {
     gap: 18px;
@@ -3143,7 +3143,7 @@ details p {
     font-size: 13px;
   }
   .entry-options > a > span {
-    font-size: 9px;
+    font-size: 10px;
   }
   .entry-heading {
     align-items: start;
@@ -3212,7 +3212,7 @@ details p {
 }
 @media (max-width: 540px) {
   .hero-note {
-    font-size: 9px;
+    font-size: 10px;
   }
   .portrait-hero .hero-media figcaption {
     padding: 17px;
@@ -3221,10 +3221,10 @@ details p {
     font-size: 23px;
   }
   .portrait-hero .hero-media figcaption span:not(.caption-icon) {
-    font-size: 9px;
+    font-size: 10px;
   }
   .portrait-hero .visual-label {
-    font-size: 7px;
+    font-size: 10px;
   }
   .hero-copy .lead {
     font-size: 15px;
@@ -3233,13 +3233,13 @@ details p {
     font-size: 11px;
   }
   .credential-pill span {
-    font-size: 9px;
+    font-size: 10px;
   }
   .credentials-strip strong {
     font-size: 18px;
   }
   .credentials-strip span {
-    font-size: 9px;
+    font-size: 10px;
   }
   .journey-entry {
     padding-top: 38px;
@@ -3248,9 +3248,38 @@ details p {
     grid-template-columns: 1fr;
   }
   .career-journey span {
-    font-size: 9px;
+    font-size: 10px;
   }
   .contact-detail p {
     font-size: 13px;
   }
+}
+
+/* Chat launcher: the open control is a real button inside the draggable pill. */
+.drm-fab-open {
+  display: flex;
+  align-items: center;
+  gap: inherit;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  touch-action: none;
+}
+.drm-fab-open:focus-visible {
+  outline: 3px solid var(--gold, #95824f);
+  outline-offset: 4px;
+  border-radius: 999px;
+}
+
+/* Photo thumbnails keep their proportions when shown as circles. */
+.contact-signoff img,
+.drm-avatar,
+.drm-head-img,
+.drm-tab-img {
+  object-fit: cover;
+  object-position: top;
 }

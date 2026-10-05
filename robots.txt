@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://traindentist.com/sitemap.xml

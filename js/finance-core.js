@@ -29,7 +29,7 @@
     [tuition, fees, living, other, savings].forEach((n) => valid(n));
     valid(rate, 40);
     if (
-      !Number.isInteger(months) ||
+      !Number.isInteger(months * 2) || // whole or half months (some programs run 28.5)
       months < 1 ||
       months > 72 ||
       !Number.isInteger(grace) ||

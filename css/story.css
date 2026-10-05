@@ -46,7 +46,7 @@
   padding: 22px 28px;
 }
 .story-hero-photo figcaption span {
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: 0.15em;
   display: block;
   color: var(--ink2);
@@ -194,7 +194,7 @@
   display: block;
 }
 .story-award small {
-  font-size: 9px;
+  font-size: 10px;
   color: #d6c68d;
 }
 .story-award strong {
@@ -357,7 +357,7 @@
     font-size: 23px;
   }
   .story-date span {
-    font-size: 9px;
+    font-size: 10px;
     margin-top: 6px;
   }
   .story-journey {

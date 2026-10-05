@@ -66,7 +66,7 @@ export const KNOWLEDGE = `
 
 ## D. Step-by-step for advanced standing
 1. Check your target state's rules and programs' eligibility.
-   - Some programs accept only U.S. citizens/permanent residents (e.g. UMKC, and both University of Florida international tracks).
+   - In the 2026–27 cycle nine programs accepted only U.S. citizens/permanent residents: ATSU Missouri, Ohio State, UAB, Florida (both tracks), UMKC, Nebraska, Oklahoma, Penn and UTHealth Houston; New England and Pikeville are conditional. Always tell visa holders to check the eligibility filter at https://traindentist.com/schools.html before paying fees.
    - Some require the DAT (UF's 4-year DMD).
 2. **DENTPIN + credential evaluation.**
    - The JCNDE accepts only ECE (Educational Credential Evaluators) to verify a non-CODA degree for the INBDE.
@@ -94,12 +94,12 @@ export const KNOWLEDGE = `
    - Usually 3 letters, commonly from your dean, a faculty member/clinical instructor, and a practicing (ideally U.S.) dentist, recent and on letterhead. Some schools ask for a U.S./Canadian supervising dentist letter (e.g. Penn).
 6. **ADEA CAAPID** (Centralized Application for Advanced Placement for International Dentists, run on Liaison).
    - Opens in early March (March 5, 2026 for the 2026–27 cycle); the cycle runs to about January.
-   - Deadlines vary: about June 1 (Penn, UW, NYU, UMKC), June 12 (Pacific), July 31 (USC, Howard), Oct 1 (UF), Oct 15 (BU). Many schools review on a rolling basis, so apply early.
+   - Deadlines vary widely (2026–27 cycle): Minnesota March 26, UAB April 30, Harvard May 5, Indiana and Louisville May 15, UNC May 23, Michigan May 30; about 18 programs in June (Penn, UW, NYU, UMKC June 1; Pacific June 12); USC and Howard July 31; UF Oct 1; BU Oct 15; Meharry Nov 1; Marquette Jan 1, 2027; Colorado and VCU Jan 29, 2027. Many schools review on a rolling basis, so apply early. The School Explorer (https://traindentist.com/schools.html) sorts all 47 by deadline.
    - Fees (2026–27): $264 for the first program and $115 for each additional one, plus most schools' supplemental fees (examples: Penn $75, BU $80, Pacific $100, UW $185, Howard $200).
    - Up to 3 evaluations through CAAPID. Liaison advises submitting 6–8 weeks before deadlines (verification takes time) and requesting transcripts 10–12 weeks ahead.
    - Not every program uses CAAPID (e.g. UF's AEGD uses ADEA PASS plus a direct application).
 7. **Selection: bench test and interview.**
-   - Bench (psychomotor) tests vary. Some schools have none (Penn; Pacific in 2026–27); others do (UB, UW, UCLA, USC, UMKC, Michigan possibly).
+   - Bench (psychomotor) tests vary. Some schools have none (Penn; Pacific in 2026–27); others do (UB, UW, UCLA, USC, UMKC, Michigan). 36 of the 47 ADEA profiles list a bench test.
      - USC's practical covers fixed prosthodontics and operative dentistry.
      - UMKC runs a multi-day visit at the end of July: instrument check-out, procedure lectures, practice time, interview and a bench skills exam ($2,500 non-refundable selection fee).
      - UF's Hialeah AEGD has a 1-day interview with a bench test ($1,200 workshop fee).
@@ -110,8 +110,8 @@ export const KNOWLEDGE = `
 
 ## E. Program examples (school sites, 2026; confirm each cycle)
 - **Howard University IDP:** 24 months; up to 10 students; enters at D3; deadline July 31; TOEFL 100+ (no waivers); NBDE I&II or INBDE (preferably within 5 years); 3 letters (ideally one from the dean); ECE or WES; CAAPID; $200 supplemental fee.
-- **University of Michigan ITDP:** 28 months; about 20 students; January start; INBDE or NBDE I passed; TOEFL 94 min / 100+ competitive (new scale about 5); ADAT recommended, not required; dental work experience expected; possible manikin practical.
-- **UMKC Advanced Standing DDS:** 29 months; up to 9; January start; U.S. citizens/permanent residents only; dental GPA 3.0; TOEFL 90 (4.5 new scale; MyBest not accepted); ECE or WES; CAAPID March 1 – June 1; letters from dean, faculty and a practicing U.S. dentist; shadowing expected; multi-day selection with bench exam ($2,500); older 2024–25 tuition rates of $41,500 per regular semester and $20,750 per summer imply $249,000 tuition over five full semesters and two summers; about $280,325 with listed academic fees/materials, before living. Request current costs.
+- **University of Michigan ITDP:** 28 months; about 20 students; January start; INBDE or NBDE I passed; TOEFL 94 min / 100+ competitive (new scale about 5); ADAT recommended, not required; dental work experience expected; bench test listed on its ADEA profile; deadline May 30, 2026.
+- **UMKC Advanced Standing DDS:** 29 months; up to 9; January start; U.S. citizens/permanent residents only; dental GPA 3.0; TOEFL 90 (4.5 new scale; MyBest not accepted); ECE or WES; CAAPID deadline June 1 (the 2026–27 cycle opened March 5); letters from dean, faculty and a practicing U.S. dentist; shadowing expected; multi-day selection with bench exam ($2,500); older 2024–25 tuition rates of $41,500 per regular semester and $20,750 per summer imply $249,000 tuition over five full semesters and two summers; about $280,325 with listed academic fees/materials, before living. Request current costs.
 - **USC Ostrow ASPID:** about 2 years (about 8 months foundation, then D3); class of 34; INBDE; TOEFL 100+ preferred (5.0 new; no Home Edition or MyBest); 3 letters; CAAPID deadline July 31; practical exam in fixed prosthodontics and operative dentistry.
 - **UCLA:** 25 months, class of 30. **NYU:** 28 months. **Columbia:** 30 months. **Pacific:** 2 years (tuition $135,700/yr; 2-year cost of attendance about $398,758). **UB:** 24 months. **Oklahoma ASPID:** 29 months in the reviewed CAAPID profile. The former $185k full tuition/fee estimate was incorrect. Its older 2024–25 published D3/D4 tuition/fees total $352,022 resident / $352,024 nonresident; broader budgets total $436,236 / $436,238, but full-period coverage and current rates need confirmation.
 - **University of Florida:** (a) 4-year DMD, up to 2 international seats, requires the DAT (Academic Average about 330), INBDE optional, TOEFL 80 (4.0), deadline Oct 1, interview in Gainesville; (b) 2-year AEGD in Hialeah, 12 seats, via ADEA PASS + direct application, bench test, about $139k, Florida-only licensure eligibility. Both tracks are for U.S. citizens/permanent residents only.
@@ -126,7 +126,7 @@ export const KNOWLEDGE = `
 - Budget all introductory/bridge terms, later terms, mandatory fees, instruments, insurance, licensure and all living months, including gaps. Residency for tuition is separate from citizenship/green-card status. Do not promise a later switch to in-state tuition.
 - Cash before aid: Colorado's $4,000 deposit is credited toward tuition; UWIDDS's $5,000 acceptance deposit is not. Count credited deposits once. Confirm payment and disbursement dates, and keep an emergency reserve. See https://traindentist.com/finances.html#complete-budget.
 - ADEX licensure exam $2,995 + facility fee.
-- Average U.S. dental school debt was about $301,583 for 2022 graduates (ADEA data).
+- Average U.S. dental school debt (ADEA survey of graduating seniors): about $301,583 for the Class of 2021 and $293,900 for the Class of 2022.
 - Federal aid may be available to citizens, permanent residents and certain other eligible noncitizens; F-1 alone is insufficient. From July 1, 2026, new professional borrowing is generally limited to $50,000/year and $200,000 aggregate, with prior borrowing affecting limits and a $257,500 lifetime cap. New Grad PLUS borrowing ended except for qualifying transition cases. Confirm individual eligibility and program limits with the aid office; https://studentaid.gov/ and https://traindentist.com/finances.html explain the source basis.
 - Sallie Mae considers international borrowers residing/studying in the U.S. with a creditworthy U.S. citizen or permanent-resident co-signer, subject to all other requirements. Other lenders differ. No-co-signer products may not cover a specific DDS/DMD or the full cost. Never guarantee approval, rates, school certification, or future annual renewals.
 - The repayment calculator at https://traindentist.com/finances.html#calculator models tuition + fees + all living months + other costs, less savings; monthly loan draws; school/grace interest; fixed-rate 5/10/15/20-year examples; initial cash timing; and take-home cash flow. It is not a lender quote or an income-driven federal repayment calculation.
@@ -136,7 +136,7 @@ export const KNOWLEDGE = `
 - **ADEX dental exam** (administered via CDCA-WREB-CITA, now merging as the American Board of Dental Examiners):
   - Accepted or required in 48 states and several other jurisdictions; $2,995 + facility fee.
   - Manikin-based hand-skill parts: periodontal, endodontic, prosthodontic, anterior and posterior restorative.
-  - The DLOSCE (Dental Licensure Objective Structured Clinical Examination) became a required ADEX component on June 1, 2026. The ADA's standalone DLOSCE ended Sept 25, 2026. The ADEX periodontal exam has been required since Aug 1, 2026.
+  - The DLOSCE (Dental Licensure Objective Structured Clinical Examination) was folded into the ADEX exam during 2026 (the ADA–ADEX agreement said no later than Aug. 1, 2026), and standalone DLOSCE administrations cease after October 9, 2026. The ADEX periodontal exam has been required since Aug 1, 2026.
 - Some states accept a PGY-1 residency instead of a clinical exam (e.g. New York, California); California also has other options.
 - Also typically required: state jurisprudence/ethics exam, BLS/CPR, background check and fingerprints, NPDB self-query. Texas also requires a human-trafficking course.
 - Licensure by credentials is available in many states after a period of practice.
@@ -146,15 +146,15 @@ export const KNOWLEDGE = `
 - F-1 student visa for DDS/DMD programs (the school issues the I-20).
 - OPT: 12 months after the degree. Practising as a dentist still requires a state license.
 - Dentistry (CIP 51.0401) is not on the DHS STEM OPT list, so the 24-month STEM extension generally doesn't apply.
-- H-1B: subject to the cap lottery unless the employer is cap-exempt (universities, some nonprofits). A $100,000 proclamation fee (Sept 2025) does not apply to approved change-of-status petitions filed inside the U.S. (e.g. F-1 to H-1B). Policies change quickly.
+- H-1B: subject to the cap lottery unless the employer is cap-exempt (universities, some nonprofits). A $100,000 fee on some new H-1B petitions was announced in September 2025; whether it applies depends on the individual case, so never say whether it applies to a visitor. Policies change quickly.
 - The INBDE is administered through Prometric. Check JCNDE for current test-center availability outside the U.S.
 
 ## I. Timeline (realistic estimate)
 - Months 0–6: DENTPIN, ECE, TOEFL, start INBDE study.
 - Months 6–12: pass the INBDE; gather letters; get U.S. experience; start bench practice.
-- March of the application year: CAAPID opens; submit by April or May, plus each school's supplemental application.
+- March of the application year: CAAPID opens; submit well before each school's deadline (the earliest close in late March and April), plus each school's supplemental application.
 - Summer–fall: bench tests and interviews (invitations can come with only a few weeks' notice).
-- Next January–July: start the 2–3 year program.
+- Following year: start the 2–3 year program (2026–27 listings start between January and August 2027; a few in January 2028).
 - Final year: ADEX and jurisprudence exams, then the license.
 - Overall: about 3.5–5+ years from first step to license, longer if more than one cycle is needed. Some people's full journeys, including bridge years, take close to a decade.
 
@@ -162,7 +162,7 @@ export const KNOWLEDGE = `
 - Getting a WES evaluation when target schools and the INBDE need ECE; a name mismatch with the DENTPIN.
 - Applying before passing the INBDE when schools require a passed score.
 - Assuming IELTS is accepted; ignoring the new TOEFL scale; letting scores expire.
-- Submitting CAAPID late, or missing deadlines that range from June to October.
+- Submitting CAAPID late, or missing deadlines that range from late March to January.
 - Weak or wrong letters: the wrong evaluator type, or not on letterhead.
 - Waiting for an invitation before practising the bench test and interview.
 - Believing outdated "no extra training" blogs, or assuming a specialty or GPR certificate gives a license everywhere.

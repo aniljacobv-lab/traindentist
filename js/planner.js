@@ -46,7 +46,7 @@
       ]);
       next.push([
         "Shortlist 8–15 programs",
-        "Compare requirements, deadlines (June to October), bench test formats and cost using the ADEA CAAPID Program Finder.",
+        "Compare requirements, eligibility, deadlines (late March to January), bench test formats and cost in the School Explorer and the ADEA CAAPID Program Finder.",
       ]);
       next.push([
         "Line up 3 strong evaluators",
@@ -64,7 +64,7 @@
     if (a.stage === "applying") {
       now.push([
         "Submit CAAPID early (it opens in early March)",
-        "Verification takes weeks. Aim for April or May, and complete each school's supplemental application.",
+        "Verification takes weeks, and the earliest deadlines fall in late March and April. Check each school's date, submit well ahead, and complete each supplemental application.",
       ]);
       now.push([
         "Finalize your personal statement and evaluations",
@@ -100,7 +100,7 @@
       ]);
       next.push([
         "Begin bench and interview training months ahead",
-        "This is where reapplicants most often turn a rejection into an offer.",
+        "Hand skills and interview answers both improve with months of practice and feedback.",
       ]);
     }
     if (a.degree === "abroad-spec")
@@ -110,7 +110,7 @@
       ]);
     later.push([
       "Plan your finances and visa",
-      "Program tuition is often $185k–$250k+. Talk to the school's international office about F-1 and OPT.",
+      "Full program attendance at the schools with published budgets runs roughly $295k–$475k. Compare schools in the School Explorer, model repayment in the finance planner, and talk to the school's international office about F-1 and OPT.",
     ]);
     return { now, next, later };
   }
@@ -140,6 +140,13 @@
       block: "start",
     });
     document.getElementById("plan-print").onclick = () => print();
+    // the visitor's own answers, in the words shown on the form
+    const said = (name) =>
+      form
+        .querySelector(`[name="${name}"]:checked`)
+        ?.closest("label")
+        ?.textContent.replace(/\s+/g, " ")
+        .trim() || a[name];
     const summary = Object.values(p)
       .flat()
       .map(([t]) => "- " + t)
@@ -147,7 +154,7 @@
     try {
       sessionStorage.setItem(
         "td_plan",
-        `My planner results:\nECE: ${a.ece}, INBDE: ${a.inbde}, TOEFL: ${a.toefl}, Stage: ${a.stage}\n${summary}`,
+        `My planner results:\nECE: ${said("ece")}\nINBDE: ${said("inbde")}\nTOEFL: ${said("toefl")}\nStage: ${said("stage")}\n${summary}`,
       );
     } catch {
       /* private mode */

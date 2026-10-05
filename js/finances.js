@@ -7,8 +7,15 @@
       currency: "USD",
       maximumFractionDigits: 0,
     }).format(n);
-  const duration = (m) =>
-    `${Math.floor(m / 12)} years${m % 12 ? ` ${m % 12} months` : ""}`;
+  const plural = (n, word) => `${n} ${word}${n === 1 ? "" : "s"}`;
+  const duration = (months) => {
+    const m = Math.round(months),
+      y = Math.floor(m / 12),
+      rest = m % 12;
+    return [y ? plural(y, "year") : "", rest || !y ? plural(rest, "month") : ""]
+      .filter(Boolean)
+      .join(" ");
+  };
   function calculate(event) {
     if (event) event.preventDefault();
     if (!form.reportValidity()) return;
@@ -75,7 +82,7 @@
       $("affordability-result").classList.toggle("warning", left < 0);
       $("affordability-result").innerHTML =
         `<strong>Monthly cash-flow check</strong><br>${money(Number(v.income))} take-home − ${money(Number(v.spending))} other commitments − ${money(actual)} loan payment = <strong>${money(left)}</strong> ${left < 0 ? "shortfall" : "remaining"}. ${left < 0 ? "The entered budget cannot support this payment." : "Check that your commitments already include adequate savings and a reserve."}`;
-      const stressed = Math.min(40, input.rate + 3),
+      const stressed = Math.min(40, Math.round((input.rate + 3) * 100) / 100),
         stressBudget = TDFinance.budget({ ...input, rate: stressed }),
         stressPay = TDFinance.payment(
           stressBudget.balance,
@@ -87,7 +94,9 @@
       $("calc-error").textContent = "";
       $("calc-announcement").textContent =
         `Estimate updated. Repayment balance ${money(b.balance)}, monthly payment ${money(actual)}. ${left < 0 ? "Your monthly budget has a shortfall." : ""}`;
+      form.classList.remove("calc-stale");
     } catch {
+      form.classList.add("calc-stale"); // the figures on screen belong to the previous inputs
       $("calc-error").textContent =
         "Please check the amounts and periods. Initial costs cannot exceed the education budget, and cash available now cannot exceed your savings/other cash. Then update your estimate.";
     }

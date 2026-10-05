@@ -89,13 +89,46 @@ test("invalid periods, negative inputs and nonfinite rates are rejected", () => 
       tuition: 100,
       fees: 0,
       living: 0,
-      months: 1.5,
+      months: 1.25, // quarter months are not a real study period
       other: 0,
       savings: 0,
       rate: 8,
       grace: 6,
     }),
   );
+});
+test("half study months are accepted, as some programs run 28.5 months", () => {
+  const b = F.budget({
+    tuition: 97266,
+    fees: 0,
+    living: 2500,
+    months: 28.5,
+    other: 0,
+    savings: 0,
+    rate: 8.94,
+    grace: 6,
+  });
+  assert.equal(b.total, 97266 + 2500 * 28.5);
+});
+test("deadline dates are the same calendar day in every timezone", () => {
+  const saved = process.env.TZ;
+  try {
+    for (const tz of ["Asia/Kolkata", "Pacific/Auckland", "Europe/London", "America/Los_Angeles", "UTC"]) {
+      process.env.TZ = tz;
+      assert.equal(P.day("October 15, 2026"), "2026-10-15", tz);
+      assert.equal(P.day("March 26, 2026"), "2026-03-26", tz);
+      const bu = programs.find((p) => p.short === "Boston University");
+      assert.equal(P.cycle(bu, "2026-10-15"), "open", tz);
+      assert.equal(P.cycle(bu, "2026-10-16"), "closed", tz);
+    }
+  } finally {
+    if (saved === undefined) delete process.env.TZ;
+    else process.env.TZ = saved;
+  }
+});
+test("calculator inputs accept exact dollars and two-decimal rates", () => {
+  const html = fs.readFileSync(path.join(__dirname, "..", "finances.html"), "utf8");
+  assert.doesNotMatch(html, /step="(100|50|0\.1)"/);
 });
 test("directory covers 47 unique sourced profiles with usable campus points", () => {
   assert.equal(programs.length, 47);

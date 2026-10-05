@@ -1169,8 +1169,7 @@ body.dialog-open {
   .page-next,
   .footer,
   .shortlist-bar,
-  #chat-widget,
-  .chat-toggle {
+  .drm-root {
     display: none !important;
   }
   .wrap {
@@ -1206,4 +1205,9 @@ body.dialog-open {
   .resource-main {
     padding-block: 20px;
   }
+}
+
+/* Results on screen belong to the previous inputs while the form has an error. */
+.calculator-inputs.calc-stale ~ * {
+  opacity: 0.45;
 }

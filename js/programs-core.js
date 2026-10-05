@@ -1,8 +1,13 @@
 /* Pure directory rules, shared with the validation tests. */
 (function (root) {
   function day(value) {
+    // "October 15, 2026" parses as local midnight; read it back in local time so the
+    // calendar date is the same for a visitor in Kolkata, London or Los Angeles.
     const n = Date.parse(value);
-    return Number.isFinite(n) ? new Date(n).toISOString().slice(0, 10) : null;
+    if (!Number.isFinite(n)) return null;
+    const d = new Date(n);
+    const pad = (x) => String(x).padStart(2, "0");
+    return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
   }
   function cycle(p, today = new Date().toLocaleDateString("en-CA")) {
     const opens = day(p.opens),

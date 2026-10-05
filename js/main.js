@@ -30,14 +30,7 @@
       a.href = "mailto:" + C.email;
       a.textContent = C.email;
     }
-    if (k === "phone" && C.phone) {
-      a.href = "tel:" + C.phoneHref;
-      a.textContent = C.phone;
-    }
-    if (k === "social" && C.social) {
-      a.href = C.socialUrl;
-      a.textContent = C.social;
-    }
+    
   }
   document.getElementById("year").textContent = new Date().getFullYear();
   const form = document.getElementById("contact-form");

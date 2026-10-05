@@ -10,3 +10,18 @@ compatibility_flags = ["nodejs_compat"]
 [vars]
 # Optional: pin a Gemini model (default gemini-flash-latest, falling back to gemini-2.5-flash)
 # GEMINI_MODEL = "gemini-2.5-flash"
+
+# Rate limits enforced by Cloudflare before any AI call.
+[[ratelimits]]
+name = "CHAT_LIMITER"      # per visitor IP
+namespace_id = "1001"
+[ratelimits.simple]
+limit = 8
+period = 60
+
+[[ratelimits]]
+name = "SITE_LIMITER"      # all visitors together
+namespace_id = "1002"
+[ratelimits.simple]
+limit = 60
+period = 60

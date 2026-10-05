@@ -11,7 +11,7 @@
   const C = window.TD_CONFIG || {};
   const contact = `Email **${C.email}** or use the **Book a Consultation** form on the home page`;
   const guide = (anchor, label) =>
-    `\n\nMore detail: **Pathway Guide → ${label}** (traindentist.com/pathway.html#${anchor}).`;
+    `\n\nMore detail: **Pathway Guide → ${label}** (https://traindentist.com/pathway.html#${anchor}).`;
 
   const FACTS = [
     {
@@ -68,7 +68,7 @@
         "Where do I start?",
       ],
       answer:
-        "The usual route for an internationally trained dentist:\n\n1. **DENTPIN + ECE Course-by-Course evaluation** ($199). The INBDE requires ECE.\n2. **Pass the INBDE**. Most programs want a passing result before you apply.\n3. **TOEFL iBT**. Minimums range from about 80 to 100 (4.0–5.0 on the new scale).\n4. **Apply through ADEA CAAPID**. It opens in early March, with deadlines from about June to October.\n5. **Bench test and interview** at the schools that invite you.\n6. **Complete a 2–3 year advanced standing program**, ending in a U.S. DDS/DMD.\n7. **Licensure**: the ADEX clinical exam, a jurisprudence exam and state requirements.\n\nFrom first step to license usually takes 3.5 to 5+ years. I coach steps 4 and 5 most closely." +
+        "The usual route for an internationally trained dentist:\n\n1. **DENTPIN + ECE Course-by-Course evaluation** ($199). The INBDE requires ECE.\n2. **Pass the INBDE**. Most programs want a passing result before you apply.\n3. **TOEFL iBT**. Minimums range from about 80 to 100 (4.0–5.0 on the new scale).\n4. **Apply through ADEA CAAPID**. It opens in early March. Deadlines run from late March to January, and most fall in June or July.\n5. **Bench test and interview** at the schools that invite you.\n6. **Complete a 2–3 year advanced standing program**, ending in a U.S. DDS/DMD.\n7. **Licensure**: the ADEX clinical exam, a jurisprudence exam and state requirements.\n\nFrom first step to license usually takes 3.5 to 5+ years. Dr. Mathew's coaching focuses on steps 4 and 5." +
         guide("steps", "The core steps"),
     },
     {
@@ -186,7 +186,7 @@
         "What are the deadlines?",
       ],
       answer:
-        "**ADEA CAAPID** is the centralized application most advanced standing programs use.\n- **Opens:** early March (March 5 in 2026)\n- **Deadlines:** from about **June 1** (Penn, UW, NYU, UMKC), through **July 31** (USC, Howard) and **October 1** (UF), to **October 15** (BU). Many schools review on a rolling basis, so apply early.\n- **Fees:** $264 for the first program and $115 for each additional one, plus most schools' own supplemental fee (about $75–$200)\n- **Evaluations:** up to 3 through CAAPID\n- **Verification:** submit 6–8 weeks before deadlines\n\nNot every program uses CAAPID, so check each school." +
+        "**ADEA CAAPID** is the centralized application most advanced standing programs use.\n- **Opens:** early March (March 5 in 2026)\n- **Deadlines (2026–27 cycle):** from **March 26** (Minnesota) and **April 30** (UAB) to **January 2027** (Colorado, VCU). Most fell in June or July. Many schools review on a rolling basis, so apply early, and sort by deadline in the School Explorer (https://traindentist.com/schools.html).\n- **Fees:** $264 for the first program and $115 for each additional one, plus most schools' own supplemental fee (about $75–$200)\n- **Evaluations:** up to 3 through CAAPID\n- **Verification:** submit 6–8 weeks before deadlines\n\nNot every program uses CAAPID, so check each school." +
         guide("caapid", "CAAPID"),
     },
     {
@@ -235,7 +235,7 @@
         "Do you do mock interviews?",
       ],
       answer:
-        'Interviews are usually with faculty, in person or virtual, sometimes as a panel, and some schools also use **Casper**. They test communication, professionalism, ethics, motivation and fit.\n\n**Interview Prep** covers:\n- Structured answers to **behavioral and clinical scenarios**\n- **U.S. dental ethics**: autonomy, informed consent, the ADA Code\n- **"Why the U.S.?" and "Why our school?"** answers that are specific to each program\n- **Recorded mock interviews** with line-by-line feedback\n\nGeneric, memorized or overly long answers are the most common reason strong clinicians lose offers.',
+        'Interviews are usually with faculty, in person or virtual, sometimes as a panel, and some schools also use **Casper**. They test communication, professionalism, ethics, motivation and fit.\n\n**Interview Prep** covers:\n- Structured answers to **behavioral and clinical scenarios**\n- **U.S. dental ethics**: autonomy, informed consent, the ADA Code\n- **"Why the U.S.?" and "Why our school?"** answers that are specific to each program\n- **Recorded mock interviews** with line-by-line feedback\n\nGeneric, memorized or overly long answers are a common pitfall, even for strong clinicians.',
     },
     {
       id: "bench",
@@ -308,7 +308,7 @@
         "What margin should I use?",
       ],
       answer:
-        "Common grading points for a **crown preparation**:\n- **Occlusal and axial reduction** that is uniform and right for the material (metal, PFM or ceramic)\n- **Taper**: retentive, not over-tapered\n- **Margins**: chamfer or shoulder as the material requires, continuous and smooth, at the specified level\n- **Path of insertion**: no undercuts\n- **Adjacent teeth left undamaged**\n\nUse depth-guide grooves, check from every angle with your mirror, and set time checkpoints. As a prosthodontist, this is my home ground.",
+        "Common grading points for a **crown preparation**:\n- **Occlusal and axial reduction** that is uniform and right for the material (metal, PFM or ceramic)\n- **Taper**: retentive, not over-tapered\n- **Margins**: chamfer or shoulder as the material requires, continuous and smooth, at the specified level\n- **Path of insertion**: no undercuts\n- **Adjacent teeth left undamaged**\n\nUse depth-guide grooves, check from every angle with your mirror, and set time checkpoints. Dr. Mathew's postgraduate training (MDS in Prosthodontics, India) covered fixed prosthodontics in depth.",
     },
     {
       id: "inbde",
@@ -406,7 +406,7 @@
         "How many programs are there?",
       ],
       answer:
-        "About **47 U.S. dental schools** offer advanced standing programs (see the ADEA CAAPID Program Finder). You earn a U.S. **DDS/DMD**, usually in **2–3 years**. Examples:\n- **Howard**: 24 months, up to 10 students, deadline July 31, TOEFL 100\n- **Michigan ITDP**: 28 months, about 20 students, January start\n- **UMKC**: 29 months, up to 9 students, U.S. citizens or permanent residents only\n- **USC**: about 2 years, class of 34, practical exam in fixed prosthodontics and operative dentistry\n- **UCLA**: 25 months · **NYU**: 28 months · **Columbia**: 30 months\n\nRequirements change every cycle, so confirm on each school's site. I can help you build a list that fits your profile.",
+        "About **47 U.S. dental schools** offer advanced standing programs (see the ADEA CAAPID Program Finder). You earn a U.S. **DDS/DMD**, usually in **2–3 years**. Examples:\n- **Howard**: 24 months, up to 10 students, deadline July 31, TOEFL 100\n- **Michigan ITDP**: 28 months, about 20 students, January start\n- **UMKC**: 29 months, up to 9 students, U.S. citizens or permanent residents only\n- **Penn**: 29 months, U.S. citizens or permanent residents only\n- **USC**: about 2 years, class of 34, practical exam in fixed prosthodontics and operative dentistry\n- **UCLA**: 25 months · **NYU**: 28 months · **Columbia**: 30 months\n\nRequirements change every cycle, so confirm on each school's site. Compare all 47 programs in the School Explorer (https://traindentist.com/schools.html). Dr. Mathew can help you build a list that fits your profile.",
     },
     {
       id: "eligibility",
@@ -428,7 +428,7 @@
         "Do I need to be a US citizen?",
       ],
       answer:
-        "Many programs accept international applicants, typically on an **F-1 student visa**. But some only accept **U.S. citizens or permanent residents**: for example **UMKC** and both of the **University of Florida**'s international tracks. Check each program's eligibility before paying application fees. For visa questions, talk to the school's international office or an immigration attorney.",
+        "Many programs accept international applicants, typically on an **F-1 student visa**. But in the 2026–27 cycle nine programs only accepted **U.S. citizens or permanent residents**: Penn, Ohio State, UAB, Nebraska, Oklahoma, UTHealth Houston, ATSU Missouri, UMKC and Florida. Use the eligibility filter in the School Explorer (https://traindentist.com/schools.html) before paying application fees. For visa questions, talk to the school's international office or an immigration attorney.",
     },
     {
       id: "chances",
@@ -456,7 +456,7 @@
         "I was rejected last year. What now?",
       ],
       answer:
-        "What strengthens an application:\n- A **passed INBDE** and **TOEFL scores comfortably above** each school's minimum\n- **U.S. exposure**: shadowing, volunteering, dental assisting, research, or a U.S. master's degree\n- **Strong letters**, ideally including a U.S. dentist\n- A **specific, honest personal statement** and a realistic school list\n- **Bench test readiness**, where many strong applicants lose out\n- **Interview polish**: clear, confident and patient-centred\n\nIf you're reapplying, start by working out what really held you back. No one can guarantee admission, but focused preparation makes a real difference.",
+        "What strengthens an application:\n- A **passed INBDE** and **TOEFL scores comfortably above** each school's minimum\n- **U.S. exposure**: shadowing, volunteering, dental assisting, research, or a U.S. master's degree\n- **Strong letters**, ideally including a U.S. dentist\n- A **specific, honest personal statement** and a realistic school list\n- **Bench test readiness**: hand skills take months to sharpen\n- **Interview polish**: clear, confident and patient-centred\n\nIf you're reapplying, start by working out what really held you back. No one can guarantee admission, but focused preparation makes a real difference.",
     },
     {
       id: "costs",
@@ -525,7 +525,7 @@
         "What is the ADEX exam?",
       ],
       answer:
-        "After your U.S. DDS/DMD:\n- **ADEX dental exam**: manikin-based periodontal, endodontic, prosthodontic and restorative parts, plus the **DLOSCE** (part of ADEX since June 2026). Accepted in 48 states. Fee $2,995 plus a facility fee.\n- Some states (for example **New York** and **California**) accept a **PGY-1 residency** in place of a clinical exam\n- A **state jurisprudence exam**, BLS/CPR, a background check and fingerprints\n- **Licensure by credentials** in many states once you've practised for a while\n\nSee the ADA's licensure-by-state map for each state's rules." +
+        "After your U.S. DDS/DMD:\n- **ADEX dental exam**: manikin-based periodontal, endodontic, prosthodontic and restorative parts, plus the **DLOSCE** (folded into ADEX during 2026). Accepted in 48 states. Fee $2,995 plus a facility fee.\n- Some states (for example **New York** and **California**) accept a **PGY-1 residency** in place of a clinical exam\n- A **state jurisprudence exam**, BLS/CPR, a background check and fingerprints\n- **Licensure by credentials** in many states once you've practised for a while\n\nSee the ADA's licensure-by-state map for each state's rules." +
         guide("licensure", "Licensure"),
     },
     {
@@ -614,7 +614,7 @@
         "What's a realistic timeline?",
       ],
       answer:
-        "A realistic plan:\n- **Months 0–6**: DENTPIN, ECE, TOEFL, start INBDE study\n- **Months 6–12**: pass the INBDE, gather letters, get U.S. experience, start bench practice\n- **March of the application year**: CAAPID opens. Submit by April or May.\n- **Summer to fall**: bench tests and interviews, sometimes with only a few weeks' notice\n- **Next year**: start your 2–3 year program\n- **Final year**: ADEX and jurisprudence exams\n\nUsually **3.5 to 5+ years** to a license. Try the **Pathway Planner** for a personal checklist." +
+        "A realistic plan:\n- **Months 0–6**: DENTPIN, ECE, TOEFL, start INBDE study\n- **Months 6–12**: pass the INBDE, gather letters, get U.S. experience, start bench practice\n- **March of the application year**: CAAPID opens. Submit well before each deadline: the earliest close in late March and April.\n- **Summer to fall**: bench tests and interviews, sometimes with only a few weeks' notice\n- **Next year**: start your 2–3 year program\n- **Final year**: ADEX and jurisprudence exams\n\nUsually **3.5 to 5+ years** to a license. Try the **Pathway Planner** for a personal checklist." +
         guide("planner", "Pathway Planner"),
     },
     {
@@ -655,7 +655,7 @@
         "What does mentorship include?",
       ],
       answer:
-        "**What I offer (all 1-on-1):**\n- **Interview Mastery**: strategy, school-specific answers, recorded mock interviews\n- **Bench + Interview Intensive**: weekly prep assignments with fast reviews, technique sessions, timed mock bench exams and mock interviews\n- **Complete Pathway Mentorship**: everything above plus school selection, CAAPID review and personal statement feedback\n- **Application Strategy** sessions on their own\n\nOnline worldwide, or in person in **Houston / Katy, Texas**. Want to book a free consultation?",
+        "**What Dr. Mathew offers (all 1-on-1):**\n- **Interview Mastery**: strategy, school-specific answers, recorded mock interviews\n- **Bench + Interview Intensive**: weekly prep assignments with fast reviews, technique sessions, timed mock bench exams and mock interviews\n- **Complete Pathway Mentorship**: everything above plus school selection, CAAPID review and personal statement feedback\n- **Application Strategy** sessions on their own\n\nOnline worldwide, or in person in **Houston / Katy, Texas**. Want to book a free consultation?",
     },
     {
       id: "pricing",
@@ -678,7 +678,7 @@
         "cost of mentorship",
       ],
       examples: ["How much does your coaching cost?", "What are your rates?"],
-      answer: `Fees depend on the program (interview, bench test, or full mentorship) and the number of sessions. I'll recommend a plan after a short **free consultation**. ${contact}.`,
+      answer: `Fees depend on the program (interview, bench test, or full mentorship) and the number of sessions. Dr. Mathew recommends a plan after a short **free consultation**. ${contact}.`,
     },
     {
       id: "format",
@@ -727,7 +727,7 @@
         "talk to you",
       ],
       examples: ["How do I book a consultation?", "How can I contact you?"],
-      answer: `I'd be glad to talk with you. ${contact}. Include your graduation year, INBDE and TOEFL status, and target schools. If you've used the **Pathway Planner**, your results fill into the form automatically. Spots are limited because every session is 1-on-1.`,
+      answer: `To talk with Dr. Mathew: ${contact}. Include your graduation year, INBDE and TOEFL status, and target schools. If you've used the **Pathway Planner**, your results fill into the form automatically.  Every session is 1-on-1.`,
     },
     {
       id: "planner",
@@ -831,6 +831,7 @@
     usa: "us",
     america: "us",
     "u.s.": "us",
+    "u.s": "us", // tokens() strips the trailing dot
     interviews: "interview",
     tests: "test",
     preps: "prep",
